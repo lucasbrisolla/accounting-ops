@@ -14,7 +14,6 @@ Mapa rápido do `accounting-ops`.
 - `_method-wiki/`: base metodológica viva
 - `templates/`: formatos reutilizáveis
 - `skills/`: transformações atômicas sob demanda
-- `books/`: camada de ingestão e mapeamento de livros
 - `archive/docs/specs/`: histórico de desenho e evolução
 
 ## Method Wiki
@@ -45,14 +44,6 @@ Mapa rápido do `accounting-ops`.
 - `tracks/accounting/workflows/monthly-closing-and-number-quality.md`
 - `tracks/accounting/workflows/cash-management-and-bank-reconciliation.md`
 - `tracks/accounting/workflows/inventory-and-valuation-review.md`
-
-## Livros
-
-- `books/the-new-controller-guidebook/`: leitura por índice do livro de Steven Bragg
-- `books/financial-planning-analysis-and-performance-management/`: leitura por índice do livro de Jack Alexander
-- `books/budgeting/`: leitura por índice do livro de budgeting
-- `books/cost-accounting-fundamentals/`: leitura por índice do livro de cost accounting
-- `books/financial-statement-analysis/`: leitura por índice do livro de Fridson e Alvarez
 
 ## Skills
 

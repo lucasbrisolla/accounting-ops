@@ -35,10 +35,9 @@ Use `INDEX.md` quando quiser uma visão rápida da arquitetura do produto.
 3. `_method-wiki/`: base metodológica viva.
 4. `PRODUCT_INDEX.md`: inventário operacional da estrutura atual.
 5. `tracks/`: trilhas específicas por domínio.
-6. `books/`: camada de ingestão e mapeamento de livros.
-7. `templates/`: formatos reutilizáveis de análise e treino.
-8. `skills/`: transformações atômicas sob demanda.
-9. `Agent Products/_backlog/backlog-accounting-ops.md`: evolução planejada do produto.
+6. `templates/`: formatos reutilizáveis de análise e treino.
+7. `skills/`: transformações atômicas sob demanda.
+8. `Agent Products/_backlog/backlog-accounting-ops.md`: evolução planejada do produto.
 
 ## Method Wiki
 
@@ -72,14 +71,6 @@ Use `INDEX.md` quando quiser uma visão rápida da arquitetura do produto.
 ## Templates Ativos
 
 - `templates/variance-analysis-one-pager.md`: estrutura curta para explicar desvios.
-## Books
-
-- `books/the-new-controller-guidebook/`: índice inicial do livro de Steven Bragg, usado para mapear capítulos promissores antes da leitura detalhada.
-- `books/financial-planning-analysis-and-performance-management/`: espinha dorsal de FP&A, performance management e comunicação financeira.
-- `books/budgeting/`: mapa do sistema orçamentário e master budget.
-- `books/cost-accounting-fundamentals/`: mapa de custos, estoque e variâncias.
-- `books/financial-statement-analysis/`: mapa de leitura crítica de demonstrações e qualidade do lucro.
-
 ## Skills Ativas
 
 - `skills/cpc-impact-translation.md`: traduz efeito técnico-contábil para impacto gerencial.

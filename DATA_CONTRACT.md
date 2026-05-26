@@ -20,7 +20,6 @@ Camada de método e operação do agente.
 - `PRODUCT_INDEX.md`
 - `DATA_CONTRACT.md`
 - `_method-wiki/`
-- `books/`
 - `skills/`
 - `tracks/`
 - `templates/`

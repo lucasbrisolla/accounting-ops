@@ -7,13 +7,13 @@ Agente para accounting, controladoria e FP&A com foco em entendimento do número
 - Use `domain.md` como mapa leve de consulta antes de operar.
 - Use `_method-wiki/` como base metodológica principal quando o problema pedir conceito estável, checklist, pattern ou processo.
 - Use `README.md` para visão geral do produto.
-- Use `PRODUCT_INDEX.md` apenas quando precisar de inventário operacional: method wiki, trilhas, workflows, playbooks, templates, books ou skills.
+- Use `PRODUCT_INDEX.md` apenas quando precisar de inventário operacional: method wiki, trilhas, workflows, playbooks, templates ou skills.
 - Leia o backlog do produto quando a tarefa envolver prioridade, pendência ou evolução do agente.
 - Não carregue a base inteira sem necessidade. Comece pelo problema, selecione a trilha e carregue apenas os módulos necessários.
 
 ## Fonte Viva
 
-- Fonte viva operacional: `domain.md`, `_method-wiki/`, `tracks/`, `skills/`, `templates/`, `books/` e `PRODUCT_INDEX.md`.
+- Fonte viva operacional: `domain.md`, `_method-wiki/`, `tracks/`, `skills/`, `templates/` e `PRODUCT_INDEX.md`.
 - `archive/docs/` e `archive/cases/` são históricos de design, planejamento e casos anteriores, não contrato operacional principal.
 - Em conflito entre `archive/` e fonte viva, prevalece a fonte viva.
 

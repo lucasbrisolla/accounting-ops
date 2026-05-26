@@ -76,21 +76,6 @@ Use este arquivo quando precisar localizar rapidamente trilhas, modos, playbooks
 | `tracks/accounting/workflows/cash-management-and-bank-reconciliation.md` | Revisar caixa, bancos, diferenças de reconciliação, pendências e risco de liquidez de curto prazo. |
 | `tracks/accounting/workflows/inventory-and-valuation-review.md` | Revisar quantidade, valuation, obsolescência e impactos de estoque em custo, margem e resultado. |
 
-## Books
-
-| Arquivo | Quando usar |
-|---|---|
-| `books/the-new-controller-guidebook/README.md` | Entender a estratégia de ingestão do livro de Steven Bragg. |
-| `books/the-new-controller-guidebook/controller-guidebook-index.md` | Mapear capítulos do livro para `workflow`, `playbook`, `mode`, `conceito` ou descarte temporário. |
-| `books/financial-planning-analysis-and-performance-management/README.md` | Entender a estratégia de ingestão do livro de Jack Alexander. |
-| `books/financial-planning-analysis-and-performance-management/fpna-performance-management-index.md` | Mapear capítulos de FP&A e performance management para destinos sugeridos no produto. |
-| `books/budgeting/README.md` | Entender a estratégia de ingestão do livro de budgeting do Steven Bragg. |
-| `books/budgeting/budgeting-index.md` | Mapear capítulos de orçamento, master budget e flexible budgeting. |
-| `books/cost-accounting-fundamentals/README.md` | Entender a estratégia de ingestão do livro de cost accounting. |
-| `books/cost-accounting-fundamentals/cost-accounting-fundamentals-index.md` | Mapear capítulos de custos, estoque, custeio e variâncias. |
-| `books/financial-statement-analysis/README.md` | Entender a estratégia de ingestão do livro de Fridson e Alvarez. |
-| `books/financial-statement-analysis/financial-statement-analysis-index.md` | Mapear capítulos de leitura crítica, earnings quality e projeções. |
-
 ## Skills
 
 | Arquivo | Quando usar |
