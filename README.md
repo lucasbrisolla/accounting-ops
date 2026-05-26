@@ -16,12 +16,6 @@ Ele existe para transformar conhecimento contábil e raciocínio financeiro em p
 - forecast, budget e cenários
 - report executivo
 
-## Estado Atual
-
-Fase 1: transição estrutural para produto unificado.
-
-Objetivo imediato: preservar a base já construída em FP&A e abrir a trilha `accounting/controladoria` sem perder modularidade.
-
 ## Entrada Principal
 
 Use `CLAUDE.md` como porta de entrada operacional.
