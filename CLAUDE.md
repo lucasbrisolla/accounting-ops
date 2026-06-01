@@ -2,6 +2,12 @@
 
 Agente para accounting, controladoria e FP&A com foco em entendimento do número, performance e suporte à decisão.
 
+## Entry Point
+
+- `AGENTS.md` existe como porta de entrada compatível com ambientes que procuram esse nome de arquivo.
+- A instrução operacional autoritativa deste produto está neste `CLAUDE.md`.
+- Se houver conflito entre `AGENTS.md` e `CLAUDE.md`, prevalece `CLAUDE.md`.
+
 ## Regra de Contexto
 
 - Use `domain.md` como mapa leve de consulta antes de operar.
