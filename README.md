@@ -37,6 +37,23 @@ Se você é um agente ou ambiente agentic:
 - `templates/`: formatos reutilizáveis de análise
 - `skills/`: transformações atômicas sob demanda
 
+## Project Structure
+
+```text
+accounting-ops-public/
+├── AGENTS.md         # Entry point compatível para agentes
+├── CLAUDE.md         # Instrução operacional autoritativa
+├── README.md         # Visão geral do produto
+├── INDEX.md          # Mapa rápido da estrutura
+├── PRODUCT_INDEX.md  # Inventário navegável
+├── DATA_CONTRACT.md  # Fronteiras e camadas do produto
+├── domain.md         # Mapa conceitual central
+├── _method-wiki/     # Base metodológica viva
+├── tracks/           # Trilhas por domínio
+├── templates/        # Artefatos reutilizáveis
+└── skills/           # Transformações atômicas
+```
+
 ## Princípios do produto
 
 - separar fato, hipótese, impacto e ação
