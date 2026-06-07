@@ -18,7 +18,11 @@ Concentrar conteúdos de:
 - `workflows/revenue-and-gross-margin-driver-review.md`
 - `workflows/gross-margin-bridge.md`
 - `playbooks/financial-information-communication.md`
+- `playbooks/creating-context-for-performance-measures.md`
+- `playbooks/flash-report-design.md`
+- `playbooks/margin-reporting-without-bad-allocations.md`
 - `playbooks/pricing-strength-vs-operating-efficiency.md`
+- `playbooks/asset-utilization-and-capital-discipline.md`
 
 ## Observação
 

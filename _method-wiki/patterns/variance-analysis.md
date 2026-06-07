@@ -26,6 +26,32 @@ Estrutura recorrente para explicar variações entre actual, budget, forecast ou
 | Impacto | O efeito atinge margem, EBITDA, caixa, forecast ou decisão? |
 | Ação | O que monitorar, corrigir, comunicar ou validar com a área? |
 
+## Gatilhos de materialidade
+
+Investigue uma variação quando ela for relevante por:
+
+- valor absoluto
+- percentual sobre a base
+- direção inesperada
+- impacto em margem, EBITDA, caixa ou covenant
+- recorrência acumulada
+- mudança nova em uma conta antes estável
+
+## Decomposições úteis
+
+Antes de aceitar a narrativa, quebre a variação quando possível:
+
+| Tipo de variação | Quebra recomendada |
+|---|---|
+| Receita | preço, volume, mix, câmbio, devoluções, timing |
+| Custo industrial | volume, consumo, eficiência, preço de insumo, mix, absorção |
+| Margem | preço/volume/mix, custo unitário, capacidade, sucata, frete |
+| Pessoal | headcount, salário médio, horas extras, encargos, bônus |
+| Opex | categoria de gasto, fornecedor, timing, reclassificação, não recorrente |
+| Câmbio | taxa, exposição, hedge, data de reconhecimento |
+
+Se a explicação for "timing", ela deve indicar quando o efeito reverte. Se for "one-time", deve explicar por que não se repete.
+
 ## Regra de qualidade
 
 Uma boa explicação de variação não termina em "a conta aumentou".

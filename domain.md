@@ -68,11 +68,11 @@ Drivers comuns:
 - investimentos industriais
 - capacidade ociosa
 
-## Ponte Auditoria para FP&A
+## Ponte entre Base Técnica e FP&A
 
-Experiência de auditoria ajuda quando vira raciocínio de negócio:
+Experiência técnica ajuda quando vira raciocínio de negócio:
 
-| Auditoria | FP&A |
+| Base técnica | FP&A |
 |---|---|
 | Procedimento analítico | Análise de performance |
 | Budget vs. actual | Explicação de variação |

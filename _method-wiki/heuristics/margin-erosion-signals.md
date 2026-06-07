@@ -13,6 +13,8 @@ O agente deve procurar sinais comerciais, operacionais e contábeis antes de ace
 - pedidos perdidos por preço
 - market share caindo com preço ainda sustentado
 - dependência crescente de poucos clientes ou produtos
+- concorrente melhorando preço/performance
+- novos produtos atrasando enquanto produtos maduros entram em declínio
 
 ## Sinais operacionais
 
@@ -36,8 +38,10 @@ O agente deve procurar sinais comerciais, operacionais e contábeis antes de ace
 3. A explicação fecha em valor e em percentual?
 4. Existe impacto de estoque, corte ou classificação?
 5. O mercado confirma ou contradiz a narrativa?
+6. A empresa está preservando margem hoje ao custo de share amanhã?
 
 ## Conexões operacionais
 
 - Workflow: `tracks/fpa/workflows/gross-margin-bridge.md`
+- Checklist: `checklists/revenue-and-gross-margin-driver-checklist.md`
 - Pattern: `patterns/gross-margin-bridge.md`

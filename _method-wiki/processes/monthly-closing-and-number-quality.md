@@ -65,6 +65,68 @@ São etapas que podem acontecer depois da emissão, mas ainda fazem parte da mel
 - revisar se algum passo deixou de ser material
 - documentar aprendizados enquanto o fechamento ainda está fresco
 
+## Calendário operacional
+
+Um fechamento industrial costuma funcionar melhor quando o calendário separa dependências por dia, em vez de tratar tudo como uma lista única.
+
+Modelo inicial:
+
+| Dia | Foco | Exemplos de entregas |
+|---|---|---|
+| T+1 | Captura e base transacional | caixa, bancos, contas a pagar, folha, depreciação, prepaids, intercompany inicial |
+| T+2 | Subledgers e estimativas | receita, accruals, contas a receber, contas a pagar, estoque, câmbio |
+| T+3 | Conciliações e trial balance | reconciliações patrimoniais, intercompany, trial balance preliminar, primeiras variações |
+| T+4 | Revisão gerencial | impostos, demonstrações preliminares, análise detalhada de variações, review com gestão |
+| T+5 | Hard close | ajustes finais, trava do período, pacote de report, atualização de forecast, retrospectiva |
+
+O calendário deve ter dono, prazo, dependência e critério de conclusão por etapa.
+
+## Dependências e caminho crítico
+
+O caminho crítico típico é:
+
+1. Entradas de caixa, AP, AR, folha, estoque e lançamentos recorrentes.
+2. Fechamento dos subledgers.
+3. Reconciliações de contas críticas.
+4. Trial balance e demonstrações preliminares.
+5. Review de variações e qualidade do número.
+6. Ajustes finais, hard close e pacote de report.
+
+Para encurtar o fechamento sem perder qualidade, priorize:
+
+- pre-close para contas de baixo risco
+- reconciliação contínua ao longo do mês
+- templates de lançamento com evidência padronizada
+- responsáveis claros por conta, rotina e bloqueio
+- revisão antecipada de itens recorrentes e open items antigos
+
+## Dashboard de status
+
+Use uma visão simples para controlar execução:
+
+| Rotina | Dono | Prazo | Status | Bloqueio | Próxima ação |
+|---|---|---|---|---|---|
+| Ex.: bancos | Treasury/Accounting | T+1 | Em andamento | extrato pendente | receber extrato e reconciliar diferença |
+
+Status úteis:
+
+- não iniciado
+- em andamento
+- concluído
+- bloqueado
+- em risco
+
+## Retrospectiva do fechamento
+
+Após o report, registre:
+
+- o que funcionou bem
+- o que atrasou o fechamento
+- quais bloqueios foram recorrentes
+- quais ajustes chegaram tarde
+- quais rotinas podem ser automatizadas, padronizadas ou antecipadas
+- quais passos deixaram de ser materiais
+
 ## Soft close
 
 Soft close é uma versão reduzida do fechamento usada quando a velocidade é mais importante do que a precisão completa.
@@ -98,9 +160,11 @@ Exemplos úteis:
 
 - Conceito: `concepts/number-quality-foundations.md`
 - Conceito: `concepts/working-capital-foundations.md`
+- Processo: `processes/account-reconciliation-and-open-items.md`
 - Pattern: `patterns/variance-analysis.md`
 - Checklist: `checklists/monthly-closing-number-quality-checklist.md`
 - Workflow: `tracks/accounting/workflows/monthly-closing-and-number-quality.md`
+- Workflow: `tracks/accounting/workflows/account-reconciliation-review.md`
 - Playbook: `tracks/accounting/playbooks/result-reading-and-number-quality.md`
 
 ## Critério de qualidade

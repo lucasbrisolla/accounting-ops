@@ -54,6 +54,10 @@ Mapa rápido do `accounting-ops`.
 ## Playbooks em destaque
 
 - `tracks/fpa/playbooks/financial-information-communication.md`
+- `tracks/fpa/playbooks/creating-context-for-performance-measures.md`
+- `tracks/fpa/playbooks/flash-report-design.md`
+- `tracks/fpa/playbooks/margin-reporting-without-bad-allocations.md`
+- `tracks/fpa/playbooks/asset-utilization-and-capital-discipline.md`
 - `tracks/fpa/playbooks/pricing-strength-vs-operating-efficiency.md`
 
 ## Backlog

@@ -72,6 +72,7 @@ accounting-ops-public/
 ├── INDEX.md          # Mapa rápido da estrutura
 ├── PRODUCT_INDEX.md  # Inventário navegável
 ├── DATA_CONTRACT.md  # Fronteiras e camadas do produto
+├── HEALTH_CHECK.md   # Diagnóstico operacional do produto
 ├── domain.md         # Mapa conceitual central
 ├── _method-wiki/     # Base metodológica viva
 ├── tracks/           # Trilhas por domínio
@@ -101,3 +102,4 @@ accounting-ops-public/
 
 - `CLAUDE.md`: roteamento, guardrails e seleção de módulos
 - `PRODUCT_INDEX.md`: inventário navegável de workflows, playbooks, templates e skills
+- `HEALTH_CHECK.md`: como avaliar a saúde operacional do produto

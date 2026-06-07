@@ -25,6 +25,22 @@ Use este processo quando a pergunta envolver:
 7. Definir indicadores de monitoramento.
 8. Fechar mensagem gerencial.
 
+## Qualidade da projeção
+
+Uma projeção deve ser tratada como ferramenta de decisão, não como exercício financeiro.
+
+Antes de aceitar o número projetado:
+
+- confirme quem é o dono operacional das premissas
+- compare a projeção contra tendência histórica, run rate e forecast anterior
+- use extrapolação simples como benchmark, não como resposta automática
+- identifique os poucos drivers materiais e variáveis
+- teste premissas críticas por sensibilidade
+- documente riscos, upsides, gatilhos, probabilidade e ação
+- inclua DRE, balanço e fluxo de caixa quando a decisão envolver capital, liquidez, covenants ou investimento
+
+O valor do processo está menos no plano final e mais no pensamento que ele força: premissas explícitas, cenários, contingências e indicadores de execução.
+
 ## Rolling forecast e business outlook
 
 Use rolling forecast ou business outlook quando o objetivo for atualizar a leitura futura sem repetir o orçamento anual inteiro.
@@ -54,6 +70,20 @@ Depois, construir apenas os suportes necessários para os itens mais relevantes.
 
 Evite replicar o orçamento anual em baixo nível de detalhe. O forecast deve ser um modelo de trabalho focado em drivers, não uma nova rodada completa de budget.
 
+## Benchmark contra tendência
+
+Toda projeção relevante deve responder por que o futuro projetado é diferente do passado recente.
+
+Use pelo menos um destes comparativos:
+
+- actual acumulado contra período anterior
+- run rate recente contra run rate implícito no restante do ano
+- forecast atual contra forecast anterior
+- cenário de extrapolação simples contra cenário base
+- actual realizado contra faixa prevista em forecasts anteriores
+
+Se o plano projeta reversão forte, aceleração ou melhora material, a explicação precisa vir de drivers observáveis, ações de gestão ou eventos verificáveis.
+
 ## Driver material e variável
 
 Priorize itens que sejam:
@@ -75,10 +105,19 @@ Todo forecast revisado deve conseguir responder:
 - quais riscos e upsides ficaram maiores
 - qual decisão ou ação gerencial agora é necessária
 
+Para projeções relevantes, a apresentação também deve mostrar:
+
+- premissas críticas
+- riscos de execução
+- sensibilidade das variáveis-chave
+- recap de cenários
+- indicadores líderes que dirão se a projeção continua válida
+
 ## Módulos relacionados
 
 - Conceito: `concepts/budget-vs-forecast-vs-operating-plan.md`
 - Processo: `processes/dashboard-and-kpi-design.md`
+- Checklist: `checklists/financial-projection-quality-checklist.md`
 - Checklist: `checklists/forecast-review-checklist.md`
 - Workflow: `tracks/fpa/workflows/rolling-forecast-and-business-outlook.md`
 - Workflow: `tracks/fpa/workflows/integrated-budget-and-driver-review.md`

@@ -49,6 +49,13 @@ Depois, ative o módulo correspondente:
 | Revisar crescimento de receita, preço, mix, market share ou drivers de margem bruta | `tracks/fpa/workflows/revenue-and-gross-margin-driver-review.md` |
 | Explicar erosão ou expansão de margem bruta em formato de bridge | `_method-wiki/patterns/gross-margin-bridge.md` + `tracks/fpa/workflows/gross-margin-bridge.md` |
 | Distinguir força de preço de eficiência operacional | `_method-wiki/concepts/pricing-strength-vs-operating-efficiency.md` + `tracks/fpa/playbooks/pricing-strength-vs-operating-efficiency.md` |
+| Ler business model além da DRE, com foco em crescimento, capital, caixa e retorno | `_method-wiki/concepts/business-model-foundations.md` + `_method-wiki/concepts/analytical-tools-foundations.md` |
+| Estruturar performance management antes de escolher KPI ou dashboard | `_method-wiki/processes/performance-management-framework.md` + `tracks/fpa/playbooks/creating-context-for-performance-measures.md` + `_method-wiki/concepts/value-driver-framework.md` |
+| Desenhar ou revisar reporting gerencial, ownership do número ou flash report | `_method-wiki/processes/management-reporting-and-report-governance.md` + `_method-wiki/patterns/responsibility-reporting.md` + `tracks/fpa/playbooks/flash-report-design.md` |
+| Revisar se uma variância merece entrar no report principal | `_method-wiki/heuristics/when-not-to-report-a-variance.md` + `_method-wiki/patterns/variance-analysis.md` |
+| Revisar margem por produto, cliente ou unidade sem distorção por alocações ruins | `tracks/fpa/playbooks/margin-reporting-without-bad-allocations.md` + `_method-wiki/patterns/gross-margin-bridge.md` |
+| Revisar capital de longo prazo, CAPEX, utilização de ativos ou caixa excedente | `_method-wiki/processes/long-term-capital-management.md` + `_method-wiki/concepts/capital-intensity-foundations.md` + `tracks/fpa/playbooks/asset-utilization-and-capital-discipline.md` |
+| Revisar se um investimento em capital entregou o business case | `_method-wiki/checklists/capital-investment-postaudit-checklist.md` + `_method-wiki/processes/long-term-capital-management.md` |
 | Transformar análise financeira em apresentação, report ou mensagem executiva | `tracks/fpa/playbooks/financial-information-communication.md` + `skills/number-to-management-story.md` |
 | Explorar a trilha de accounting/controladoria | `tracks/accounting/README.md` + arquivo aplicável da trilha |
 
@@ -80,5 +87,5 @@ Use skills apenas quando a saída pedir a capacidade específica:
 - Não decorar respostas sem explicar o raciocínio.
 - Não esconder gaps: nomear lacunas e mostrar como compensar.
 - Não usar jargão sem traduzir.
-- Não transformar auditoria em accounting, controladoria ou FP&A por maquiar o nome; fazer a ponte conceitual corretamente.
+- Não maquiar experiência, contexto ou escopo real; fazer a ponte conceitual corretamente.
 - Em análises, separar fato, hipótese, impacto e ação sugerida.

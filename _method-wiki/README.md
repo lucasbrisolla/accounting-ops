@@ -8,6 +8,7 @@ Esta pasta concentra conhecimento estável, modular e reutilizável do `accounti
 
 - `_method-wiki/`: base metodológica viva
 - `tracks/`: modos, workflows e playbooks operacionais
+- `books/`: camada de ingestão e rastreabilidade por fonte
 - `archive/`: histórico de design, planos e casos anteriores
 - `PRODUCT_INDEX.md`: inventário operacional sob demanda
 

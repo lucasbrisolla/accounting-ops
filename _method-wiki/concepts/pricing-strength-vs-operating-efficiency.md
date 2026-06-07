@@ -27,6 +27,9 @@ Uma empresa pode sustentar margem porque tem força de preço, mesmo carregando 
 - baixa sensibilidade a reajuste
 - produto ou serviço percebido como diferenciado
 - pedidos perdidos por preço em nível administrável
+- descontos como percentual do preço de lista sob controle
+- preço/performance superior ao concorrente
+- market share estável ou crescente
 
 ## Sinais de eficiência operacional
 
@@ -35,6 +38,17 @@ Uma empresa pode sustentar margem porque tem força de preço, mesmo carregando 
 - produtividade consistente
 - boa absorção de custos fixos
 - qualidade estável
+
+## Métricas de acompanhamento
+
+| Métrica | Por que importa |
+|---|---|
+| ASP | Mostra sustentação ou erosão de preço médio. |
+| Descontos / preço de lista | Mostra pressão comercial escondida no preço líquido. |
+| Pedidos perdidos por preço | Sinaliza risco futuro de receita e margem. |
+| Market share | Testa se o preço está sendo mantido sem perda competitiva. |
+| Custo unitário | Testa eficiência operacional real. |
+| Qualidade, scrap e rework | Mostram se custo e entrega sustentam a margem. |
 
 ## Pergunta crítica
 
