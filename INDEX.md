@@ -14,7 +14,7 @@ Mapa rápido do `accounting-ops`.
 - `_method-wiki/`: base metodológica viva
 - `templates/`: formatos reutilizáveis
 - `skills/`: transformações atômicas sob demanda
-- `archive/docs/specs/`: histórico de desenho e evolução
+- `books/`: camada de ingestão e mapeamento de livros
 
 ## Method Wiki
 
@@ -43,13 +43,24 @@ Mapa rápido do `accounting-ops`.
 
 - `tracks/accounting/workflows/monthly-closing-and-number-quality.md`
 - `tracks/accounting/workflows/cash-management-and-bank-reconciliation.md`
+- `tracks/accounting/workflows/account-reconciliation-review.md`
+- `tracks/accounting/workflows/working-capital-and-cash-conversion-review.md`
 - `tracks/accounting/workflows/inventory-and-valuation-review.md`
+
+## Livros
+
+- `books/the-new-controller-guidebook/`: leitura por índice do livro de Steven Bragg
+- `books/financial-planning-analysis-and-performance-management/`: leitura por índice do livro de Jack Alexander
+- `books/budgeting/`: leitura por índice do livro de budgeting
+- `books/cost-accounting-fundamentals/`: leitura por índice do livro de cost accounting
+- `books/financial-statement-analysis/`: leitura por índice do livro de Fridson e Alvarez
 
 ## Skills
 
 - `skills/cpc-impact-translation.md`
 - `skills/challenge-variance-explanation.md`
 - `skills/number-to-management-story.md`
+- `skills/prepare-journal-entry-support.md`
 
 ## Playbooks em destaque
 
@@ -59,6 +70,9 @@ Mapa rápido do `accounting-ops`.
 - `tracks/fpa/playbooks/margin-reporting-without-bad-allocations.md`
 - `tracks/fpa/playbooks/asset-utilization-and-capital-discipline.md`
 - `tracks/fpa/playbooks/pricing-strength-vs-operating-efficiency.md`
+- `tracks/fpa/playbooks/operating-expense-and-effectiveness-review.md`
+- `tracks/fpa/playbooks/long-term-projection-and-strategic-scenario-review.md`
+- `tracks/fpa/playbooks/external-view-and-peer-benchmarking.md`
 
 ## Backlog
 

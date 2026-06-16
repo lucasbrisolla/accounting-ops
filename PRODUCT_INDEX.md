@@ -27,12 +27,16 @@ Use este arquivo quando precisar localizar rapidamente trilhas, modos, playbooks
 | `_method-wiki/heuristics/when-not-to-report-a-variance.md` | Decidir quando uma variância não merece destaque principal no report. |
 | `_method-wiki/checklists/forecast-review-checklist.md` | Revisar forecast, premissas, cenários e riscos de execução. |
 | `_method-wiki/checklists/capital-investment-postaudit-checklist.md` | Revisar se um CAPEX entregou business case, utilização e aprendizado. |
+| `_method-wiki/checklists/financial-projection-quality-checklist.md` | Revisar qualidade, premissas, tendência, cenários e uso gerencial de projeções financeiras. |
 | `_method-wiki/checklists/monthly-closing-number-quality-checklist.md` | Revisar fechamento e qualidade do número antes do report. |
+| `_method-wiki/checklists/revenue-and-gross-margin-driver-checklist.md` | Revisar drivers de receita, forecast comercial, margem bruta e força de preço. |
+| `_method-wiki/checklists/working-capital-driver-checklist.md` | Revisar DSO, estoque, payables, capital preso e conversão de caixa. |
 | `_method-wiki/patterns/gross-margin-bridge.md` | Estruturar bridge de margem bruta por drivers. |
 | `_method-wiki/patterns/goal-to-driver-cascade.md` | Descer de objetivo estratégico até driver, KPI, meta e accountability. |
 | `_method-wiki/patterns/performance-tree.md` | Decompor um KPI em drivers subordinados e comunicar causa, impacto e ação. |
 | `_method-wiki/patterns/responsibility-reporting.md` | Ligar linha reportada, nível de agregação e owner do número. |
 | `_method-wiki/patterns/variance-analysis.md` | Estruturar explicação de variação com baseline, driver, evidência, impacto e ação. |
+| `_method-wiki/processes/account-reconciliation-and-open-items.md` | Revisar conciliações contábeis, diferenças, open items e necessidade de ajuste. |
 | `_method-wiki/processes/dashboard-and-kpi-design.md` | Desenhar dashboards, KPIs, alertas e indicadores de performance ligados a drivers e decisão. |
 | `_method-wiki/processes/forecasting-and-business-outlook.md` | Navegar o processo de forecast, business outlook e cenários. |
 | `_method-wiki/processes/long-term-capital-management.md` | Navegar a disciplina de CAPEX, uso de ativos, caixa e retorno de longo prazo. |
@@ -44,13 +48,14 @@ Use este arquivo quando precisar localizar rapidamente trilhas, modos, playbooks
 
 | Trilha | Papel |
 |---|---|
-| `tracks/fpa/` | Trilha atual mais madura, voltada a FP&A, análise de variações e narrativa executiva. |
+| `tracks/fpa/` | Trilha atual mais madura, voltada a FP&A, análise de variações e performance. |
 | `tracks/accounting/` | Trilha de accounting/controladoria, com foco inicial em fechamento, qualidade do número e impacto técnico-contábil no report gerencial. |
 
 ## Modos da trilha FP&A
 
 | Arquivo | Quando usar |
 |---|---|
+| `tracks/fpa/modes/fpa-learning.md` | Explicar conceitos, desenvolver base e construir raciocínio sistêmico de FP&A. |
 | `tracks/fpa/modes/variance-analysis.md` | Analisar orçado vs. realizado, forecast vs. actual e bridges de variação. |
 
 ## Playbooks da trilha FP&A
@@ -62,7 +67,10 @@ Use este arquivo quando precisar localizar rapidamente trilhas, modos, playbooks
 | `tracks/fpa/playbooks/flash-report-design.md` | Desenhar ou criticar flash reports curtos e acionáveis. |
 | `tracks/fpa/playbooks/margin-reporting-without-bad-allocations.md` | Desenhar reports de margem sem distorção por rateios ruins. |
 | `tracks/fpa/playbooks/pricing-strength-vs-operating-efficiency.md` | Diferenciar margem forte por poder de preço de margem forte por eficiência operacional real. |
+| `tracks/fpa/playbooks/operating-expense-and-effectiveness-review.md` | Revisar SG&A, produtividade, headcount, qualidade operacional e custo de processo sem depender de KPI decorativo. |
+| `tracks/fpa/playbooks/long-term-projection-and-strategic-scenario-review.md` | Revisar projeções de longo prazo, guidance estratégico, alternativas de cenário, funding e criação de valor sem confundir ambição com plano financiável. |
 | `tracks/fpa/playbooks/asset-utilization-and-capital-discipline.md` | Revisar ativos subutilizados, capital parado e disciplina econômica de longo prazo. |
+| `tracks/fpa/playbooks/external-view-and-peer-benchmarking.md` | Ler mercado, clientes, concorrentes, adjacências e benchmarks antes de aceitar narrativa interna de performance. |
 
 ## Workflows da trilha FP&A
 
@@ -92,8 +100,25 @@ Use este arquivo quando precisar localizar rapidamente trilhas, modos, playbooks
 | Arquivo | Quando usar |
 |---|---|
 | `tracks/accounting/workflows/monthly-closing-and-number-quality.md` | Conduzir revisão de fechamento mensal, separar efeito operacional de efeito contábil e fechar mensagem executiva do número. |
+| `tracks/accounting/workflows/account-reconciliation-review.md` | Revisar conciliação contábil, classificar diferenças e decidir se há ajuste ou pendência monitorada. |
+| `tracks/accounting/workflows/working-capital-and-cash-conversion-review.md` | Revisar capital de giro operacional, DSO, estoque, payables e conversão de caixa. |
 | `tracks/accounting/workflows/cash-management-and-bank-reconciliation.md` | Revisar caixa, bancos, diferenças de reconciliação, pendências e risco de liquidez de curto prazo. |
 | `tracks/accounting/workflows/inventory-and-valuation-review.md` | Revisar quantidade, valuation, obsolescência e impactos de estoque em custo, margem e resultado. |
+
+## Books
+
+| Arquivo | Quando usar |
+|---|---|
+| `books/the-new-controller-guidebook/README.md` | Entender a estratégia de ingestão do livro de Steven Bragg. |
+| `books/the-new-controller-guidebook/controller-guidebook-index.md` | Mapear capítulos do livro para `workflow`, `playbook`, `mode`, `conceito` ou descarte temporário. |
+| `books/financial-planning-analysis-and-performance-management/README.md` | Entender a estratégia de ingestão do livro de Jack Alexander. |
+| `books/financial-planning-analysis-and-performance-management/fpna-performance-management-index.md` | Mapear capítulos de FP&A e performance management para destinos sugeridos no produto. |
+| `books/budgeting/README.md` | Entender a estratégia de ingestão do livro de budgeting do Steven Bragg. |
+| `books/budgeting/budgeting-index.md` | Mapear capítulos de orçamento, master budget e flexible budgeting. |
+| `books/cost-accounting-fundamentals/README.md` | Entender a estratégia de ingestão do livro de cost accounting. |
+| `books/cost-accounting-fundamentals/cost-accounting-fundamentals-index.md` | Mapear capítulos de custos, estoque, custeio e variâncias. |
+| `books/financial-statement-analysis/README.md` | Entender a estratégia de ingestão do livro de Fridson e Alvarez. |
+| `books/financial-statement-analysis/financial-statement-analysis-index.md` | Mapear capítulos de leitura crítica, earnings quality e projeções. |
 
 ## Skills
 
@@ -102,6 +127,7 @@ Use este arquivo quando precisar localizar rapidamente trilhas, modos, playbooks
 | `skills/cpc-impact-translation.md` | Traduzir CPC/IFRS ou tratamento contábil para efeito no número gerencial. |
 | `skills/challenge-variance-explanation.md` | Questionar a robustez de uma explicação de variação. |
 | `skills/number-to-management-story.md` | Transformar análise já entendida em headline, mensagem executiva curta ou fala de reunião. |
+| `skills/prepare-journal-entry-support.md` | Preparar suporte de lançamento manual com racional, evidência, reversão e impacto gerencial. |
 
 ## Templates
 

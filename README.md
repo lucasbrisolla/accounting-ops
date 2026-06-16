@@ -4,7 +4,7 @@ Agente para accounting, controladoria e FP&A com foco em entendimento do número
 
 ## O que é
 
-O `accounting-ops` existe para transformar número, contabilidade e raciocínio financeiro em leitura gerencial e pensamento de negócio.
+O `accounting-ops` existe para transformar número, contabilidade, auditoria e contexto operacional em raciocínio de negócio.
 
 Ele ajuda principalmente em temas como:
 
@@ -76,8 +76,9 @@ accounting-ops-public/
 ├── domain.md         # Mapa conceitual central
 ├── _method-wiki/     # Base metodológica viva
 ├── tracks/           # Trilhas por domínio
-├── templates/        # Artefatos reutilizáveis
-└── skills/           # Transformações atômicas
+├── templates/        # Artefatos reutilizáveis de análise e treino
+├── skills/           # Transformações atômicas
+└── books/            # Camada de ingestão e mapeamento editorial
 ```
 
 ## Capacidades principais
@@ -90,16 +91,18 @@ accounting-ops-public/
 | Margem e performance | Organiza leitura de preço, mix, custo e eficiência |
 | Capital de giro | Apoia análise de DSO, estoque, payables e conversão de caixa |
 | Narrativa executiva | Traduz análise financeira em mensagem clara para gestão |
+| Aprendizagem aplicada | Apoia desenvolvimento de raciocínio financeiro com foco prático e conexão com o trabalho real |
 
 ## Princípios do produto
 
 - separar fato, hipótese, impacto e ação
 - não maquiar gaps de experiência ou evidência
-- traduzir técnica contábil para linguagem de negócio
+- traduzir auditoria para linguagem de negócio sem inflar experiência hands-on
 - priorizar raciocínio prático sobre definição decorada
 
 ## Onde está o detalhe
 
 - `CLAUDE.md`: roteamento, guardrails e seleção de módulos
-- `PRODUCT_INDEX.md`: inventário navegável de workflows, playbooks, templates e skills
+- `PRODUCT_INDEX.md`: inventário navegável de workflows, playbooks, templates, skills e books
 - `HEALTH_CHECK.md`: como avaliar a saúde operacional do produto
+- backlog local do produto: evolução planejada fora da versão pública

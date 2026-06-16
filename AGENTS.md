@@ -12,4 +12,4 @@ Este arquivo existe como porta de entrada compatível para ambientes que procura
 
 1. Leia `README.md` para visão geral do produto.
 2. Leia `CLAUDE.md` para roteamento, guardrails e seleção de módulos.
-3. Use `domain.md` como mapa conceitual leve antes de carregar trilhas, workflows, playbooks, templates ou skills.
+3. Use `domain.md` como mapa conceitual leve antes de carregar trilhas, workflows, playbooks, templates, skills ou books.
