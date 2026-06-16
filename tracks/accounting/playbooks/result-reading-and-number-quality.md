@@ -13,6 +13,8 @@ Use este playbook para:
 
 Antes de discutir performance, confirmar se o número é confiável e comparável.
 
+Além disso, perguntar se a apresentação do número é interessada: qual narrativa ela favorece, quem se beneficia dela e que evidência independente sustenta a explicação.
+
 ## Sequência sugerida
 
 ### 1. Começar pelo desvio mais relevante
@@ -39,8 +41,23 @@ Perguntas úteis:
 - houve reversão de provisão ou reconhecimento pontual?
 - o saldo fecha com a narrativa operacional?
 - o comparativo está contaminado por mudança de critério?
+- a métrica usada é contábil, gerencial ou non-GAAP?
+- o ajuste seria apresentado com a mesma ênfase se piorasse o resultado?
+- existe pressão de meta, bônus, covenant, crédito, valuation ou captação?
+- a narrativa depende de crescimento contínuo, evento pontual ou contingência minimizada?
 
-### 4. Traduzir para mensagem executiva
+### 4. Aplicar ceticismo adversarial
+
+Antes de transformar a leitura em mensagem executiva, simule o lado de quem preparou ou defende o número:
+
+- se eu quisesse deixar o resultado mais favorável, que métrica escolheria?
+- que custo, provisão, receita, corte ou classificação eu tentaria explicar como temporário?
+- que risco ficaria em nota, comentário lateral ou métrica alternativa?
+- que evidência externa ou cruzada poderia contrariar essa história?
+
+Se a resposta revelar fragilidade, a saída deve trazer ressalva explícita, pergunta aberta ou ajuste gerencial.
+
+### 5. Traduzir para mensagem executiva
 
 Formato útil:
 
@@ -55,6 +72,11 @@ Formato útil:
 - redução de despesa explicada apenas por reclassificação
 - estoque, provisão ou receita mudando o resultado de forma pouco intuitiva
 - fechamento "bonito" no DRE, mas incoerente com balanço ou caixa
+- métrica ajustada que melhora a leitura sem reconciliação transparente
+- resultado estável demais frente a operação volátil
+- erro minimizado porque não afetou caixa, EBITDA ou ano cheio
+- crescimento defendido por narrativa de mercado, produto ou diversificação sem prova operacional
+- contingência relevante tratada como remota sem análise independente de impacto
 
 ## Saída esperada
 

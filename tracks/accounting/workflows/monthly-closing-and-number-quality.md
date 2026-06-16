@@ -80,7 +80,37 @@ Checar se as rotinas relevantes foram concluídas ou justificadamente dispensada
 - accrual de impostos quando aplicável
 - fechamento/trava do período no sistema
 
-### 4. Identificar os números que puxam a leitura
+### 4. Montar calendário e caminho crítico
+
+Quando houver calendário de fechamento, transformar a lista de tarefas em uma visão por dia:
+
+| Dia | Foco | Exemplos |
+|---|---|---|
+| T+1 | base transacional | bancos, AP, folha, depreciação, prepaids, intercompany inicial |
+| T+2 | subledgers e estimativas | receita, accruals, AR, AP, estoque, câmbio |
+| T+3 | reconciliações | contas críticas, intercompany, trial balance preliminar |
+| T+4 | review | impostos, demonstrações preliminares, variações, review gerencial |
+| T+5 | hard close | ajustes finais, trava do período, pacote de report, retrospectiva |
+
+Identificar o caminho crítico:
+
+- entradas transacionais antes de subledger
+- subledger antes de reconciliação
+- reconciliação antes de trial balance confiável
+- trial balance antes de demonstrações e variações
+- review antes de hard close
+
+### 5. Controlar status das rotinas
+
+Usar uma tabela simples:
+
+| Rotina | Dono | Prazo | Status | Bloqueio | Próxima ação |
+|---|---|---|---|---|---|
+|  |  |  | não iniciado / em andamento / concluído / bloqueado / em risco |  |  |
+
+Todo item bloqueado precisa ter próxima ação, dono e prazo de destravamento.
+
+### 6. Identificar os números que puxam a leitura
 
 Começar pelas maiores oscilações em:
 
@@ -92,7 +122,7 @@ Começar pelas maiores oscilações em:
 - estoque
 - contas patrimoniais com efeito em resultado
 
-### 5. Separar operacional de contábil
+### 7. Separar operacional de contábil
 
 Para cada variação relevante, classificar como:
 
@@ -104,7 +134,7 @@ Para cada variação relevante, classificar como:
 
 Se houver mistura, explicitar a combinação.
 
-### 6. Testar a qualidade do número
+### 8. Testar a qualidade do número
 
 Perguntas obrigatórias:
 
@@ -117,7 +147,7 @@ Perguntas obrigatórias:
 - há reconciliação crítica atrasada ou omitida?
 - algum lançamento manual tardio muda a interpretação do resultado?
 
-### 7. Avaliar soft close, se aplicável
+### 9. Avaliar soft close, se aplicável
 
 Se o fechamento for gerencial interno e simplificado, declarar:
 
@@ -128,7 +158,7 @@ Se o fechamento for gerencial interno e simplificado, declarar:
 
 Soft close não deve esconder incerteza. Ele só é aceitável quando o usuário do número entende as limitações.
 
-### 8. Construir a leitura executiva
+### 10. Construir a leitura executiva
 
 Fechar com uma síntese que responda:
 
@@ -137,7 +167,7 @@ Fechar com uma síntese que responda:
 - quanto disso é recorrente
 - o que é risco, ruído ou tema de acompanhamento
 
-### 9. Registrar melhorias para o próximo fechamento
+### 11. Registrar melhorias para o próximo fechamento
 
 Depois da emissão, registrar:
 
@@ -147,6 +177,8 @@ Depois da emissão, registrar:
 - procedimentos a atualizar
 - passos imateriais que podem ser removidos
 - controles que precisam voltar caso tenham sido omitidos
+- rotinas que podem ser antecipadas para pre-close
+- open items antigos que precisam de plano de limpeza
 
 ## Estrutura de saída sugerida
 
@@ -157,6 +189,7 @@ Depois da emissão, registrar:
 5. Limitações do fechamento, se houver soft close.
 6. Mensagem gerencial final.
 7. Próximos passos de validação, ajuste ou comunicação.
+8. Melhorias para o próximo ciclo.
 
 ## Red flags
 

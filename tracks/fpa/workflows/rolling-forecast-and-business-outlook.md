@@ -40,6 +40,7 @@ Sempre que possível, trabalhar com algum destes insumos:
 - drivers operacionais mais relevantes
 - premissas críticas do negócio
 - eventos novos: perda/ganho de cliente, preço, câmbio, volume, CAPEX, corte, atraso, commodity
+- tendência histórica, run rate recente ou forecast variance anterior
 
 ## Sequência de trabalho
 
@@ -50,6 +51,7 @@ Antes de projetar, confirmar:
 - horizonte de revisão: trimestre, semestre, 12 meses ou rolling 12
 - granularidade desejada: mensal, trimestral ou alta visão
 - comparativo principal: orçamento, forecast anterior ou operating plan
+- dono operacional das principais premissas
 
 ### 2. Identificar drivers críticos
 
@@ -79,8 +81,22 @@ Perguntas obrigatórias:
 - quais foram invalidadas por tendência ou evento novo?
 - existe upside relevante não refletido?
 - existe downside provável tratado como improvável?
+- que premissa mais muda o resultado se variar pouco?
+- qual premissa precisa de indicador líder para monitoramento?
 
-### 4. Construir cenário base
+### 4. Comparar contra tendência e run rate
+
+Antes de aceitar o novo cenário, testar:
+
+- actual acumulado contra período anterior
+- run rate atual contra run rate necessário no restante do ano
+- forecast atual contra forecast anterior
+- cenário base contra extrapolação simples da tendência recente
+- actual realizado contra ranges de forecasts anteriores
+
+Se o forecast projeta reversão forte, aceleração ou melhora relevante, exigir driver, ação, evento ou capacidade que sustente a mudança.
+
+### 5. Construir cenário base
 
 O cenário base deve representar a melhor estimativa atual, e não o cenário mais desejado.
 
@@ -91,7 +107,7 @@ Ao montar o cenário:
 - explicitar as premissas
 - evitar detalhe excessivo em itens pouco relevantes
 
-### 5. Construir upside e downside
+### 6. Construir upside e downside
 
 Para cada cenário complementar, mostrar:
 
@@ -99,8 +115,22 @@ Para cada cenário complementar, mostrar:
 - impacto mais provável
 - linhas mais afetadas
 - ação de resposta sugerida
+- indicador líder
+- probabilidade aproximada quando fizer sentido
 
-### 6. Fechar com mensagem gerencial
+Downside com probabilidade alta deve ser considerado para incorporação no cenário base, não apenas listado como risco remoto.
+
+### 7. Validar visão financeira completa
+
+Quando relevante, garantir que a projeção não pare no P&L:
+
+- impacto em caixa
+- impacto em capital de giro
+- necessidade de financiamento
+- CAPEX ou capacidade adicional
+- risco de covenant
+
+### 8. Fechar com mensagem gerencial
 
 Responder:
 
@@ -113,9 +143,10 @@ Responder:
 
 1. Resumo executivo do outlook.
 2. Principais mudanças contra orçamento ou forecast anterior.
-3. Drivers e premissas críticas.
-4. Cenário base, upside e downside.
-5. Ações e pontos de monitoramento.
+3. Benchmark contra tendência e run rate.
+4. Drivers e premissas críticas.
+5. Cenário base, upside e downside.
+6. Ações e pontos de monitoramento.
 
 ## Red flags
 
@@ -124,6 +155,9 @@ Responder:
 - excesso de detalhe em itens pouco materiais
 - cenário único tratado como certeza
 - foco em lagging indicators sem leitura de drivers
+- melhora projetada sem explicação contra tendência recente
+- downside provável tratado como evento improvável
+- forecast sem dono operacional das premissas
 
 ## Guardrails
 
@@ -131,3 +165,4 @@ Responder:
 - Não esconder incerteza para parecer mais preciso.
 - Não projetar tudo com o mesmo nível de detalhe.
 - Se faltar dado, declarar onde a estimativa está mais fraca.
+- Não aceitar reversão de tendência sem driver verificável.

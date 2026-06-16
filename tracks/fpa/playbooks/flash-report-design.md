@@ -38,6 +38,21 @@ Perguntar para cada item:
 - o receptor consegue agir?
 - a métrica antecipa problema ou apenas descreve atraso?
 
+## Decluttering visual
+
+Antes de circular o flash report, fazer uma passada explícita de redução de ruído:
+
+- remover bordas, fundos, sombras e ornamentos que não ajudam a interpretar
+- usar gridlines só quando realmente ajudam leitura e, se usadas, mantê-las leves
+- evitar marcadores redundantes quando a linha ou barra já conta a história
+- limpar eixos e labels: sem zeros inúteis, sem texto diagonal e sem período escrito de forma que force rotação
+- preferir rótulo direto próximo ao dado em vez de depender de legenda distante
+- usar uma cor de destaque para exceção, risco ou desvio principal e deixar o restante neutro
+- preservar white space em vez de preencher a página por ansiedade
+- manter unidades explícitas quando ajudam leitura imediata, como `$`, `%` e separadores de milhar
+
+Regra prática: se a página provoca reação de "tem coisa demais aqui", ela ainda não está pronta.
+
 ## Categorias comuns
 
 - caixa e liquidez
@@ -52,6 +67,8 @@ Perguntar para cada item:
 - o report cabe em leitura rápida
 - a mensagem principal aparece antes do detalhe
 - as exceções estão mais visíveis que o resto
+- o leitor entende o gráfico sem caça à legenda
+- a página tem ordem visual e espaço para respirar
 - o comentário fecha o “e daí?”
 
 ## Módulos relacionados
@@ -59,4 +76,3 @@ Perguntar para cada item:
 - Process: `_method-wiki/processes/management-reporting-and-report-governance.md`
 - Pattern: `_method-wiki/patterns/responsibility-reporting.md`
 - Template: `templates/flash-report.md`
-

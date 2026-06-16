@@ -33,6 +33,7 @@ Sempre que possível, trabalhar com algum destes insumos:
 - contas a receber e contas a pagar de curto prazo
 - memória de fechamento
 - explicação de cheques, tarifas, bloqueios, adiantamentos ou transferências em trânsito
+- DSO, aging de recebíveis, DPO e forecast de capital de giro quando a leitura for gerencial
 
 ## Sequência de trabalho
 
@@ -73,6 +74,8 @@ Depois da reconciliação, avaliar:
 - concentração de recebimentos ou pagamentos
 - dependência de entrada ainda não confirmada
 - impacto de atrasos, inadimplência ou desembolsos extraordinários
+- capital preso em recebíveis, estoque ou pagamentos alongados
+- se a pressão de caixa vem de liquidez real ou de processo operacional
 
 ### 5. Fechar com mensagem gerencial
 
@@ -98,6 +101,8 @@ Responder:
 - saldo bancário indisponível tratado como caixa livre
 - lançamentos manuais relevantes sem trilha clara
 - previsão de liquidez apoiada em recebimento incerto
+- caixa preservado por atraso com fornecedor crítico
+- saldo de caixa aparentemente bom com working capital deteriorando
 
 ## Guardrails
 
@@ -105,3 +110,4 @@ Responder:
 - Não confundir diferença de timing com erro definitivo sem evidência.
 - Não tratar caixa contábil como liquidez real sem olhar disponibilidade.
 - Se houver limitação de extrato, corte ou suporte, declarar a fragilidade da leitura.
+- Quando o problema for conversão de caixa, usar também `tracks/accounting/workflows/working-capital-and-cash-conversion-review.md`.

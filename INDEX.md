@@ -12,9 +12,12 @@ Mapa rápido do `accounting-ops`.
 ## Camada central
 
 - `_method-wiki/`: base metodológica viva
+- `context/`: contexto do Lucas, empresas e mapas de aprendizagem
+- `examples/`: calibradores práticos
 - `templates/`: formatos reutilizáveis
 - `skills/`: transformações atômicas sob demanda
 - `books/`: camada de ingestão e mapeamento de livros
+- `archive/docs/specs/`: histórico de desenho e evolução
 
 ## Method Wiki
 
@@ -76,4 +79,4 @@ Mapa rápido do `accounting-ops`.
 
 ## Backlog
 
-- fonte única: backlog local do produto
+- fonte única: `Agent Products/_backlog/backlog-accounting-ops.md`

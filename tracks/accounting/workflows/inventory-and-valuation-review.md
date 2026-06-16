@@ -33,6 +33,7 @@ Sempre que possível, trabalhar com algum destes insumos:
 - movimentação de entradas, saídas, perdas e ajustes
 - provisões para obsolescência ou perdas
 - análise de margem, custo dos produtos vendidos e produção
+- forecast de demanda, purchase commitments, lead time, cycle time e top itens de maior valor
 
 ## Sequência de trabalho
 
@@ -53,6 +54,8 @@ Começar por:
 - movimentos sem contrapartida clara
 - ajustes relevantes de inventário
 - itens com giro baixo ou sem movimentação
+- inventory turns e days sales of inventory por categoria relevante
+- top 20-50 itens que concentram valor
 
 ### 3. Testar valuation e qualidade do custo
 
@@ -63,6 +66,8 @@ Perguntas obrigatórias:
 - existe estoque capitalizando ineficiência ou custo não recorrente?
 - há provisão de obsolescência suficiente?
 - a margem do período está sendo influenciada por efeito de estoque?
+- excesso e obsolescência vêm de forecast, qualidade, novo produto, end-of-life ou outro driver?
+- purchase commitments criam risco de estoque futuro?
 
 ### 4. Separar efeito operacional de efeito contábil
 
@@ -73,6 +78,7 @@ Para cada desvio relevante, classificar como:
 - ajuste de custo padrão ou absorção
 - obsolescência, perda, scrap ou rework
 - efeito temporário de corte ou timing
+- forecast accuracy, mix errado, supplier performance, lead time ou cycle time
 
 ### 5. Fechar com leitura gerencial
 
@@ -98,6 +104,9 @@ Responder:
 - ajuste físico recorrente sem causa tratada
 - custo padrão descolado da realidade
 - perdas, scrap ou rework diluídos sem transparência
+- estoque alto com pedidos de clientes atrasados
+- E&O crescendo sem root cause
+- compromissos de compra elevados apesar de demanda incerta
 
 ## Guardrails
 
@@ -105,3 +114,4 @@ Responder:
 - Não assumir que valuation correto resolve problema físico ou operacional.
 - Não tratar efeito de estoque como performance real sem separar timing e absorção.
 - Se faltar visibilidade de inventário, critério de custo ou aging, declarar a limitação.
+- Quando o foco for caixa preso e giro, usar também `tracks/accounting/workflows/working-capital-and-cash-conversion-review.md`.

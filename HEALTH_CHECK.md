@@ -23,12 +23,14 @@ O foco aqui não é revisar técnica financeira em si. É revisar a qualidade do
 | Área | Pergunta | Nota | Evidência |
 | --- | --- | --- | --- |
 | Entrada | `README.md`, `AGENTS.md` e `CLAUDE.md` têm papéis claros e sem duplicação desnecessária? |  |  |
-| Fonte viva | `domain.md`, `_method-wiki/`, `tracks/`, `skills/` e `templates/` estão com papéis claros? |  |  |
+| Fonte viva | `domain.md`, `_method-wiki/`, `tracks/`, `skills/`, `templates/`, `context/` e `books/` estão com papéis claros? |  |  |
 | Routing | O problema é roteado primeiro para a trilha certa antes de carregar detalhes excessivos? |  |  |
 | Method wiki | A base metodológica está sendo usada como fonte principal quando o problema pede conceito, checklist, pattern ou processo? |  |  |
 | Tracks | A divisão `tracks/accounting/` x `tracks/fpa/` continua clara e útil? |  |  |
 | Skills auxiliares | As skills fazem transformações atômicas e não substituem workflows inteiros? |  |  |
 | Templates | Templates reduzem variação sem virar burocracia obrigatória? |  |  |
+| Contexto | `context/` ajuda a calibrar uso e narrativa sem contaminar o produto inteiro? |  |  |
+| Books | `books/` continuam como camada de ingestão e não como desvio do fluxo principal? |  |  |
 | Evolução | O produto consegue crescer sem concentrar tudo no `CLAUDE.md`? |  |  |
 
 ## Check Operacional
@@ -40,14 +42,16 @@ O foco aqui não é revisar técnica financeira em si. É revisar a qualidade do
 | Explicação | A resposta separa causa, impacto, ação e lacuna quando isso importa? |  |  |
 | Qualidade do número | O agente evita falar de performance sem antes considerar qualidade e confiabilidade do número? |  |  |
 | Tradução para negócio | O produto traduz técnica contábil para linguagem de negócio sem inflar experiência hands-on? |  |  |
+| Consistência editorial | O tom e o formato final permanecem coerentes com o produto? |  |  |
 | Reuso | O mesmo tipo de problema tende a cair sempre no mesmo workflow ou playbook? |  |  |
+| Crescimento controlado | Novos módulos entram em lugar certo, sem gerar duplicação óbvia? |  |  |
 
 ## Resultado
 
-- `0-12`: arquitetura ou operação ainda estão confusas demais.
-- `13-24`: utilizável, mas com risco de inconsistência.
-- `25-36`: produto maduro para uso recorrente.
-- `37-42`: produto muito bem modularizado e operacionalmente confiável.
+- `0-14`: arquitetura ou operação ainda estão confusas demais.
+- `15-28`: utilizável, mas com risco de carga cognitiva e inconsistência.
+- `29-42`: produto maduro para uso recorrente.
+- `43-54`: produto muito bem modularizado e operacionalmente confiável.
 
 ## Sinais De Alerta Específicos
 
@@ -57,7 +61,8 @@ Se dois ou mais itens abaixo aparecerem, o `accounting-ops` merece refactor prio
 - a fronteira entre `tracks/accounting/` e `tracks/fpa/` ficou ambígua
 - o agente precisa carregar `PRODUCT_INDEX.md` cedo demais para tarefas simples
 - a mesma regra aparece em `README.md`, `CLAUDE.md` e `_method-wiki/` sem fonte clara
-- a explicação de número virou narrativa bonita sem base suficiente
+- `books/` começaram a competir com o fluxo principal em vez de alimentar a base viva
+- a experiência de auditoria está sendo vendida como experiência direta de controladoria ou FP&A
 
 ## Estado Sugerido Hoje
 
@@ -66,7 +71,8 @@ Se dois ou mais itens abaixo aparecerem, o `accounting-ops` merece refactor prio
 | Superfície de entrada | `forte` | manter papéis separados entre `README.md`, `AGENTS.md` e `CLAUDE.md` |
 | Routing por trilha | `forte` | evitar expandir demais o `CLAUDE.md` |
 | Base metodológica | `forte` | continuar promovendo conteúdo maduro para `_method-wiki/` |
-| Verificabilidade | `frágil` | decidir no futuro se vale criar `doctor` ou `verify` leve |
+| Contexto e books | `utilizável` | evitar drift entre camada viva e camada de ingestão |
+| Verificabilidade | `utilizável` | evoluir do `doctor` estrutural para checks mais próximos dos outputs canônicos |
 
 ## Ritual De Revisão
 
@@ -76,6 +82,8 @@ Use este arquivo:
 2. ao criar ou reescrever workflow importante
 3. ao ampliar a trilha `accounting` ou `fpa`
 4. quando o produto começar a parecer "inteligente demais cedo demais"
+5. antes de replicar padrões deste agente para outros produtos
+6. junto com `scripts/accounting_ops_doctor.py`, quando houver mudança estrutural relevante
 
 ## Regra De Ouro
 

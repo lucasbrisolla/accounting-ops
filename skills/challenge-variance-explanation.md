@@ -36,7 +36,19 @@ Testar:
 - há efeito de corte, classificação ou provisão escondido?
 - a explicação confunde sintoma com causa?
 
-### 3. Separar fato de hipótese
+### 3. Fazer challenge quantitativo
+
+Testar a matemática da narrativa:
+
+- a soma dos drivers reconcilia com a variação total?
+- preço, volume e mix foram separados quando aplicável?
+- headcount, remuneração média, hora extra e bônus foram separados em despesas de pessoal?
+- rate, mix, eficiência e volume foram separados em custo industrial?
+- "timing" tem data ou evento de reversão?
+- "one-time" é realmente não recorrente ou apenas não planejado?
+- o efeito contábil foi separado de efeito operacional?
+
+### 4. Separar fato de hipótese
 
 Classificar:
 
@@ -44,7 +56,7 @@ Classificar:
 - hipótese provável
 - ponto sem evidência suficiente
 
-### 4. Reescrever a narrativa
+### 5. Reescrever a narrativa
 
 Produzir uma explicação mais robusta, com:
 
@@ -57,8 +69,9 @@ Produzir uma explicação mais robusta, com:
 
 1. Explicação original.
 2. Fragilidades da explicação.
-3. Leitura revisada.
-4. O que ainda precisa ser confirmado.
+3. Teste quantitativo.
+4. Leitura revisada.
+5. O que ainda precisa ser confirmado.
 
 ## Guardrails
 

@@ -65,12 +65,13 @@ O fluxo básico do produto é:
 ## Project Structure
 
 ```text
-accounting-ops-public/
+accounting-ops/
 ├── AGENTS.md         # Entry point compatível para agentes
 ├── CLAUDE.md         # Instrução operacional autoritativa
 ├── README.md         # Visão geral do produto
 ├── INDEX.md          # Mapa rápido da estrutura
 ├── PRODUCT_INDEX.md  # Inventário navegável
+├── PROMPT_INICIAL.md # Prompt sugerido para novas conversas
 ├── DATA_CONTRACT.md  # Fronteiras e camadas do produto
 ├── HEALTH_CHECK.md   # Diagnóstico operacional do produto
 ├── domain.md         # Mapa conceitual central
@@ -78,7 +79,10 @@ accounting-ops-public/
 ├── tracks/           # Trilhas por domínio
 ├── templates/        # Artefatos reutilizáveis de análise e treino
 ├── skills/           # Transformações atômicas
-└── books/            # Camada de ingestão e mapeamento editorial
+├── context/          # Contexto pessoal, casos e mapas de aprendizagem
+├── books/            # Camada de ingestão e mapeamento de livros
+├── examples/         # Exemplos calibradores
+└── archive/          # Histórico de specs, planos e casos anteriores
 ```
 
 ## Capacidades principais
@@ -103,6 +107,6 @@ accounting-ops-public/
 ## Onde está o detalhe
 
 - `CLAUDE.md`: roteamento, guardrails e seleção de módulos
-- `PRODUCT_INDEX.md`: inventário navegável de workflows, playbooks, templates, skills e books
+- `PRODUCT_INDEX.md`: inventário navegável de workflows, playbooks, templates, skills, contextos e books
 - `HEALTH_CHECK.md`: como avaliar a saúde operacional do produto
-- backlog local do produto: evolução planejada fora da versão pública
+- `backlog local do produto: evolução planejada fora da versão pública`: evolução planejada do produto

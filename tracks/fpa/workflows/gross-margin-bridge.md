@@ -32,6 +32,7 @@ Sempre que possível, trabalhar com algum destes insumos:
 - mix de produto, cliente, canal ou geografia
 - custos diretos e indiretos relevantes
 - descontos, rebates, perdas, scrap, rework ou variâncias
+- ASP, preço de lista, pedidos perdidos por preço e market share quando houver leitura de pricing strength
 
 ## Sequência de trabalho
 
@@ -63,6 +64,8 @@ Abrir a bridge em blocos como:
 - custo de insumo ou produção
 - descontos e concessões
 - qualidade, scrap, rework ou variâncias
+- ASP, preço de lista, rebates ou erosão de preço
+- pedidos perdidos por preço e pressão competitiva
 - outros efeitos relevantes
 
 ### 4. Separar natureza do impacto
@@ -84,6 +87,7 @@ Responder:
 - o que parece estrutural versus temporário
 - onde há risco de continuidade da pressão
 - quais ações podem proteger ou recompor a margem
+- se a margem depende de força de preço, eficiência operacional ou ambos
 
 ## Estrutura de saída sugerida
 
@@ -100,6 +104,8 @@ Responder:
 - desconto tratado como volume
 - ganho de margem por efeito temporário vendido como melhoria estrutural
 - ausência de reconciliação entre valor absoluto e percentual
+- ASP sustentado com market share em queda
+- desconto crescente tratado como estratégia comercial neutra
 
 ## Guardrails
 
@@ -107,3 +113,4 @@ Responder:
 - Não tratar preço e mix como sinônimos.
 - Não deixar custo indireto ou perda operacional invisível na bridge.
 - Se a decomposição não fechar perfeitamente, declarar a diferença residual.
+- Não tratar margem alta como prova de eficiência sem testar força de preço.

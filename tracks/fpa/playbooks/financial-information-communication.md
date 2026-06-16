@@ -24,21 +24,36 @@ O trabalho de FP&A não termina quando o número foi explicado. Ele termina quan
 - quais alternativas existem
 - que ação ou monitoramento vem depois
 
+Antes de pensar em slide, gráfico ou layout, o material precisa sair do modo exploratório e entrar no modo explicativo. A gestão não precisa consumir toda a trilha da análise; precisa receber a leitura que sintetiza o que importa, o que está em jogo e o que fazer com isso.
+
 ## Fluxo
 
-### 1. Definir a Decisão ou Objetivo
+### 0. Sair do modo exploratório
+
+Separar material de trabalho de peça final:
+
+- distinguir achados principais da trilha analítica que levou até eles
+- guardar suporte técnico, cortes intermediários e reconciliações para anexo, backup ou perguntas
+- resistir à tentação de provar robustez mostrando tudo
+- só avançar quando o ponto principal puder ser explicado sem abrir a planilha inteira
+
+Material executivo bom mostra as pérolas, não as cem ostras abertas durante a análise.
+
+### 1. Definir a Decisão, a Audiência e o Mecanismo
 
 Antes de montar slides, relatório ou mensagem, declarar:
 
 - qual pergunta a comunicação precisa responder
 - qual decisão, alinhamento ou atenção ela deve provocar
 - quem é a audiência
+- qual é o canal principal de consumo: reunião ao vivo, deck, e-mail, memo ou relatório
 - que nível de detalhe essa audiência consegue usar
+- quanta autonomia a audiência terá para consumir a mensagem fora da sua presença
 - quais vieses ou premissas podem distorcer a leitura
 
 Se não houver objetivo claro, a comunicação tende a virar despejo de análise.
 
-### 2. Extrair a Mensagem Executiva
+### 2. Extrair a Mensagem Executiva e a Big Idea
 
 Converter a análise em uma tese curta:
 
@@ -46,10 +61,14 @@ Converter a análise em uma tese curta:
 - 3 a 5 mensagens principais
 - causa dominante
 - impacto financeiro ou operacional
+- Big Idea em uma frase, com ponto de vista, stake e implicação ou pedido
+- versão de 3 minutos do raciocínio, em linguagem natural
 - risco, oportunidade ou trade-off
 - ação recomendada ou próximo passo
 
 Boa comunicação financeira evita começar pela planilha. Ela começa pela implicação.
+
+Se isso ainda não for possível, a análise pode até estar correta, mas ainda não está pronta para comunicação executiva.
 
 ### 3. Adaptar à Audiência
 
@@ -90,7 +109,16 @@ Escolher o canal pelo uso esperado:
 
 O canal errado força a mensagem errada. Nem todo dashboard deve virar slide, e nem toda análise deve virar dashboard.
 
+Guardrail: apresentação ao vivo pode ser mais enxuta porque o narrador completa lacunas em tempo real. Documento assíncrono ou e-mail precisa responder mais dúvidas diretamente no material. Quando a mesma peça precisar servir aos dois usos, esse trade-off deve ser explícito.
+
 ### 5. Estruturar a Apresentação
+
+Antes de abrir slides ou montar o report final, rascunhar um storyboard da mensagem:
+
+- sequência de pontos
+- evidências que sustentam cada ponto
+- transições entre contexto, achado, implicação e ação
+- detalhe que fica no corpo principal versus detalhe que vai para anexo
 
 Estrutura base:
 
@@ -103,6 +131,7 @@ Estrutura base:
 7. Anexos com detalhe técnico.
 
 Regra prática: se o tempo cair pela metade, a audiência ainda deve receber a mensagem principal.
+Não começar pelo layout reduz o risco de montar um deck grande, bonito e semanticamente vazio.
 
 ### 6. Escolher a Visualização Certa
 
@@ -136,6 +165,9 @@ Entrega boa combina objetividade com leitura da sala. Se a audiência travar em 
 
 ## Checklist de Qualidade
 
+- O material já saiu do modo exploratório.
+- Existe uma Big Idea em uma frase.
+- O mecanismo principal de consumo foi definido.
 - A primeira página já responde "e daí?".
 - A mensagem separa fato, hipótese, impacto e ação.
 - O material mostra o que vai bem e o que precisa melhorar.
@@ -147,11 +179,13 @@ Entrega boa combina objetividade com leitura da sala. Se a audiência travar em 
 
 ## Sinais de Problema
 
+- Material tentando provar robustez ao mostrar toda a exploração.
 - Muitos números e nenhuma decisão.
 - Explicação correta, mas sem implicação gerencial.
 - Slide com planilha inteira em fonte pequena.
 - Jargão contábil usado para esconder incerteza.
 - Gráfico bonito que não responde a pergunta.
+- A mesma peça foi usada para apresentação e leitura assíncrona sem adaptação.
 - Apresentação depende de 100% do tempo disponível para fazer sentido.
 - Recomendação aparece apenas no final, depois que a audiência já se perdeu.
 

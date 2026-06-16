@@ -26,6 +26,7 @@ O que acontece aqui: revisar consistência do número, separar efeito operaciona
 - `concepts/working-capital-foundations.md`
 - `checklists/working-capital-driver-checklist.md`
 - `checklists/monthly-closing-number-quality-checklist.md`
+- `heuristics/adversarial-financial-reporting.md`
 - `processes/account-reconciliation-and-open-items.md`
 - `processes/monthly-closing-and-number-quality.md`
 
@@ -41,6 +42,10 @@ O que acontece aqui: revisar orçamento, atualizar expectativas e testar premiss
 
 - `tracks/fpa/workflows/rolling-forecast-and-business-outlook.md`
 - `tracks/fpa/workflows/integrated-budget-and-driver-review.md`
+
+**Playbook relevante:**
+
+- `tracks/fpa/playbooks/long-term-projection-and-strategic-scenario-review.md`
 
 **Base metodológica relevante:**
 
@@ -62,6 +67,11 @@ O que acontece aqui: explicar crescimento, queda de margem, preço, mix, custo e
 
 - `tracks/fpa/workflows/revenue-and-gross-margin-driver-review.md`
 - `tracks/fpa/workflows/gross-margin-bridge.md`
+
+**Playbooks relevantes:**
+
+- `tracks/fpa/playbooks/pricing-strength-vs-operating-efficiency.md`
+- `tracks/fpa/playbooks/operating-expense-and-effectiveness-review.md`
 
 **Base metodológica relevante:**
 
@@ -133,6 +143,13 @@ O que acontece aqui: revisar intensidade de capital, uso de ativos, CAPEX, caixa
 2. Use `checklists/financial-projection-quality-checklist.md` para testar ownership, tendência, premissas, cenários, riscos, upsides e visão financeira completa.
 3. Se a projeção for um forecast recorrente, aplique também `tracks/fpa/workflows/rolling-forecast-and-business-outlook.md`.
 
+### Preciso revisar uma projeção de longo prazo ou guidance estratégico
+
+1. Comece por `tracks/fpa/playbooks/long-term-projection-and-strategic-scenario-review.md`.
+2. Use `processes/forecasting-and-business-outlook.md` para separar forecast recorrente de cenário estratégico de 2-5+ anos.
+3. Consulte `checklists/financial-projection-quality-checklist.md` para testar premissas, cenários, visão financeira completa, funding e restrições.
+4. Se a tese depender de CAPEX, capacidade, liquidez ou retorno, complemente com `processes/long-term-capital-management.md`.
+
 ### Preciso revisar um orçamento
 
 1. Comece por `tracks/fpa/workflows/integrated-budget-and-driver-review.md`.
@@ -179,6 +196,13 @@ O que acontece aqui: revisar intensidade de capital, uso de ativos, CAPEX, caixa
 2. Use `checklists/revenue-and-gross-margin-driver-checklist.md` para testar mercado, share, preço, mix, descontos, pipeline, pedidos perdidos e margem.
 3. Consulte `concepts/pricing-strength-vs-operating-efficiency.md` se a margem depender de prêmio de preço.
 4. Use `processes/dashboard-and-kpi-design.md` se a saída esperada for dashboard de receita ou pricing strength.
+
+### Preciso revisar SG&A, produtividade ou eficiência operacional
+
+1. Comece por `tracks/fpa/playbooks/operating-expense-and-effectiveness-review.md`.
+2. Use `concepts/pricing-strength-vs-operating-efficiency.md` para testar se a margem está escondendo custo ruim.
+3. Consulte `tracks/accounting/workflows/working-capital-and-cash-conversion-review.md` se o problema também estiver aparecendo em DSO, estoque, payables ou caixa.
+4. Consulte `tracks/accounting/workflows/inventory-and-valuation-review.md` se a ineficiência estiver ligada a yield, cycle time, quality ou supply chain.
 
 ### Preciso revisar caixa e giro
 

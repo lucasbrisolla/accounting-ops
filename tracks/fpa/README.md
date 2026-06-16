@@ -6,12 +6,13 @@ Trilha atual mais madura dentro do `accounting-ops`.
 
 Concentrar conteúdos de:
 
+- aprendizagem de FP&A
 - análise de variações
-- workflows de forecast, orçamento, receita e margem
 - playbooks aplicados por contexto de performance
 
 ## Estrutura atual
 
+- `modes/fpa-learning.md`
 - `modes/variance-analysis.md`
 - `workflows/rolling-forecast-and-business-outlook.md`
 - `workflows/integrated-budget-and-driver-review.md`
@@ -22,10 +23,10 @@ Concentrar conteúdos de:
 - `playbooks/flash-report-design.md`
 - `playbooks/margin-reporting-without-bad-allocations.md`
 - `playbooks/pricing-strength-vs-operating-efficiency.md`
+- `playbooks/operating-expense-and-effectiveness-review.md`
+- `playbooks/long-term-projection-and-strategic-scenario-review.md`
 - `playbooks/asset-utilization-and-capital-discipline.md`
 
 ## Observação
 
 Esta trilha preserva o conteúdo originalmente criado no `fpa-ops`, agora dentro da arquitetura modular do `accounting-ops`.
-
-Casos muito específicos e materiais de preparação individual ficam fora desta edição pública.

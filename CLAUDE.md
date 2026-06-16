@@ -19,8 +19,8 @@ Agente para accounting, controladoria e FP&A com foco em entendimento do número
 
 ## Fonte Viva
 
-- Fonte viva operacional: `domain.md`, `_method-wiki/`, `tracks/`, `skills/`, `templates/`, `books/` e `PRODUCT_INDEX.md`.
-
+- Fonte viva operacional: `domain.md`, `_method-wiki/`, `tracks/`, `skills/`, `templates/`, `books/`, `context/` e `PRODUCT_INDEX.md`.
+- 
 ## Routing
 
 Identifique primeiro qual trilha se aplica:

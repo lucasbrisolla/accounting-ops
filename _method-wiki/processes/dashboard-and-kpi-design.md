@@ -111,7 +111,22 @@ Como regra prática:
 
 Se tudo está no dashboard, nada está em foco.
 
-### 7. Definir alertas e exceções
+### 7. Reduzir carga cognitiva do painel
+
+Além de limitar métricas, reduzir o esforço de leitura do painel:
+
+- eliminar elementos que não agregam sinal informativo suficiente
+- evitar bordas de gráfico, fundos pesados e ornamentos padrão por inércia
+- usar gridlines e marcadores só quando ajudam de fato; caso contrário, removê-los
+- preservar white space e alinhamento consistente entre títulos, visuais e comentários
+- evitar rótulos diagonais e simplificar eixos, períodos e números
+- preferir rotular séries diretamente quando isso poupa a ida e volta entre legenda e dado
+- usar contraste de forma estratégica: destaque para a exceção ou driver prioritário, neutralidade para o restante
+- manter unidades explícitas quando isso reduz ambiguidade, como `$`, `%` e separadores de milhar
+
+Painel bom não apenas mostra o driver certo. Ele faz isso com baixo atrito cognitivo.
+
+### 8. Definir alertas e exceções
 
 Quando fizer sentido, trocar revisão exaustiva por exception-based reporting.
 
@@ -126,7 +141,7 @@ Alertas úteis podem incluir:
 
 O objetivo é chamar atenção para o que pede investigação ou ação, não gerar ruído.
 
-### 8. Fechar governança da métrica
+### 9. Fechar governança da métrica
 
 Para cada KPI relevante, documentar:
 
@@ -149,14 +164,16 @@ Indicador sem definição estável vira disputa de interpretação.
 3. KPIs selecionados e descartados.
 4. Hierarquia de dashboards.
 5. Frequência de atualização.
-6. Alertas e limites de exceção.
-7. Riscos de comportamento indesejado.
-8. Próximas ações de implantação ou revisão.
+6. Decisões de decluttering e leitura visual.
+7. Alertas e limites de exceção.
+8. Riscos de comportamento indesejado.
+9. Próximas ações de implantação ou revisão.
 
 ## Red flags
 
 - dashboard pronto sem ligação com objetivo do negócio
 - excesso de métricas no painel principal
+- excesso de ruído visual antes mesmo de haver excesso de métrica
 - foco apenas em indicadores atrasados
 - métrica sem definição formal
 - dado sem responsável claro
@@ -168,6 +185,7 @@ Indicador sem definição estável vira disputa de interpretação.
 
 - Não confundir dashboard com relatório mensal.
 - Não medir tudo que está disponível.
+- Não aceitar defaults visuais da ferramenta sem testar se ajudam ou só poluem.
 - Não usar KPI sem testar efeito colateral.
 - Não separar visualização de qualidade do dado.
 - Não substituir julgamento gerencial por métrica; usar métrica para informar e desafiar julgamento.

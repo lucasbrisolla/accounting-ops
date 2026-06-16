@@ -48,6 +48,8 @@ Uma empresa pode ter:
 - produto ou serviço percebido como diferenciado
 - pedidos perdidos por preço em nível administrável
 - capacidade de manter margem mesmo com custo pressionado
+- market share estável ou crescente sem concessão excessiva de preço
+- comparação preço/performance favorável contra concorrentes
 
 ## Sinais de eficiência operacional
 
@@ -65,6 +67,20 @@ Uma empresa pode ter:
 - margem preservada apesar de custo ruim e processo ineficiente
 - produto premium sem sustentação clara de valor percebido
 - perda recorrente de pedidos por preço
+- desconto como percentual do preço de lista aumentando
+- concorrente melhorando performance com preço menor
+- excesso de capacidade no setor pressionando preço futuro
+
+## Métricas para Monitorar
+
+| Métrica | Leitura |
+|---|---|
+| ASP | Indica sustentação ou erosão do preço médio. |
+| Desconto / preço de lista | Mostra quanto do preço anunciado está sendo cedido para fechar venda. |
+| Pedidos perdidos por preço | Sinaliza pressão futura em receita e margem. |
+| Market share | Testa se a empresa mantém posição enquanto preserva preço. |
+| Preço/performance vs. concorrentes | Mostra se o prêmio de preço ainda tem justificativa. |
+| Custo unitário e qualidade | Testam se a margem sobreviveria sem prêmio de preço. |
 
 ## Perguntas de diagnóstico
 
@@ -73,6 +89,8 @@ Uma empresa pode ter:
 3. O market share está confirmando ou negando a tese de pricing strength?
 4. Há ineficiência operacional escondida atrás da margem ainda forte?
 5. Se o prêmio de preço desaparecer, a operação continua saudável?
+6. O desconto está crescendo mais rápido do que a receita?
+7. A empresa está mantendo preço à custa de volume ou share?
 
 ## Estrutura de resposta sugerida
 

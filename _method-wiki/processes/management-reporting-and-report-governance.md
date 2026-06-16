@@ -26,10 +26,42 @@ Se ele não muda decisão, monitora risco relevante ou sustenta accountability, 
 Responder:
 
 - para qual decisão ou rotina este report existe?
-- quem recebe?
+- quem é a audiência primária e, se possível, o decisor?
+- o report está em modo exploratório ou já em modo explicativo?
+- qual é a mensagem central em uma frase?
 - o que essa pessoa deve perceber ou fazer com ele?
 
-### 2. Testar utilidade real
+Se o time não consegue resumir o ponto principal em uma frase curta, o material provavelmente ainda está em modo exploratório e ainda não deveria circular como report gerencial.
+
+### 2. Definir mecanismo principal de consumo
+
+Escolher primeiro como o report será consumido:
+
+- reunião ao vivo
+- leitura assíncrona
+- formato híbrido
+
+Perguntar:
+
+- quanto da interpretação dependerá do apresentador?
+- quanto detalhe precisa estar explícito no material?
+- a ordem de leitura será guiada ou autodirigida?
+
+O mesmo material raramente atende bem, sem ajuste, uma reunião executiva e uma circulação assíncrona.
+
+### 3. Testar carga cognitiva e legibilidade
+
+Perguntar:
+
+- o report parece mais complicado do que o tema realmente é?
+- o leitor precisa ficar indo e voltando entre legenda, eixo e dado para entender o ponto?
+- há bordas, fundos, gridlines, marcadores ou labels redundantes competindo com a mensagem?
+- alinhamento, white space e ordem visual ajudam a leitura ou parecem acidentais?
+- a exceção principal é a primeira coisa que salta aos olhos?
+
+Tudo que adiciona esforço sem acrescentar entendimento suficiente deve ser reduzido, reposicionado ou removido.
+
+### 4. Testar utilidade real
 
 Perguntar:
 
@@ -38,7 +70,7 @@ Perguntar:
 - ele antecipa problema ou apenas descreve passado?
 - existe duplicação com outro material?
 
-### 3. Revisar escopo e frequência
+### 5. Revisar escopo e frequência
 
 Nem todo report precisa ser mensal, semanal e detalhado.
 
@@ -49,7 +81,7 @@ Escolher:
 - profundidade
 - mecanismo de exceção
 
-### 4. Ligar linhas a owner
+### 6. Ligar linhas a owner
 
 Toda linha relevante deve ter:
 
@@ -57,7 +89,7 @@ Toda linha relevante deve ter:
 - um receptor adequado
 - uma interpretação esperada
 
-### 5. Enxugar e manter o núcleo vivo
+### 7. Enxugar e manter o núcleo vivo
 
 Manter pequeno núcleo de reports que:
 
@@ -67,7 +99,7 @@ Manter pequeno núcleo de reports que:
 
 Todo o resto deve ser suporte sob demanda.
 
-### 6. Revisar periodicamente
+### 8. Revisar periodicamente
 
 Perguntas de revisão:
 
@@ -87,9 +119,13 @@ Perguntas de revisão:
 ## Red flags
 
 - report sem audiência definida
+- report que despeja trilha de exploração em vez de mensagem principal
+- report visualmente denso a ponto de gerar sensação de esforço antes da leitura
 - muita linha e pouca mensagem
 - indicador sem owner
 - duplicação entre relatórios
+- excesso de elementos padrão competindo com dado, exceção ou conclusão
+- mesmo material usado para fala ao vivo e circulação assíncrona sem ajuste
 - material enviado porque "sempre foi assim"
 
 ## Módulos relacionados

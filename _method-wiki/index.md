@@ -38,6 +38,7 @@
 |---|---|---|
 | [margin-erosion-signals.md](heuristics/margin-erosion-signals.md) | Sinais de erosão de margem e perguntas para desafiar explicações superficiais. | Jack Alexander Cap. 15 |
 | [when-not-to-report-a-variance.md](heuristics/when-not-to-report-a-variance.md) | Regra de bolso para decidir quando uma variância não merece destaque principal. | Steven Bragg Cap. 14 |
+| [adversarial-financial-reporting.md](heuristics/adversarial-financial-reporting.md) | Heurística para ler demonstrações e narrativas financeiras como comunicação interessada, testando incentivos, métricas alternativas, suavização e contingências. | Fridson e Alvarez Cap. 1 |
 
 ## Checklists
 
@@ -71,3 +72,9 @@
 | [management-reporting-and-report-governance.md](processes/management-reporting-and-report-governance.md) | Hub metodológico para governança de reports gerenciais e racionalização do estoque de relatórios. | Steven Bragg Cap. 14 |
 | [monthly-closing-and-number-quality.md](processes/monthly-closing-and-number-quality.md) | Hub metodológico para fechamento mensal, consistência e leitura gerencial do número. | Bragg Controller Guidebook Cap. 11 + workflow de fechamento |
 | [performance-management-framework.md](processes/performance-management-framework.md) | Hub metodológico para conectar contexto, drivers, medidas, execução e accountability. | Jack Alexander Cap. 7 |
+
+## Playbooks Conectados
+
+| Arquivo | Descrição | Fonte |
+|---|---|---|
+| [external-view-and-peer-benchmarking.md](../tracks/fpa/playbooks/external-view-and-peer-benchmarking.md) | Playbook para ler mercado, clientes, concorrentes, adjacências e benchmarks antes de aceitar narrativa interna de performance. | Jack Alexander Cap. 11 |

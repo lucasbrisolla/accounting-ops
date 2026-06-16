@@ -52,6 +52,17 @@ Sinais:
 - scrap, perdas e retrabalho
 - SG&A
 - nível de serviço
+- cycle time
+- forecast accuracy quando afeta execução
+- erros de faturamento, entrega ou cobrança
+- headcount e estrutura com contexto de modelo de negócio
+- cost of quality failures
+
+Regra prática:
+
+- a melhor unidade causal costuma ser o processo, não a função da DRE
+- SG&A, custo fabril ou despesa administrativa são sintomas parciais, não explicações completas
+- operating effectiveness deve ser lido em processos como revenue process, supply chain, NPD, qualidade e planejamento
 
 ### 4. Capital effectiveness
 
@@ -87,12 +98,55 @@ O peso relativo de cada driver muda por:
 
 Não existe combinação universal.
 
+## Uso com benchmarking externo
+
+Ao comparar a companhia contra pares, clientes, adjacências ou best practices, organize o benchmark pelos mesmos drivers de valor:
+
+| Driver | Pergunta externa |
+|---|---|
+| Sales growth | O crescimento acompanha mercado, share, canal e base de clientes? |
+| Relative pricing strength | O preço é sustentado por diferenciação real ou por condição temporária? |
+| Operating effectiveness | A operação converte receita em margem melhor ou pior que pares? |
+| Capital effectiveness | O modelo exige mais estoque, ativo fixo ou capital de giro que os comparáveis? |
+| Cost of capital | O risco, estrutura de capital e retorno justificam a estratégia? |
+| Intangibles | Marca, tecnologia ou relacionamento explicam performance superior de forma observável? |
+
+Benchmark só é útil quando ajuda a explicar o driver, não quando apenas ranqueia empresas.
+
+### Como interpretar o gap externo
+
+Quando um comparável parece melhor ou pior, não parar no indicador. Classificar o gap em uma destas hipóteses:
+
+- diferença de modelo econômico
+- diferença de execução
+- diferença de estágio, escala ou mix
+- diferença contábil ou de disclosure
+- diferença conjuntural, não estrutural
+
+Sem essa classificação, o benchmark tende a virar meta ruim ou explicação preguiçosa.
+
+### Regra de uso
+
+O framework não serve apenas para olhar concorrentes diretos.
+
+Ele também ajuda a organizar leitura de:
+
+- clientes relevantes
+- canais de distribuição
+- fornecedores críticos
+- adjacências e substitutos
+- empresas que funcionam como best practice ou wild card
+
+O importante é perguntar qual driver aquela comparação ilumina melhor.
+
 ## Perguntas de challenge
 
 1. Estamos analisando só crescimento e margem e ignorando capital?
 2. A força de preço é real ou apenas temporária?
 3. O retorno está sendo corroído por capital pesado ou custo de capital alto?
 4. O ativo intangível percebido realmente está virando desempenho?
+5. O benchmark escolhido explica o driver ou só oferece uma comparação conveniente?
+6. A empresa está usando o setor como desculpa para execução fraca ou como evidência real de pressão externa?
 
 ## Guardrails
 
@@ -107,7 +161,8 @@ Não existe combinação universal.
 - Concept: `concepts/intangible-assets-and-goodwill-signals.md`
 - Process: `processes/performance-management-framework.md`
 - Pattern: `patterns/goal-to-driver-cascade.md`
+- Playbook: `tracks/fpa/playbooks/external-view-and-peer-benchmarking.md`
 
 ## Fonte
 
-Destilado de Jack Alexander, *Financial Planning, Analysis, and Performance Management*, Cap. 7.
+Destilado de Jack Alexander, *Financial Planning, Analysis, and Performance Management*, Caps. 7 e 11.

@@ -86,6 +86,37 @@ Ao comparar unidades, segmentos ou empresas, testar:
 
 Modelos diferentes não devem ser julgados pela mesma régua curta.
 
+## Visão externa do modelo
+
+Depois de entender o modelo por dentro, comparar a empresa com o ambiente externo:
+
+- concorrentes diretos, para entender posição relativa em crescimento, margem, capital e retorno
+- clientes e canais, para testar demanda, poder de barganha, risco de crédito e pressão comercial
+- fornecedores e insumos críticos, para testar pressão de custo e risco de abastecimento
+- empresas adjacentes, para identificar substitutos, mudança de canal ou novas práticas
+- best practices ou wild cards, para descobrir práticas que explicam performance superior
+
+O objetivo não é provar que a empresa deveria ter o mesmo indicador do par. É entender se a diferença vem de modelo econômico, execução, escala, canal, capital, contabilidade ou contexto competitivo.
+
+### O que cada lente externa ajuda a testar
+
+| Lente externa | O que ajuda a responder |
+|---|---|
+| Concorrentes diretos | A empresa realmente está melhor ou pior em crescimento, margem, capital e retorno? |
+| Clientes e canais | A demanda final, o poder de barganha e a dinâmica comercial confirmam a narrativa? |
+| Fornecedores e insumos | O modelo está mais exposto a custo, escassez ou concentração do que parece? |
+| Adjacências e substitutos | Existe mudança estrutural de canal, produto ou serviço que pode rebaixar o modelo atual? |
+| Best practices e wild cards | O gap observado parece copiável, improvável ou estruturalmente ligado a outro modelo? |
+
+### Regra prática
+
+Uma leitura boa de business model combina duas perguntas ao mesmo tempo:
+
+- como o negócio diz que cria valor
+- o que o ambiente externo sugere sobre a robustez dessa tese
+
+Se a tese interna e a evidência externa não convergem, a análise deve parar de descrever e começar a desafiar.
+
 ## Perguntas de challenge
 
 1. O crescimento exige mais capital do que aparenta?
@@ -93,6 +124,8 @@ Modelos diferentes não devem ser julgados pela mesma régua curta.
 3. O lucro se converte em caixa com consistência?
 4. O retorno compensa o capital imobilizado e o risco assumido?
 5. Estamos comparando negócios com estruturas econômicas realmente comparáveis?
+6. O relatório da administração da empresa é coerente com o que pares, clientes e setor estão mostrando?
+7. A diferença contra o benchmark é uma oportunidade copiável ou uma característica estrutural do modelo?
 
 ## Guardrails
 
@@ -108,7 +141,8 @@ Modelos diferentes não devem ser julgados pela mesma régua curta.
 - Concept: `concepts/capital-intensity-foundations.md`
 - Pattern: `patterns/performance-tree.md`
 - Process: `processes/performance-management-framework.md`
+- Playbook: `tracks/fpa/playbooks/external-view-and-peer-benchmarking.md`
 
 ## Fonte
 
-Destilado de Jack Alexander, *Financial Planning, Analysis, and Performance Management*, Cap. 3.
+Destilado de Jack Alexander, *Financial Planning, Analysis, and Performance Management*, Caps. 3 e 11.

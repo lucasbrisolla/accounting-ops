@@ -39,6 +39,21 @@ Perguntar:
 - disponibilidade de insumo
 - regulação
 
+Se a análise envolver empresa comparável, relatório de administração ou benchmark, complementar com:
+
+- clientes e canais relevantes
+- fornecedores e insumos críticos
+- empresas adjacentes ou substitutas
+- best practices ou wild cards que mostrem práticas superiores
+- sinais externos que confirmem ou neguem a narrativa da administração
+
+Regra prática:
+
+- não parar no concorrente direto
+- não tratar contexto externo como anexo decorativo
+- usar a leitura externa para decidir que driver realmente merece ser medido
+- abandonar KPI “bonito” quando o ambiente mostra que a pergunta gerencial está errada
+
 ### 4. Ler performance atual
 
 - onde o resultado está forte?
@@ -64,10 +79,12 @@ As medidas devem nascer da combinação entre:
 2. A empresa está tentando medir sintoma ou driver?
 3. O contexto mudou e o KPI ficou velho?
 4. Existe owner real para agir sobre o número?
+5. O ambiente externo confirma que esse KPI continua relevante?
+6. Estamos escolhendo métrica por disponibilidade ou por utilidade gerencial real?
 
 ## Módulos relacionados
 
 - Process: `_method-wiki/processes/performance-management-framework.md`
 - Concept: `_method-wiki/concepts/value-driver-framework.md`
 - Process: `_method-wiki/processes/dashboard-and-kpi-design.md`
-
+- Playbook: `tracks/fpa/playbooks/external-view-and-peer-benchmarking.md`

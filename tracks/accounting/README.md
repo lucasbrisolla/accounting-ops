@@ -17,6 +17,8 @@ Concentrar conteúdos de:
 - `modes/accounting-closing-and-quality.md`
 - `modes/accounting-technical-application.md`
 - `workflows/monthly-closing-and-number-quality.md`
+- `workflows/account-reconciliation-review.md`
+- `workflows/working-capital-and-cash-conversion-review.md`
 - `workflows/cash-management-and-bank-reconciliation.md`
 - `workflows/inventory-and-valuation-review.md`
 - `playbooks/result-reading-and-number-quality.md`
