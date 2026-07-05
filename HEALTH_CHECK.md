@@ -30,7 +30,10 @@ O foco aqui não é revisar técnica financeira em si. É revisar a qualidade do
 | Skills auxiliares | As skills fazem transformações atômicas e não substituem workflows inteiros? |  |  |
 | Templates | Templates reduzem variação sem virar burocracia obrigatória? |  |  |
 | Contexto | `context/` ajuda a calibrar uso e narrativa sem contaminar o produto inteiro? |  |  |
+| Contexto empresarial | `context/companies/` separa evidência situada, contexto de companhia e candidatos de promoção metodológica? |  |  |
+| Stateless | `stateless/` contém adaptações úteis para ambientes sem memória persistente sem virar taxonomia aspiracional demais? |  |  |
 | Books | `books/` continuam como camada de ingestão e não como desvio do fluxo principal? |  |  |
+| Pipeline editorial | A camada `books/` alimenta a base viva por promoção seletiva, sem competir com `_method-wiki/`? |  |  |
 | Evolução | O produto consegue crescer sem concentrar tudo no `CLAUDE.md`? |  |  |
 
 ## Check Operacional
@@ -62,6 +65,8 @@ Se dois ou mais itens abaixo aparecerem, o `accounting-ops` merece refactor prio
 - o agente precisa carregar `PRODUCT_INDEX.md` cedo demais para tarefas simples
 - a mesma regra aparece em `README.md`, `CLAUDE.md` e `_method-wiki/` sem fonte clara
 - `books/` começaram a competir com o fluxo principal em vez de alimentar a base viva
+- `context/companies/` começou a promover aprendizados situados para método geral sem registro em matriz ou nota de promoção
+- `stateless/` passou a crescer como inventário aspiracional sem artefatos realmente usados
 - a experiência de auditoria está sendo vendida como experiência direta de controladoria ou FP&A
 
 ## Estado Sugerido Hoje
@@ -71,8 +76,9 @@ Se dois ou mais itens abaixo aparecerem, o `accounting-ops` merece refactor prio
 | Superfície de entrada | `forte` | manter papéis separados entre `README.md`, `AGENTS.md` e `CLAUDE.md` |
 | Routing por trilha | `forte` | evitar expandir demais o `CLAUDE.md` |
 | Base metodológica | `forte` | continuar promovendo conteúdo maduro para `_method-wiki/` |
-| Contexto e books | `utilizável` | evitar drift entre camada viva e camada de ingestão |
-| Verificabilidade | `utilizável` | evoluir do `doctor` estrutural para checks mais próximos dos outputs canônicos |
+| Contexto, companies e books | `utilizável` | manter a fronteira entre evidência situada, promoção metodológica e ingestão editorial |
+| Stateless | `utilizável` | decidir quais artefatos são MVP real e quais ainda são taxonomia aspiracional |
+| Verificabilidade | `utilizável` | manter o `doctor` calibrado por camada e evoluir checks mais próximos dos outputs canônicos |
 
 ## Ritual De Revisão
 
@@ -84,6 +90,15 @@ Use este arquivo:
 4. quando o produto começar a parecer "inteligente demais cedo demais"
 5. antes de replicar padrões deste agente para outros produtos
 6. junto com `scripts/accounting_ops_doctor.py`, quando houver mudança estrutural relevante
+
+## Regra De Calibração Do Doctor
+
+O `doctor` deve medir fronteiras atuais do produto, não fantasmas de versões antigas.
+
+- nomes de empresas são esperados em `context/companies/`
+- lentes específicas de companhia são esperadas em `stateless/company-packs/`
+- nomes de empresas em `_method-wiki/`, `tracks/`, `skills/`, `templates/` ou superfícies principais devem ser tratados como possível contaminação de método geral por caso específico
+- termos legados só devem permanecer como drift se ainda representarem risco real de regressão
 
 ## Regra De Ouro
 

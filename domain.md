@@ -68,6 +68,16 @@ Drivers comuns:
 - investimentos industriais
 - capacidade ociosa
 
+### Pacote de custos industriais
+
+Separar a análise em três perguntas:
+
+1. **Inventory Valuation:** qual valor está carregado no estoque e no CPV?
+2. **Process Costing:** como materiais e conversão foram acumulados entre WIP e unidades concluídas?
+3. **Standard Costing:** por que o custo real divergiu do padrão e a diferença é acionável?
+
+Essa separação evita atribuir ao FIFO um problema de WIP, ou à eficiência um problema de padrão desatualizado.
+
 ## Ponte Auditoria para FP&A
 
 Experiência de auditoria ajuda quando vira raciocínio de negócio:

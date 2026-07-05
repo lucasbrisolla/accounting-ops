@@ -83,7 +83,27 @@ class AccountingOpsDoctorTests(unittest.TestCase):
             self.assertIn("CLAUDE.md -> tracks/fpa/modes/ghost-mode.md", result.broken_references)
             self.assertIn("PRODUCT_INDEX.md -> tracks/accounting/modes/ghost-mode.md", result.broken_references)
 
-    def test_reports_surface_drift_outside_archive(self):
+    def test_allows_company_terms_in_company_context_and_company_packs(self):
+        module = load_module()
+
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            touch_required_paths(root, module)
+            touch(root, "CLAUDE.md", "")
+            touch(root, "PRODUCT_INDEX.md", "")
+            touch(root, "README.md", "")
+            touch(root, "INDEX.md", "")
+            touch(root, "context/companies/belgo-arames/enterprise-context.md", "Belgo")
+            touch(root, "context/companies/bekaert/enterprise-context.md", "Bekaert e Belgo")
+            touch(root, "stateless/company-packs/belgo-lens.md", "Belgo")
+            touch(root, "archive/interview/legacy.md", "Belgo")
+
+            result = module.check_accounting_ops(root)
+
+            self.assertTrue(result.ok)
+            self.assertEqual(result.surface_drift, [])
+
+    def test_reports_case_specific_terms_in_generic_surfaces(self):
         module = load_module()
 
         with tempfile.TemporaryDirectory() as tmp:
@@ -93,14 +113,14 @@ class AccountingOpsDoctorTests(unittest.TestCase):
             touch(root, "PRODUCT_INDEX.md", "")
             touch(root, "README.md", "")
             touch(root, "INDEX.md", "")
-            touch(root, "context/nota.md", "Belgo")
+            touch(root, "_method-wiki/concepts/generic-method.md", "Belgo")
             touch(root, "archive/interview/legacy.md", "Belgo")
 
             result = module.check_accounting_ops(root)
 
             self.assertFalse(result.ok)
             self.assertIn("CLAUDE.md -> entrevista", result.surface_drift)
-            self.assertIn("context/nota.md -> Belgo", result.surface_drift)
+            self.assertIn("_method-wiki/concepts/generic-method.md -> Belgo", result.surface_drift)
             self.assertNotIn("archive/interview/legacy.md -> Belgo", result.surface_drift)
 
 

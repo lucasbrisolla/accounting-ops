@@ -24,6 +24,7 @@ Use este arquivo quando precisar localizar rapidamente trilhas, modos, playbooks
 | `_method-wiki/concepts/value-driver-framework.md` | Organizar a leitura integrada de performance por drivers de criação de valor. |
 | `_method-wiki/concepts/working-capital-foundations.md` | Revisar fundamentos de capital de giro: caixa, recebíveis, estoque e contas a pagar. |
 | `_method-wiki/heuristics/margin-erosion-signals.md` | Procurar sinais de erosão de margem e desafiar explicações superficiais. |
+| `_method-wiki/heuristics/cost-opportunity-signals.md` | Identificar oportunidades acionáveis de custo, economia, waste, scrap, rework, consumo, owner e captura em margem ou caixa. |
 | `_method-wiki/heuristics/when-not-to-report-a-variance.md` | Decidir quando uma variância não merece destaque principal no report. |
 | `_method-wiki/checklists/forecast-review-checklist.md` | Revisar forecast, premissas, cenários e riscos de execução. |
 | `_method-wiki/checklists/capital-investment-postaudit-checklist.md` | Revisar se um CAPEX entregou business case, utilização e aprendizado. |
@@ -104,6 +105,8 @@ Use este arquivo quando precisar localizar rapidamente trilhas, modos, playbooks
 | `tracks/accounting/workflows/working-capital-and-cash-conversion-review.md` | Revisar capital de giro operacional, DSO, estoque, payables e conversão de caixa. |
 | `tracks/accounting/workflows/cash-management-and-bank-reconciliation.md` | Revisar caixa, bancos, diferenças de reconciliação, pendências e risco de liquidez de curto prazo. |
 | `tracks/accounting/workflows/inventory-and-valuation-review.md` | Revisar quantidade, valuation, obsolescência e impactos de estoque em custo, margem e resultado. |
+| `tracks/accounting/workflows/process-costing-and-wip-review.md` | Revisar produção contínua, unidades equivalentes, WIP e distribuição de custos entre processos. |
+| `tracks/accounting/workflows/standard-cost-and-industrial-variance-review.md` | Revisar custo padrão, variâncias industriais e impactos em estoque, CPV e margem. |
 
 ## Books
 

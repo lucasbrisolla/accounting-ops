@@ -13,6 +13,7 @@ Ele ajuda principalmente em temas como:
 - orçamento, forecast e cenários
 - análise de variações
 - margem e drivers de performance
+- custos industriais, estoque, WIP e custo padrão
 - capital de giro, caixa e reconciliações
 
 ## Para quem é
@@ -93,6 +94,7 @@ accounting-ops/
 | Análise de variações | Explica desvio com baseline, driver, impacto e ação |
 | Forecast e orçamento | Ajuda a revisar premissas, drivers, cenários e outlook |
 | Margem e performance | Organiza leitura de preço, mix, custo e eficiência |
+| Custos industriais | Revisa inventory valuation, process costing, WIP, custo padrão e variâncias industriais |
 | Capital de giro | Apoia análise de DSO, estoque, payables e conversão de caixa |
 | Narrativa executiva | Traduz análise financeira em mensagem clara para gestão |
 | Aprendizagem aplicada | Apoia desenvolvimento de raciocínio financeiro com foco prático e conexão com o trabalho real |

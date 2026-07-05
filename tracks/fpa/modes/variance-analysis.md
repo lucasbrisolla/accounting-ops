@@ -21,9 +21,13 @@ Use para analisar desvios entre actual, budget, forecast ou períodos comparativ
 - volume
 - preço
 - mix
-- custo unitario
+- custo unitário
 - frete
 - eficiência operacional
+- preço de material e purchase price variance
+- uso, yield, scrap e qualidade
+- labor rate e labor efficiency
+- overhead spending, eficiência e absorção
 - estoque
 - timing contábil
 - one-off
@@ -42,5 +46,9 @@ Ela precisa dizer:
 
 - por que aumentou
 - se era esperado
-- se continua nos proximos meses
+- se continua nos próximos meses
 - qual decisão ou alerta decorre disso
+
+Quando houver custo padrão, validar primeiro se o standard é atual e atingível. Uma variância favorável pode esconder compra excessiva, produção sem demanda ou outro comportamento que piora o resultado econômico.
+
+Para revisão industrial completa, usar `tracks/accounting/workflows/standard-cost-and-industrial-variance-review.md`.

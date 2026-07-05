@@ -50,6 +50,21 @@ Antes de aceitar a narrativa, quebre a variação quando possível:
 | Opex | categoria de gasto, fornecedor, timing, reclassificação, não recorrente |
 | Câmbio | taxa, exposição, hedge, data de reconhecimento |
 
+### Decomposição industrial por custo padrão
+
+Quando existir standard costing, separar:
+
+| Componente | Rate ou preço | Uso, eficiência ou volume |
+|---|---|---|
+| Material | preço de compra | consumo, yield, scrap e qualidade |
+| Mão de obra | taxa e mix de função | horas, setup, treinamento e downtime |
+| Overhead variável | spending rate | eficiência da base de atividade |
+| Overhead fixo | gasto contra orçamento | volume, capacidade e absorção |
+
+Antes de explicar a variância, testar se o padrão é atual, atingível e coerente com volume, equipamento, processo e condições de compra.
+
+Uma variância favorável não prova boa performance. Compra em excesso, produção sem demanda ou postergação de manutenção podem melhorar o indicador e piorar a economia total.
+
 Se a explicação for "timing", ela deve indicar quando o efeito reverte. Se for "one-time", deve explicar por que não se repete.
 
 ## Regra de qualidade
@@ -66,5 +81,10 @@ Ela precisa dizer:
 ## Conexões operacionais
 
 - Modo: `tracks/fpa/modes/variance-analysis.md`
+- Workflow: `tracks/accounting/workflows/standard-cost-and-industrial-variance-review.md`
 - Template: `templates/variance-analysis-one-pager.md`
 - Skill: `skills/challenge-variance-explanation.md`
+
+## Fonte adicional
+
+- Steven Bragg, *Cost Accounting Fundamentals*, Cap. 7 — Standard Costing.

@@ -6,7 +6,6 @@ Agente para accounting, controladoria e FP&A com foco em entendimento do número
 
 - `AGENTS.md` existe como porta de entrada compatível com ambientes que procuram esse nome de arquivo.
 - A instrução operacional autoritativa deste produto está neste `CLAUDE.md`.
-- Se houver conflito entre `AGENTS.md` e `CLAUDE.md`, prevalece `CLAUDE.md`.
 
 ## Regra de Contexto
 
@@ -41,6 +40,9 @@ Depois, ative o módulo correspondente:
 | Revisar caixa, bancos, liquidez de curto prazo ou reconciliação bancária | `tracks/accounting/modes/accounting-closing-and-quality.md` + `tracks/accounting/workflows/cash-management-and-bank-reconciliation.md` |
 | Revisar capital de giro operacional, DSO, estoque, payables ou conversão de caixa | `tracks/accounting/workflows/working-capital-and-cash-conversion-review.md` + `_method-wiki/checklists/working-capital-driver-checklist.md` |
 | Revisar estoque, valuation, obsolescência ou impacto em margem e custo | `_method-wiki/concepts/inventory-and-valuation-foundations.md` + `tracks/accounting/workflows/inventory-and-valuation-review.md` |
+| Revisar produção contínua, unidades equivalentes, percentual de conclusão ou WIP | `tracks/accounting/workflows/process-costing-and-wip-review.md` + `_method-wiki/concepts/inventory-and-valuation-foundations.md` |
+| Revisar custo padrão, padrões desatualizados ou variâncias industriais | `tracks/accounting/workflows/standard-cost-and-industrial-variance-review.md` + `_method-wiki/patterns/variance-analysis.md` |
+| Identificar oportunidade de custo, economia acionável, waste, scrap, rework ou perda operacional | `_method-wiki/heuristics/cost-opportunity-signals.md` + `tracks/accounting/workflows/standard-cost-and-industrial-variance-review.md` |
 | Entender impacto de CPC/IFRS no número gerencial | `tracks/accounting/modes/accounting-technical-application.md` + `tracks/accounting/playbooks/cpc-ifrs-impact-on-management-number.md` |
 | Aprender FP&A | `tracks/fpa/modes/fpa-learning.md` |
 | Analisar desvio de resultado | `_method-wiki/patterns/variance-analysis.md` + `tracks/fpa/modes/variance-analysis.md` + `templates/variance-analysis-one-pager.md` |

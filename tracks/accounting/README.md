@@ -10,6 +10,7 @@ Concentrar conteúdos de:
 - qualidade do número
 - conciliações
 - controladoria gerencial
+- custos industriais, WIP, valuation e variâncias
 - políticas e rotinas contábeis relevantes para gestão
 
 ## Estrutura atual
@@ -21,6 +22,8 @@ Concentrar conteúdos de:
 - `workflows/working-capital-and-cash-conversion-review.md`
 - `workflows/cash-management-and-bank-reconciliation.md`
 - `workflows/inventory-and-valuation-review.md`
+- `workflows/process-costing-and-wip-review.md`
+- `workflows/standard-cost-and-industrial-variance-review.md`
 - `playbooks/result-reading-and-number-quality.md`
 - `playbooks/cpc-ifrs-impact-on-management-number.md`
 

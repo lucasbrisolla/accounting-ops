@@ -49,6 +49,8 @@ Mapa rápido do `accounting-ops`.
 - `tracks/accounting/workflows/account-reconciliation-review.md`
 - `tracks/accounting/workflows/working-capital-and-cash-conversion-review.md`
 - `tracks/accounting/workflows/inventory-and-valuation-review.md`
+- `tracks/accounting/workflows/process-costing-and-wip-review.md`
+- `tracks/accounting/workflows/standard-cost-and-industrial-variance-review.md`
 
 ## Livros
 

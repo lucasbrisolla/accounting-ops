@@ -77,6 +77,7 @@ O que acontece aqui: explicar crescimento, queda de margem, preço, mix, custo e
 
 - `concepts/inventory-and-valuation-foundations.md`
 - `checklists/revenue-and-gross-margin-driver-checklist.md`
+- `heuristics/cost-opportunity-signals.md`
 - `heuristics/margin-erosion-signals.md`
 - `patterns/gross-margin-bridge.md`
 - `patterns/variance-analysis.md`
@@ -188,7 +189,17 @@ O que acontece aqui: revisar intensidade de capital, uso de ativos, CAPEX, caixa
 1. Comece por `tracks/fpa/workflows/gross-margin-bridge.md`.
 2. Use `patterns/gross-margin-bridge.md` como estrutura de decomposição.
 3. Use `heuristics/margin-erosion-signals.md` para desafiar explicações fracas.
-4. Consulte `concepts/pricing-strength-vs-operating-efficiency.md` se a margem alta parecer esconder ineficiência.
+4. Use `heuristics/cost-opportunity-signals.md` se a pergunta virar oportunidade de custo, scrap, rework, yield, frete urgente ou eficiência capturável.
+5. Consulte `concepts/pricing-strength-vs-operating-efficiency.md` se a margem alta parecer esconder ineficiência.
+
+### Preciso identificar uma oportunidade de custo
+
+1. Comece por `heuristics/cost-opportunity-signals.md`.
+2. Separe custo alto explicado de custo acionável.
+3. Identifique baseline, gap, driver, valor, owner, recorrência e prazo de captura.
+4. Use `tracks/accounting/workflows/standard-cost-and-industrial-variance-review.md` se a oportunidade vier de custo padrão, variância industrial, scrap, rework, yield ou absorção.
+5. Use `tracks/accounting/workflows/inventory-and-valuation-review.md` se o custo estiver preso em estoque, obsolescência, rework ou valuation.
+6. Use `tracks/accounting/workflows/working-capital-and-cash-conversion-review.md` se a oportunidade for liberar caixa ou capital de giro.
 
 ### Preciso revisar receita, forecast comercial ou pricing
 

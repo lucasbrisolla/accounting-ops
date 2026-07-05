@@ -24,7 +24,7 @@
 | [business-model-foundations.md](concepts/business-model-foundations.md) | Leitura de business model além da DRE, incorporando crescimento, capital, caixa e retorno. | Jack Alexander Cap. 3 |
 | [capital-intensity-foundations.md](concepts/capital-intensity-foundations.md) | Intensidade de capital como característica econômica do negócio e implicação para retorno e caixa. | Jack Alexander Cap. 18 |
 | [excess-cash-and-capital-drag.md](concepts/excess-cash-and-capital-drag.md) | Como ler caixa excedente, custo de oportunidade e diluição de retorno. | Jack Alexander Cap. 18 |
-| [inventory-and-valuation-foundations.md](concepts/inventory-and-valuation-foundations.md) | Fundamentos de estoque, valuation, giro, obsolescência e impacto em margem. | Workflow de estoque |
+| [inventory-and-valuation-foundations.md](concepts/inventory-and-valuation-foundations.md) | Fundamentos de quantidade, método de custo, overhead, perda de valor e impacto em margem. | Bragg Cost Accounting Cap. 4 + workflow de estoque |
 | [intangible-assets-and-goodwill-signals.md](concepts/intangible-assets-and-goodwill-signals.md) | Sinais gerenciais para interpretar goodwill, intangíveis e impairment. | Jack Alexander Cap. 18 |
 | [number-quality-foundations.md](concepts/number-quality-foundations.md) | Fundamentos de qualidade do número antes da leitura de performance. | Workflow de fechamento |
 | [operating-leverage-and-break-even.md](concepts/operating-leverage-and-break-even.md) | Leitura prática de custo fixo, contribuição, break-even e operating leverage. | Jack Alexander Cap. 3 |
@@ -37,6 +37,7 @@
 | Arquivo | Descrição | Fonte |
 |---|---|---|
 | [margin-erosion-signals.md](heuristics/margin-erosion-signals.md) | Sinais de erosão de margem e perguntas para desafiar explicações superficiais. | Jack Alexander Cap. 15 |
+| [cost-opportunity-signals.md](heuristics/cost-opportunity-signals.md) | Heurística para identificar oportunidades acionáveis de custo, separando waste, scrap, rework, consumo, owner, captura e falsos positivos. | Bragg Cost Accounting Cap. 9 |
 | [when-not-to-report-a-variance.md](heuristics/when-not-to-report-a-variance.md) | Regra de bolso para decidir quando uma variância não merece destaque principal. | Steven Bragg Cap. 14 |
 | [adversarial-financial-reporting.md](heuristics/adversarial-financial-reporting.md) | Heurística para ler demonstrações e narrativas financeiras como comunicação interessada, testando incentivos, métricas alternativas, suavização e contingências. | Fridson e Alvarez Cap. 1 |
 
@@ -59,7 +60,7 @@
 | [goal-to-driver-cascade.md](patterns/goal-to-driver-cascade.md) | Estrutura para descer de objetivo amplo até driver, medida, meta e accountability. | Jack Alexander Cap. 7 |
 | [performance-tree.md](patterns/performance-tree.md) | Estrutura para decompor um KPI em drivers subordinados e comunicar causa, impacto e ação. | Jack Alexander Cap. 3 |
 | [responsibility-reporting.md](patterns/responsibility-reporting.md) | Estrutura para ligar linha reportada, granularidade e owner do número. | Steven Bragg Cap. 14 |
-| [variance-analysis.md](patterns/variance-analysis.md) | Estrutura recorrente para explicar variações entre actual, budget, forecast ou períodos. | Modo variance-analysis |
+| [variance-analysis.md](patterns/variance-analysis.md) | Estrutura recorrente para explicar variações gerais e industriais entre actual, budget, forecast ou padrão. | Modo variance-analysis + Bragg Cost Accounting Cap. 7 |
 
 ## Processes
 

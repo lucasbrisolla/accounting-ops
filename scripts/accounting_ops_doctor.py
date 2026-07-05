@@ -39,13 +39,20 @@ REFERENCE_DOCS = [
     "INDEX.md",
 ]
 
-BANNED_SURFACE_TERMS = [
-    "interview-technical-prep",
-    "lucas-fpa-bridge",
-    "interview-drill",
-    "Belgo",
+GLOBAL_SURFACE_DRIFT_TERMS = [
     "entrevista",
 ]
+
+LAYERED_SURFACE_DRIFT_TERMS = {
+    "Belgo": [
+        "context/companies/",
+        "stateless/company-packs/",
+    ],
+    "Bekaert": [
+        "context/companies/",
+        "stateless/company-packs/",
+    ],
+}
 
 BACKTICK_PATH_PATTERN = re.compile(
     r"`(?P<path>(?:_method-wiki|tracks|templates|skills|books|context|examples|archive)/[^`\n]+?\.md)`"
@@ -125,9 +132,15 @@ def check_surface_drift(root: Path) -> list[str]:
         except ValueError:
             relative = str(path)
         content = path.read_text(encoding="utf-8")
-        for term in BANNED_SURFACE_TERMS:
+        for term in GLOBAL_SURFACE_DRIFT_TERMS:
             if term in content:
                 drift.append(f"{relative} -> {term}")
+        for term, allowed_prefixes in LAYERED_SURFACE_DRIFT_TERMS.items():
+            if term not in content:
+                continue
+            if any(relative.startswith(prefix) for prefix in allowed_prefixes):
+                continue
+            drift.append(f"{relative} -> {term}")
     return sorted(set(drift))
 
 
