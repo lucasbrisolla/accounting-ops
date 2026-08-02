@@ -57,6 +57,19 @@ Extrair:
 - incerteza ou lacuna relevante
 - ação, decisão ou monitoramento sugerido
 
+### 2.1 Construir um arco narrativo curto
+
+Ordenar a mensagem em quatro movimentos:
+
+1. ponto de partida: plano, meta, tendência ou expectativa
+2. tensão: mudança, desvio, risco ou trade-off que importa para a audiência
+3. evidência: drivers que explicam a tensão e seu impacto
+4. resolução: implicação, ação, decisão ou monitoramento
+
+Em uma narrativa financeira, a tensão deve ser observável e gerencialmente relevante. Não inventar conflito para tornar a frase mais interessante; explicitar o que já está em jogo no número.
+
+Escolher uma frase-âncora curta e repetível para a Big Idea. Usá-la ou retomá-la no headline, na transição entre evidências e no fechamento, com pequenas adaptações apenas quando aumentarem a clareza.
+
 ### 3. Cortar ruído
 
 Eliminar:
@@ -74,6 +87,8 @@ Montar em ordem:
 - explicação principal
 - ressalva importante
 - ação ou implicação
+
+Se a mensagem for apresentada em páginas ou slides, cada parte deve responder à anterior e conduzir à resolução. Se uma evidência não aumenta o entendimento da tensão nem sustenta a ação, movê-la para o suporte ou removê-la.
 
 A densidade final deve acompanhar o mecanismo de consumo. Fala ao vivo aceita mais síntese; e-mail e report assíncrono pedem contexto um pouco mais explícito.
 

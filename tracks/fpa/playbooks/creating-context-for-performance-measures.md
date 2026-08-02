@@ -64,7 +64,18 @@ Regra prática:
 
 Sem iniciativa e processo, a métrica vira observação.
 
-### 6. Só então escolher medidas
+### 6. Formular a tensão gerencial
+
+Antes de escolher a medida, explicitar o que está em jogo para a audiência:
+
+- qual era a condição esperada ou o objetivo de referência?
+- qual mudança, desvio, risco ou trade-off exige atenção?
+- por que essa tensão importa para resultado, margem, caixa, cliente ou operação?
+- que decisão ou ação a medida deve melhorar?
+
+A tensão deve vir de um fato ou hipótese verificável, não de dramatização. Se não houver diferença relevante entre o estado esperado e o estado observado, talvez exista uma boa métrica descritiva, mas ainda não existe uma narrativa gerencial que justifique colocá-la no centro do reporting.
+
+### 7. Só então escolher medidas
 
 As medidas devem nascer da combinação entre:
 
@@ -72,6 +83,8 @@ As medidas devem nascer da combinação entre:
 - driver de valor
 - processo
 - owner
+
+O KPI escolhido deve ajudar a explicar ou acompanhar a tensão, e não apenas confirmar que ela existe. Registrar também qual será o critério de resolução: meta recuperada, risco reduzido, decisão tomada, caixa protegido ou outro resultado observável.
 
 ## Perguntas de challenge
 
@@ -81,6 +94,8 @@ As medidas devem nascer da combinação entre:
 4. Existe owner real para agir sobre o número?
 5. O ambiente externo confirma que esse KPI continua relevante?
 6. Estamos escolhendo métrica por disponibilidade ou por utilidade gerencial real?
+7. Qual é a tensão que torna esta medida relevante agora?
+8. Como saberemos que a tensão foi resolvida ou mudou de natureza?
 
 ## Módulos relacionados
 

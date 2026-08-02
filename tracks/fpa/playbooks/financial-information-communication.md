@@ -133,6 +133,25 @@ Estrutura base:
 Regra prática: se o tempo cair pela metade, a audiência ainda deve receber a mensagem principal.
 Não começar pelo layout reduz o risco de montar um deck grande, bonito e semanticamente vazio.
 
+### 5.1 Dar forma narrativa à sequência
+
+Organizar a comunicação como um arco simples, adaptado ao problema gerencial:
+
+1. **Ponto de partida:** qual era o plano, a expectativa, a tendência ou a condição de referência.
+2. **Tensão:** o que mudou, ficou aquém do esperado ou criou um risco, trade-off ou decisão.
+3. **Evidência e desenvolvimento:** quais drivers explicam a tensão e como ela afeta resultado, margem, caixa ou operação.
+4. **Resolução:** qual implicação, alternativa, recomendação ou próximo passo responde à tensão.
+
+Em reporting financeiro, tensão não significa criar drama. Ela deve ser um fato relevante para a audiência: uma variação material, um risco de forecast, uma pressão sobre margem, uma restrição de caixa ou uma escolha entre objetivos conflitantes.
+
+Repetir a mensagem central de forma deliberada:
+
+- declarar a tese no resumo executivo
+- usar títulos e transições que retomem a mesma ideia com palavras consistentes
+- fechar com a implicação e a ação, sem introduzir uma nova tese no último momento
+
+Uma história falada pode depender mais das transições do apresentador. Um report, e-mail ou deck que será lido sem o narrador precisa carregar o arco no próprio material, com títulos orientados à conclusão, rótulos diretos e uma recapitulação curta.
+
 ### 6. Escolher a Visualização Certa
 
 Escolher o gráfico pelo ponto que ele precisa provar:
@@ -148,6 +167,25 @@ Escolher o gráfico pelo ponto que ele precisa provar:
 | Sinalizar status contra meta | semáforo, scorecard ou gauge com parcimônia |
 
 Guardrail: o gráfico deve reduzir ruído, não decorar a análise.
+
+### 6.1 Direcionar atenção para a mensagem principal
+
+O visual precisa responder não apenas “qual dado está presente?”, mas também “onde o leitor deve olhar primeiro e em que ordem deve interpretar o restante?”. Antes de finalizar cada página, declarar:
+
+- primeiro olhar: mensagem, exceção ou decisão que deve capturar atenção
+- segunda leitura: evidência que sustenta a mensagem
+- contexto: comparação, tendência ou detalhe que evita interpretação errada
+
+Usar atributos visuais pré-atentivos para criar essa hierarquia:
+
+- tamanho para sinalizar importância relativa
+- cor para destacar um driver, desvio ou status material
+- posição e alinhamento para ordenar e facilitar comparação
+- título, rótulo direto e anotação para explicitar a leitura esperada
+
+Manter os demais elementos neutros e evitar destacar várias histórias ao mesmo tempo. A ênfase visual deve acompanhar a Big Idea; se o primeiro ponto percebido não for o ponto que a comunicação precisa transmitir, revisar o visual antes de revisar o texto.
+
+Fazer o teste do primeiro olhar: afastar-se do material, voltar a ele e observar onde os olhos pousam primeiro e qual caminho de leitura aparece. Repetir o teste em uma versão assíncrona ou impressa, quando esse for o mecanismo de consumo. Se a leitura depender de o apresentador apontar o lugar certo, a página ainda não está suficientemente autoexplicativa.
 
 ### 7. Ensaiar a Entrega
 
@@ -169,6 +207,10 @@ Entrega boa combina objetividade com leitura da sala. Se a audiência travar em 
 - Existe uma Big Idea em uma frase.
 - O mecanismo principal de consumo foi definido.
 - A primeira página já responde "e daí?".
+- Existe uma tensão gerencial factual e relevante para a audiência.
+- A sequência tem ponto de partida, desenvolvimento e resolução.
+- O primeiro olhar coincide com a Big Idea e a ordem de leitura é deliberada.
+- A mensagem central é repetida com linguagem consistente no início, nas transições e no fechamento.
 - A mensagem separa fato, hipótese, impacto e ação.
 - O material mostra o que vai bem e o que precisa melhorar.
 - A recomendação é proporcional ao nível de certeza.
@@ -176,6 +218,19 @@ Entrega boa combina objetividade com leitura da sala. Se a audiência travar em 
 - A visualização escolhida reforça a mensagem principal.
 - O material funciona como handout se circular depois da reunião.
 - O tom foi ajustado para a audiência, não para quem fez a análise.
+
+## Gate integrado antes de circular
+
+Fazer uma última passagem pelas seis lições antes de enviar ou apresentar:
+
+1. **Contexto:** a audiência, a decisão e a Big Idea estão definidas.
+2. **Visual:** cada gráfico prova um ponto específico.
+3. **Ruído:** detalhe, ornamento e suporte que não mudam a leitura foram cortados.
+4. **Foco:** o primeiro olhar e a hierarquia visual correspondem à mensagem.
+5. **Design:** o material é legível, acessível, autoexplicativo e utilizável no mecanismo de consumo escolhido.
+6. **História:** existe tensão, desenvolvimento, resolução e ação ou monitoramento.
+
+Classificar o material como `circular`, `revisar` ou `aguardar validação da audiência`. Não circular uma peça apenas porque os números estão corretos; a peça também precisa permitir que a audiência entenda e aja.
 
 ## Sinais de Problema
 

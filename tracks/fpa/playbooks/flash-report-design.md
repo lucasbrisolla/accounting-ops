@@ -53,6 +53,19 @@ Antes de circular o flash report, fazer uma passada explícita de redução de r
 
 Regra prática: se a página provoca reação de "tem coisa demais aqui", ela ainda não está pronta.
 
+## Design para uso rápido
+
+O flash report deve deixar claro como agir sem depender de uma explicação paralela do autor:
+
+- título e comentário devem indicar o ponto principal e o próximo checkpoint
+- filtros, períodos, unidades e comparações precisam ser autoexplicativos
+- não usar apenas cor para marcar risco, melhora ou piora; combinar com texto, símbolo, posição ou rótulo
+- revisar contraste, tamanho de fonte, casas decimais, alinhamento e leitura em escala de cinza ou impressão
+- garantir que a exceção e a ação tenham prioridade visual sobre o detalhe de suporte
+- testar a página com alguém que não participou da análise e registrar onde a leitura trava
+
+Estética ajuda a criar confiança e paciência para ler, mas não substitui affordance, acessibilidade ou clareza de ação. Se a liderança rejeitar um formato novo, descobrir se o problema é falta de orientação, baixa legibilidade ou preferência legítima do mecanismo de consumo antes de voltar ao visual anterior.
+
 ## Categorias comuns
 
 - caixa e liquidez
@@ -70,6 +83,9 @@ Regra prática: se a página provoca reação de "tem coisa demais aqui", ela ai
 - o leitor entende o gráfico sem caça à legenda
 - a página tem ordem visual e espaço para respirar
 - o comentário fecha o “e daí?”
+- a ação, o checkpoint e o significado dos sinais são claros sem explicação oral
+- a página continua legível sem depender de distinções de cor
+- o formato foi testado com pelo menos um leitor que não construiu a análise
 
 ## Módulos relacionados
 

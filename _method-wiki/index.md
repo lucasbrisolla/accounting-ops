@@ -2,7 +2,7 @@
 
 ## Entradas principais
 
-- [README](README.md)
+- [README](Agent%20Products/accounting-ops/_method-wiki/README.md)
 - [Guide](guide.md)
 
 ## Áreas
