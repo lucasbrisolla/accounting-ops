@@ -41,7 +41,7 @@ class AccountingOpsDoctorTests(unittest.TestCase):
             touch(root, "CLAUDE.md", "`tracks/fpa/modes/fpa-learning.md`")
             touch(root, "PRODUCT_INDEX.md", "`tracks/accounting/modes/accounting-closing-and-quality.md`")
             touch(root, "README.md", "`templates/flash-report.md`")
-            touch(root, "INDEX.md", "`skills/number-to-management-story.md`")
+            touch(root, "INDEX.md", "`skills/number-to-management-story/SKILL.md`")
 
             result = module.check_accounting_ops(root)
 
@@ -64,7 +64,7 @@ class AccountingOpsDoctorTests(unittest.TestCase):
             self.assertIn("CLAUDE.md", result.missing)
             self.assertIn("HEALTH_CHECK.md", result.missing)
             self.assertIn("tracks/accounting/modes/accounting-closing-and-quality.md", result.missing)
-            self.assertIn("skills/prepare-journal-entry-support.md", result.missing)
+            self.assertIn("skills/prepare-journal-entry-support/SKILL.md", result.missing)
 
     def test_reports_broken_internal_references(self):
         module = load_module()
@@ -75,7 +75,7 @@ class AccountingOpsDoctorTests(unittest.TestCase):
             touch(root, "CLAUDE.md", "`tracks/fpa/modes/ghost-mode.md`")
             touch(root, "PRODUCT_INDEX.md", "[ghost](tracks/accounting/modes/ghost-mode.md)")
             touch(root, "README.md", "`templates/flash-report.md`")
-            touch(root, "INDEX.md", "`skills/number-to-management-story.md`")
+            touch(root, "INDEX.md", "`skills/number-to-management-story/SKILL.md`")
 
             result = module.check_accounting_ops(root)
 

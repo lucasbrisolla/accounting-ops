@@ -59,5 +59,5 @@ Isso não significa presumir fraude. Significa colocar o ônus da prova na expli
 
 - Workflow: `tracks/accounting/workflows/monthly-closing-and-number-quality.md`
 - Playbook: `tracks/accounting/playbooks/result-reading-and-number-quality.md`
-- Skill: `skills/cpc-impact-translation.md`
+- Skill: `skills/cpc-impact-translation/SKILL.md`
 - Heurística: `_method-wiki/heuristics/adversarial-financial-reporting.md`

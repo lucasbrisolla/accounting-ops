@@ -80,7 +80,7 @@ Perguntar:
 
 ### 5. Avaliar necessidade de lançamento
 
-Se houver ajuste necessário, usar `skills/prepare-journal-entry-support.md` para estruturar:
+Se houver ajuste necessário, usar `skills/prepare-journal-entry-support/SKILL.md` para estruturar:
 
 - débito e crédito
 - suporte

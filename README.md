@@ -72,6 +72,8 @@ accounting-ops/
 ├── README.md         # Visão geral do produto
 ├── INDEX.md          # Mapa rápido da estrutura
 ├── PRODUCT_INDEX.md  # Inventário navegável
+├── CONTEXT.md        # Glossário da arquitetura de conhecimento
+├── docs/adr/          # Decisões arquiteturais
 ├── PROMPT_INICIAL.md # Prompt sugerido para novas conversas
 ├── DATA_CONTRACT.md  # Fronteiras e camadas do produto
 ├── HEALTH_CHECK.md   # Diagnóstico operacional do produto

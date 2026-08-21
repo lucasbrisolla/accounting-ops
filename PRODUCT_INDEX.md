@@ -19,7 +19,7 @@ Use este arquivo quando precisar localizar rapidamente trilhas, modos, playbooks
 | `_method-wiki/concepts/inventory-and-valuation-foundations.md` | Revisar fundamentos de estoque, valuation, giro, obsolescência e margem. |
 | `_method-wiki/concepts/intangible-assets-and-goodwill-signals.md` | Interpretar goodwill, intangíveis e impairment como sinais gerenciais de alocação de capital. |
 | `_method-wiki/concepts/number-quality-foundations.md` | Revisar fundamentos de qualidade do número antes de discutir performance. |
-| `_method-wiki/concepts/operating-leverage-and-break-even.md` | Revisar contribuição, break-even e operating leverage com foco em risco operacional. |
+| `_method-wiki/concepts/operating-leverage-and-break-even.md` | Revisar CVP, contribuição, break-even, margem de segurança e sensibilidade de drivers com foco em risco operacional. |
 | `_method-wiki/concepts/pricing-strength-vs-operating-efficiency.md` | Separar força de preço de eficiência operacional. |
 | `_method-wiki/concepts/value-driver-framework.md` | Organizar a leitura integrada de performance por drivers de criação de valor. |
 | `_method-wiki/concepts/working-capital-foundations.md` | Revisar fundamentos de capital de giro: caixa, recebíveis, estoque e contas a pagar. |
@@ -127,10 +127,11 @@ Use este arquivo quando precisar localizar rapidamente trilhas, modos, playbooks
 
 | Arquivo | Quando usar |
 |---|---|
-| `skills/cpc-impact-translation.md` | Traduzir CPC/IFRS ou tratamento contábil para efeito no número gerencial. |
-| `skills/challenge-variance-explanation.md` | Questionar a robustez de uma explicação de variação. |
-| `skills/number-to-management-story.md` | Transformar análise já entendida em headline, mensagem executiva curta ou fala de reunião. |
-| `skills/prepare-journal-entry-support.md` | Preparar suporte de lançamento manual com racional, evidência, reversão e impacto gerencial. |
+| `skills/cpc-impact-translation/SKILL.md` | Traduzir CPC/IFRS ou tratamento contábil para efeito no número gerencial. |
+| `skills/challenge-variance-explanation/SKILL.md` | Questionar a robustez de uma explicação de variação. |
+| `skills/number-to-management-story/SKILL.md` | Transformar análise já entendida em headline, mensagem executiva curta ou fala de reunião. |
+| `skills/prepare-journal-entry-support/SKILL.md` | Preparar suporte de lançamento manual com racional, evidência, reversão e impacto gerencial. |
+| `skills/context-gap-audit/SKILL.md` | Auditar lacunas de contexto, contradições, oportunidades e capacidades documentadas mas não operacionalizadas. |
 
 ## Templates
 

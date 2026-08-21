@@ -171,7 +171,7 @@ Defina thresholds conforme materialidade da empresa, mas use a lógica:
 - Workflow: `tracks/accounting/workflows/account-reconciliation-review.md`
 - Workflow: `tracks/accounting/workflows/cash-management-and-bank-reconciliation.md`
 - Workflow: `tracks/accounting/workflows/working-capital-and-cash-conversion-review.md`
-- Skill: `skills/prepare-journal-entry-support.md`
+- Skill: `skills/prepare-journal-entry-support/SKILL.md`
 
 ## Fonte
 

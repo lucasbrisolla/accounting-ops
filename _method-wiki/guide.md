@@ -50,6 +50,7 @@ O que acontece aqui: revisar orçamento, atualizar expectativas e testar premiss
 **Base metodológica relevante:**
 
 - `concepts/budget-vs-forecast-vs-operating-plan.md`
+- `concepts/operating-leverage-and-break-even.md`
 - `checklists/financial-projection-quality-checklist.md`
 - `checklists/forecast-review-checklist.md`
 - `processes/forecasting-and-business-outlook.md`
@@ -157,6 +158,13 @@ O que acontece aqui: revisar intensidade de capital, uso de ativos, CAPEX, caixa
 2. Use `concepts/budget-vs-forecast-vs-operating-plan.md` para separar referência aprovada, plano de execução e visão atualizada.
 3. Se o orçamento depender de caixa, estoque ou giro, consulte `concepts/working-capital-foundations.md`.
 
+### Preciso testar sensibilidade de volume, preço ou custo
+
+1. Use `concepts/operating-leverage-and-break-even.md` para separar contribuição, custos fixos, mix, break-even e margem de segurança.
+2. Faça sensibilidade de uma variável por vez para ordenar exposição.
+3. Construa cenário integrado quando volume, preço, mix, capacidade ou custos mudarem juntos.
+4. Feche com indicador de monitoramento, gatilho e ação no workflow `tracks/fpa/workflows/integrated-budget-and-driver-review.md`.
+
 ### Preciso desenhar ou revisar KPIs e dashboards
 
 1. Comece por `processes/dashboard-and-kpi-design.md`.
@@ -226,7 +234,7 @@ O que acontece aqui: revisar intensidade de capital, uso de ativos, CAPEX, caixa
 
 1. Comece por `processes/account-reconciliation-and-open-items.md`.
 2. Use `tracks/accounting/workflows/account-reconciliation-review.md` para revisar saldo, fonte, diferença e open items.
-3. Se houver ajuste necessário, use `skills/prepare-journal-entry-support.md` para preparar suporte do lançamento.
+3. Se houver ajuste necessário, use `skills/prepare-journal-entry-support/SKILL.md` para preparar suporte do lançamento.
 4. Feche com status da conta: reconciliada, reconciliada com pendências monitoradas ou não reconciliada.
 
 ### Preciso revisar capital de longo prazo, CAPEX ou uso de ativos
@@ -259,4 +267,4 @@ O que acontece aqui: revisar intensidade de capital, uso de ativos, CAPEX, caixa
 
 1. Use `patterns/variance-analysis.md` para estruturar baseline, materialidade, quebra, driver, evidência, impacto e ação.
 2. Se a variação envolver fechamento, consulte `concepts/number-quality-foundations.md`.
-3. Se a explicação parecer frágil, use `skills/challenge-variance-explanation.md`.
+3. Se a explicação parecer frágil, use `skills/challenge-variance-explanation/SKILL.md`.

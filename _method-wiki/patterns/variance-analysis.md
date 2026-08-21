@@ -83,7 +83,7 @@ Ela precisa dizer:
 - Modo: `tracks/fpa/modes/variance-analysis.md`
 - Workflow: `tracks/accounting/workflows/standard-cost-and-industrial-variance-review.md`
 - Template: `templates/variance-analysis-one-pager.md`
-- Skill: `skills/challenge-variance-explanation.md`
+- Skill: `skills/challenge-variance-explanation/SKILL.md`
 
 ## Fonte adicional
 

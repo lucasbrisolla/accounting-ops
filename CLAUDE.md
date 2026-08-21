@@ -10,6 +10,7 @@ Agente para accounting, controladoria e FP&A com foco em entendimento do número
 ## Regra de Contexto
 
 - Use `domain.md` como mapa leve de consulta antes de operar.
+- Use `CONTEXT.md` para a linguagem da arquitetura de conhecimento do produto: skills, workflows, playbooks, conceitos, templates e roteamento.
 - Use `_method-wiki/` como base metodológica principal quando o problema pedir conceito estável, checklist, pattern ou processo.
 - Use `README.md` para visão geral do produto.
 - Use `PRODUCT_INDEX.md` apenas quando precisar de inventário operacional: method wiki, trilhas, workflows, playbooks, templates, books ou skills.
@@ -49,6 +50,7 @@ Depois, ative o módulo correspondente:
 | Desenhar ou revisar KPIs, dashboards, alertas ou indicadores de performance | `_method-wiki/processes/dashboard-and-kpi-design.md` |
 | Atualizar outlook, rolling forecast ou cenário base/upside/downside | `tracks/fpa/workflows/rolling-forecast-and-business-outlook.md` |
 | Revisar qualidade de projeção financeira, premissas, tendência, sensibilidade ou cenários | `_method-wiki/checklists/financial-projection-quality-checklist.md` + `_method-wiki/processes/forecasting-and-business-outlook.md` |
+| Revisar CVP, break-even, margem de segurança ou sensibilidade de volume, preço e custo | `_method-wiki/concepts/operating-leverage-and-break-even.md` + `tracks/fpa/workflows/integrated-budget-and-driver-review.md` |
 | Revisar projeção de longo prazo, guidance estratégico, tese de expansão ou cenário de transformação | `tracks/fpa/playbooks/long-term-projection-and-strategic-scenario-review.md` + `_method-wiki/processes/forecasting-and-business-outlook.md` + `_method-wiki/processes/long-term-capital-management.md` |
 | Revisar orçamento, drivers, premissas críticas e conexão com caixa, estoque e resultado | `tracks/fpa/workflows/integrated-budget-and-driver-review.md` |
 | Revisar crescimento de receita, preço, mix, market share ou drivers de margem bruta | `tracks/fpa/workflows/revenue-and-gross-margin-driver-review.md` + `_method-wiki/checklists/revenue-and-gross-margin-driver-checklist.md` |
@@ -63,8 +65,8 @@ Depois, ative o módulo correspondente:
 | Revisar margem por produto, cliente ou unidade sem distorção por alocações ruins | `tracks/fpa/playbooks/margin-reporting-without-bad-allocations.md` + `_method-wiki/patterns/gross-margin-bridge.md` |
 | Revisar capital de longo prazo, CAPEX, utilização de ativos ou caixa excedente | `_method-wiki/processes/long-term-capital-management.md` + `_method-wiki/concepts/capital-intensity-foundations.md` + `tracks/fpa/playbooks/asset-utilization-and-capital-discipline.md` |
 | Revisar se um investimento em capital entregou o business case | `_method-wiki/checklists/capital-investment-postaudit-checklist.md` + `_method-wiki/processes/long-term-capital-management.md` |
-| Transformar análise financeira em apresentação, report ou mensagem executiva | `tracks/fpa/playbooks/financial-information-communication.md` + `skills/number-to-management-story.md` |
-| Preparar suporte para lançamento manual, accrual, reclassificação, prepaid, depreciação ou ajuste de reconciliação | `skills/prepare-journal-entry-support.md` |
+| Transformar análise financeira em apresentação, report ou mensagem executiva | `tracks/fpa/playbooks/financial-information-communication.md` + `skills/number-to-management-story/SKILL.md` |
+| Preparar suporte para lançamento manual, accrual, reclassificação, prepaid, depreciação ou ajuste de reconciliação | `skills/prepare-journal-entry-support/SKILL.md` |
 | Explorar a trilha de accounting/controladoria | `tracks/accounting/README.md` + arquivo aplicável da trilha |
 
 Se o problema não se encaixar em nenhum workflow, use `domain.md` para localizar o módulo mínimo aplicável.
@@ -85,10 +87,11 @@ Use skills apenas quando a saída pedir a capacidade específica:
 
 | Necessidade | Skill |
 |---|---|
-| Traduzir efeito técnico-contábil para impacto gerencial | `skills/cpc-impact-translation.md` |
-| Pressionar uma explicação de variação antes da narrativa final | `skills/challenge-variance-explanation.md` |
-| Transformar leitura de número em headline, mensagem executiva curta ou fala de reunião | `skills/number-to-management-story.md` |
-| Preparar suporte de lançamento manual com racional, evidência, reversão e impacto | `skills/prepare-journal-entry-support.md` |
+| Traduzir efeito técnico-contábil para impacto gerencial | `skills/cpc-impact-translation/SKILL.md` |
+| Pressionar uma explicação de variação antes da narrativa final | `skills/challenge-variance-explanation/SKILL.md` |
+| Transformar leitura de número em headline, mensagem executiva curta ou fala de reunião | `skills/number-to-management-story/SKILL.md` |
+| Preparar suporte de lançamento manual com racional, evidência, reversão e impacto | `skills/prepare-journal-entry-support/SKILL.md` |
+| Auditar o corpus em busca de lacunas, contradições, oportunidades e capacidades ainda não operacionalizadas | `skills/context-gap-audit/SKILL.md` |
 
 ## Guardrails
 

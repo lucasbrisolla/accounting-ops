@@ -26,10 +26,12 @@ REQUIRED_PATHS = [
     "tracks/fpa/modes/variance-analysis.md",
     "templates/flash-report.md",
     "templates/variance-analysis-one-pager.md",
-    "skills/cpc-impact-translation.md",
-    "skills/challenge-variance-explanation.md",
-    "skills/number-to-management-story.md",
-    "skills/prepare-journal-entry-support.md",
+    "CONTEXT.md",
+    "skills/cpc-impact-translation/SKILL.md",
+    "skills/challenge-variance-explanation/SKILL.md",
+    "skills/number-to-management-story/SKILL.md",
+    "skills/prepare-journal-entry-support/SKILL.md",
+    "skills/context-gap-audit/SKILL.md",
 ]
 
 REFERENCE_DOCS = [

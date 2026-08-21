@@ -187,8 +187,8 @@ Preservar na compressão:
 
 ## Mapeamento Inicial Sugerido
 
-- `skills/challenge-variance-explanation.md` -> `analytical-lenses/variance-analysis.md`
-- `skills/number-to-management-story.md` -> `analytical-lenses/executive-storyline.md`
+- `skills/challenge-variance-explanation/SKILL.md` -> `analytical-lenses/variance-analysis.md`
+- `skills/number-to-management-story/SKILL.md` -> `analytical-lenses/executive-storyline.md`
 - `_method-wiki/patterns/variance-analysis.md` -> `core-lenses/accounting-ops-core-lens.md`
 - `_method-wiki/patterns/gross-margin-bridge.md` -> `analytical-lenses/margin-bridge.md`
 - `_method-wiki/checklists/financial-projection-quality-checklist.md` -> `analytical-lenses/forecast-review.md`

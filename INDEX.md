@@ -8,6 +8,8 @@ Mapa rápido do `accounting-ops`.
 - `README.md`: visão geral do produto
 - `PRODUCT_INDEX.md`: inventário operacional detalhado
 - `domain.md`: mapa conceitual central
+- `CONTEXT.md`: glossário da arquitetura de conhecimento
+- `docs/adr/`: decisões arquiteturais
 
 ## Camada central
 
@@ -62,10 +64,11 @@ Mapa rápido do `accounting-ops`.
 
 ## Skills
 
-- `skills/cpc-impact-translation.md`
-- `skills/challenge-variance-explanation.md`
-- `skills/number-to-management-story.md`
-- `skills/prepare-journal-entry-support.md`
+- `skills/cpc-impact-translation/SKILL.md`
+- `skills/challenge-variance-explanation/SKILL.md`
+- `skills/number-to-management-story/SKILL.md`
+- `skills/prepare-journal-entry-support/SKILL.md`
+- `skills/context-gap-audit/SKILL.md`
 
 ## Playbooks em destaque
 

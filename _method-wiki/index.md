@@ -27,7 +27,7 @@
 | [inventory-and-valuation-foundations.md](concepts/inventory-and-valuation-foundations.md) | Fundamentos de quantidade, método de custo, overhead, perda de valor e impacto em margem. | Bragg Cost Accounting Cap. 4 + workflow de estoque |
 | [intangible-assets-and-goodwill-signals.md](concepts/intangible-assets-and-goodwill-signals.md) | Sinais gerenciais para interpretar goodwill, intangíveis e impairment. | Jack Alexander Cap. 18 |
 | [number-quality-foundations.md](concepts/number-quality-foundations.md) | Fundamentos de qualidade do número antes da leitura de performance. | Workflow de fechamento |
-| [operating-leverage-and-break-even.md](concepts/operating-leverage-and-break-even.md) | Leitura prática de custo fixo, contribuição, break-even e operating leverage. | Jack Alexander Cap. 3 |
+| [operating-leverage-and-break-even.md](concepts/operating-leverage-and-break-even.md) | Leitura de CVP, custo fixo, contribuição, break-even, margem de segurança, sensibilidade e operating leverage. | Steven Bragg *Budgeting* Cap. 2 + Jack Alexander Cap. 3 |
 | [pricing-strength-vs-operating-efficiency.md](concepts/pricing-strength-vs-operating-efficiency.md) | Diferença entre margem sustentada por poder de preço e margem sustentada por eficiência. | Jack Alexander Cap. 15 |
 | [value-driver-framework.md](concepts/value-driver-framework.md) | Mapa sintético dos drivers de criação de valor para leitura integrada de performance. | Jack Alexander Cap. 7 |
 | [working-capital-foundations.md](concepts/working-capital-foundations.md) | Fundamentos de capital de giro: caixa, contas a receber, estoque e contas a pagar. | Workflows atuais |
