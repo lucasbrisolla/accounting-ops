@@ -1,116 +1,92 @@
 # accounting-ops
 
-Agente para accounting, controladoria e FP&A com foco em entendimento do número, performance e suporte à decisão.
-
-## O que é
-
-O `accounting-ops` existe para transformar número, contabilidade, auditoria e contexto operacional em raciocínio de negócio.
-
-Ele ajuda principalmente em temas como:
-
-- fechamento e qualidade do número
-- leitura gerencial de resultado
-- orçamento, forecast e cenários
-- análise de variações
-- margem e drivers de performance
-- custos industriais, estoque, WIP e custo padrão
-- capital de giro, caixa e reconciliações
+O `accounting-ops` ajuda você a transformar números, contabilidade, auditoria e contexto operacional em análise financeira e suporte à decisão. O produto cobre accounting, controladoria e planejamento e análise financeira (FP&A).
 
 ## Para quem é
 
-O `accounting-ops` é útil para:
+Use o produto se você:
 
-- profissionais em transição para controladoria, accounting ou FP&A
-- pessoas que querem aprender raciocínio financeiro com foco prático
-- quem precisa estruturar análises de número, variação, margem e forecast
-- quem quer transformar leitura financeira em mensagem executiva mais clara
+- está em transição para accounting, controladoria ou FP&A
+- quer aprender raciocínio financeiro com foco prático
+- precisa estruturar análises de número, variação, margem ou previsão
+- quer transformar uma análise financeira em mensagem executiva clara
 
 ## Como começar
 
-Se você está entendendo o produto:
-
-- leia `README.md`
-- use `INDEX.md` para um mapa rápido
-- use `PRODUCT_INDEX.md` se precisar localizar módulos específicos
-
-Se você é um agente ou ambiente agentic:
-
-- use `AGENTS.md` como porta de entrada compatível
-- use `CLAUDE.md` como instrução operacional autoritativa
-
-## Quick Start
-
-1. Abra este repositório no seu ambiente agentic de preferência.
-2. Leia `AGENTS.md` e depois `CLAUDE.md`.
-3. Defina o objetivo com clareza: fechamento, forecast, margem, capital de giro, narrativa executiva ou aprendizagem.
-4. Use `PRODUCT_INDEX.md` apenas se precisar localizar o módulo mais adequado.
-5. Trabalhe com o menor conjunto possível de arquivos, em vez de carregar a base inteira.
+1. Defina o objetivo: fechamento, previsão (forecast), margem, capital de giro, narrativa executiva ou aprendizagem.
+2. Para navegar pela estrutura, consulte [`INDEX.md`](INDEX.md).
+3. Para localizar um módulo específico, consulte [`PRODUCT_INDEX.md`](PRODUCT_INDEX.md).
+4. Se você trabalha em um ambiente com suporte a agentes, leia [`AGENTS.md`](AGENTS.md) e depois [`CLAUDE.md`](CLAUDE.md).
+5. Carregue apenas os arquivos necessários para o objetivo; não carregue a base inteira sem critério.
 
 ## Como funciona
 
 O fluxo básico do produto é:
 
-1. entender o problema
-2. escolher a trilha principal entre `tracks/accounting/` e `tracks/fpa/`
-3. carregar a base metodológica mínima em `_method-wiki/`
-4. aplicar o workflow, playbook, template ou skill mais adequado
-5. transformar a análise em explicação, mensagem executiva ou próximo passo
+1. Entenda o problema e defina a pergunta que precisa ser respondida.
+2. Escolha a trilha principal entre `tracks/accounting/` e `tracks/fpa/`.
+3. Carregue a base metodológica mínima em `_method-wiki/`.
+4. Aplique o workflow, playbook, template ou skill mais adequado.
+5. Transforme a análise em explicação, mensagem executiva ou próximo passo.
 
-## O que ele não é
+## O que o produto cobre
 
-- não é gerador de resposta decorada
-- não substitui experiência hands-on que a pessoa ainda não teve
-- não deveria maquiar gaps de dado, evidência ou experiência
+| Capacidade | O que faz |
+|---|---|
+| Fechamento e qualidade do número | Estrutura a revisão de saldos, consistência e leitura gerencial do resultado. |
+| Análise de variações | Explica desvios com base de comparação, fator, impacto e ação. |
+| Previsão, orçamento e cenários | Ajuda a revisar premissas, fatores, cenários e projeções. |
+| Margem e desempenho | Organiza a análise de preço, mix, custo e eficiência. |
+| Custos industriais | Revisa valoração de estoques, custeio por processo, produção em processo (WIP), custo padrão e variâncias industriais. |
+| Capital de giro | Apoia a análise de prazo médio de recebimento (DSO), estoque, contas a pagar e conversão de caixa. |
+| Narrativa executiva | Traduz análise financeira em mensagem clara para a gestão. |
+| Aprendizagem aplicada | Apoia o desenvolvimento de raciocínio financeiro com foco prático e conexão com o trabalho real. |
+
+## O que o produto não é
+
+- não gera respostas prontas sem raciocínio
+- não substitui experiência prática
+- não deve maquiar lacunas de dados, evidência ou experiência
 - não serve para carregar a base inteira sem critério
 
-## Project Structure
+## Estrutura do projeto
+
+Esta árvore mostra as principais camadas compartilhadas do produto:
 
 ```text
 accounting-ops/
-├── AGENTS.md         # Entry point compatível para agentes
+├── AGENTS.md         # Entrada para agentes
 ├── CLAUDE.md         # Instrução operacional autoritativa
 ├── README.md         # Visão geral do produto
 ├── INDEX.md          # Mapa rápido da estrutura
 ├── PRODUCT_INDEX.md  # Inventário navegável
 ├── CONTEXT.md        # Glossário da arquitetura de conhecimento
-├── docs/adr/          # Decisões arquiteturais
-├── PROMPT_INICIAL.md # Prompt sugerido para novas conversas
 ├── DATA_CONTRACT.md  # Fronteiras e camadas do produto
 ├── HEALTH_CHECK.md   # Diagnóstico operacional do produto
 ├── domain.md         # Mapa conceitual central
 ├── _method-wiki/     # Base metodológica viva
 ├── tracks/           # Trilhas por domínio
-├── templates/        # Artefatos reutilizáveis de análise e treino
+├── templates/        # Artefatos reutilizáveis
 ├── skills/           # Transformações atômicas
-├── context/          # Contexto pessoal, casos e mapas de aprendizagem
-├── books/            # Camada de ingestão e mapeamento de livros
-├── examples/         # Exemplos calibradores
-└── archive/          # Histórico de specs, planos e casos anteriores
+├── context/companies/ # Estrutura de contexto por empresa
+├── stateless/        # Adaptação para ambientes sem repositório
+├── scripts/          # Ferramentas auxiliares
+└── tests/            # Testes automatizados
 ```
 
-## Capacidades principais
-
-| Capacidade | O que faz |
-|---|---|
-| Fechamento e qualidade do número | Estrutura revisão de saldos, consistência e leitura gerencial do resultado |
-| Análise de variações | Explica desvio com baseline, driver, impacto e ação |
-| Forecast e orçamento | Ajuda a revisar premissas, drivers, cenários e outlook |
-| Margem e performance | Organiza leitura de preço, mix, custo e eficiência |
-| Custos industriais | Revisa inventory valuation, process costing, WIP, custo padrão e variâncias industriais |
-| Capital de giro | Apoia análise de DSO, estoque, payables e conversão de caixa |
-| Narrativa executiva | Traduz análise financeira em mensagem clara para gestão |
-| Aprendizagem aplicada | Apoia desenvolvimento de raciocínio financeiro com foco prático e conexão com o trabalho real |
+A versão pública mantém conteúdo genérico e não inclui contextos específicos de empresas, livros, exemplos privados ou arquivos históricos.
 
 ## Princípios do produto
 
-- separar fato, hipótese, impacto e ação
-- não maquiar gaps de experiência ou evidência
-- traduzir auditoria para linguagem de negócio sem inflar experiência hands-on
-- priorizar raciocínio prático sobre definição decorada
+- separe fato, hipótese, impacto e ação
+- não maquie lacunas de experiência ou evidência
+- traduza auditoria para a linguagem de negócio sem inflar a experiência prática
+- priorize raciocínio prático em vez de definições decoradas
 
-## Onde está o detalhe
+## Onde encontrar detalhes
 
-- `CLAUDE.md`: roteamento, guardrails e seleção de módulos
-- `PRODUCT_INDEX.md`: inventário navegável de workflows, playbooks, templates, skills, contextos e books
-- `HEALTH_CHECK.md`: como avaliar a saúde operacional do produto
-- `backlog local do produto: evolução planejada fora da versão pública`: evolução planejada do produto
+- [`CONTEXT.md`](CONTEXT.md): glossário da arquitetura de conhecimento
+- [`CLAUDE.md`](CLAUDE.md): roteamento, guardrails e seleção de módulos
+- [`PRODUCT_INDEX.md`](PRODUCT_INDEX.md): inventário navegável de workflows, playbooks, templates, skills e contextos
+- [`HEALTH_CHECK.md`](HEALTH_CHECK.md): como avaliar a saúde operacional do produto
+- O backlog de evolução do produto é mantido em um arquivo local, fora da versão pública.
