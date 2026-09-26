@@ -272,8 +272,8 @@ Classificar o material como `circular`, `revisar` ou `aguardar validação da au
 
 ## Módulos Relacionados
 
+- Contrato canônico de Variance: `skills/explain-variance/SKILL.md`
 - Skill: `skills/number-to-management-story/SKILL.md`
-- Template: `templates/variance-analysis-one-pager.md`
 - Pattern: `_method-wiki/patterns/variance-analysis.md`
 - Processo: `_method-wiki/processes/dashboard-and-kpi-design.md`
 - Workflow: `tracks/fpa/workflows/rolling-forecast-and-business-outlook.md`

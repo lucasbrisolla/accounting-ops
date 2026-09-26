@@ -38,7 +38,7 @@ context/companies/<slug-da-empresa>/
   raw/
   library/
   distillations/
-  promotions/
+  promotions/*.md
   enterprise-context.md
   evidence-bundle.md
   promotion-notes.md
@@ -47,12 +47,14 @@ context/companies/<slug-da-empresa>/
 ## Pastas especiais
 
 - `_template/`: estrutura-modelo para novas companhias
-- `company-slug/`: exemplo pronto para duplicar ou renomear ao iniciar a primeira destilação real
 
 ## Próximo uso recomendado
 
 1. Escolher a companhia comparável.
-2. Renomear ou copiar `company-slug/` para o `slug` real.
+2. Copiar `_template/` para o `slug` real da companhia.
 3. Preencher `source-manifest.md`.
 4. Posicionar a primeira fonte em `raw/`.
 5. Criar a leitura operacional em `enterprise-context.md`.
+6. Registrar candidatos metodológicos com `scripts/promotion_pipeline.py` em
+   `promotions/`; manter fatos específicos na camada situada até o teste de
+   generalização.

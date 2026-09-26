@@ -33,7 +33,7 @@ O foco aqui não é revisar técnica financeira em si. É revisar a qualidade do
 | Contexto empresarial | `context/companies/` separa evidência situada, contexto de companhia e candidatos de promoção metodológica? |  |  |
 | Stateless | `stateless/` contém adaptações úteis para ambientes sem memória persistente sem virar taxonomia aspiracional demais? |  |  |
 | Books | `books/` continuam como camada de ingestão e não como desvio do fluxo principal? |  |  |
-| Pipeline editorial | A camada `books/` alimenta a base viva por promoção seletiva, sem competir com `_method-wiki/`? |  |  |
+| Pipeline editorial | A camada `books/` e o contexto empresarial usam o mesmo registro de promoção, sem competir com `_method-wiki/`? |  |  |
 | Evolução | O produto consegue crescer sem concentrar tudo no `CLAUDE.md`? |  |  |
 
 ## Check Operacional
@@ -66,7 +66,7 @@ Se dois ou mais itens abaixo aparecerem, o `accounting-ops` merece refactor prio
 - a mesma regra aparece em `README.md`, `CLAUDE.md` e `_method-wiki/` sem fonte clara
 - `books/` começaram a competir com o fluxo principal em vez de alimentar a base viva
 - `context/companies/` começou a promover aprendizados situados para método geral sem registro em matriz ou nota de promoção
-- `stateless/` passou a crescer como inventário aspiracional sem artefatos realmente usados
+- `stateless/` passou a divergir das fontes mestras ou a manter artefatos sem fonte registrada
 - a experiência de auditoria está sendo vendida como experiência direta de controladoria ou FP&A
 
 ## Estado Sugerido Hoje
@@ -77,8 +77,8 @@ Se dois ou mais itens abaixo aparecerem, o `accounting-ops` merece refactor prio
 | Routing por trilha | `forte` | evitar expandir demais o `CLAUDE.md` |
 | Base metodológica | `forte` | continuar promovendo conteúdo maduro para `_method-wiki/` |
 | Contexto, companies e books | `utilizável` | manter a fronteira entre evidência situada, promoção metodológica e ingestão editorial |
-| Stateless | `utilizável` | decidir quais artefatos são MVP real e quais ainda são taxonomia aspiracional |
-| Verificabilidade | `utilizável` | manter o `doctor` calibrado por camada e evoluir checks mais próximos dos outputs canônicos |
+| Stateless | `confiável` | validar o pacote em uso real e manter a derivação registrada em `stateless/adaptation/README.md` |
+| Verificabilidade | `utilizável` | manter o `Product Contract` versionado, o `doctor` calibrado por camada e os checks próximos dos outputs canônicos |
 
 ## Ritual De Revisão
 
@@ -89,11 +89,18 @@ Use este arquivo:
 3. ao ampliar a trilha `accounting` ou `fpa`
 4. quando o produto começar a parecer "inteligente demais cedo demais"
 5. antes de replicar padrões deste agente para outros produtos
-6. junto com `scripts/accounting_ops_doctor.py`, quando houver mudança estrutural relevante
+6. junto com `scripts/accounting_ops_product_contract.py` e `scripts/accounting_ops_doctor.py`, quando houver mudança estrutural relevante
 
 ## Regra De Calibração Do Doctor
 
 O `doctor` deve medir fronteiras atuais do produto, não fantasmas de versões antigas.
+
+- `scripts/accounting_ops_product_contract.py` é a fonte da política; o
+  `doctor` não deve reintroduzir listas, regex ou regras de camada na saída.
+- Findings devem preservar categoria, alvo, mensagem e gravidade para que um
+  caller possa renderizar a decisão sem reconstruir a regra.
+- `scripts/promotion_pipeline.py` é o formato comum; o `Product Contract` deve
+  rejeitar registros ausentes, incoerentes ou fora da camada de origem.
 
 - nomes de empresas são esperados em `context/companies/`
 - lentes específicas de companhia são esperadas em `stateless/company-packs/`

@@ -1,5 +1,8 @@
 # Manual Geral de Análise
 
+> Fontes mestras: `CLAUDE.md`, `README.md` e `HEALTH_CHECK.md`.
+> Revisão do adapter: `2026-09-26`.
+
 ## Papel deste documento
 
 Este documento orienta o comportamento de um assistente stateless ao analisar materiais de negócio, finanças, performance, apresentações e narrativas executivas.

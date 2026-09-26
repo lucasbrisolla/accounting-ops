@@ -2,164 +2,50 @@
 from __future__ import annotations
 
 import argparse
-import re
-from dataclasses import dataclass
 from pathlib import Path
+import sys
 
 
-REQUIRED_PATHS = [
-    "README.md",
-    "AGENTS.md",
-    "CLAUDE.md",
-    "DATA_CONTRACT.md",
-    "PRODUCT_INDEX.md",
-    "HEALTH_CHECK.md",
-    "domain.md",
-    "_method-wiki/README.md",
-    "_method-wiki/index.md",
-    "_method-wiki/guide.md",
-    "tracks/accounting/README.md",
-    "tracks/accounting/modes/accounting-closing-and-quality.md",
-    "tracks/accounting/modes/accounting-technical-application.md",
-    "tracks/fpa/README.md",
-    "tracks/fpa/modes/fpa-learning.md",
-    "tracks/fpa/modes/variance-analysis.md",
-    "templates/flash-report.md",
-    "templates/variance-analysis-one-pager.md",
-    "CONTEXT.md",
-    "skills/cpc-impact-translation/SKILL.md",
-    "skills/challenge-variance-explanation/SKILL.md",
-    "skills/number-to-management-story/SKILL.md",
-    "skills/prepare-journal-entry-support/SKILL.md",
-    "skills/context-gap-audit/SKILL.md",
-]
+PRODUCT_ROOT = Path(__file__).resolve().parents[1]
+if str(PRODUCT_ROOT) not in sys.path:
+    sys.path.insert(0, str(PRODUCT_ROOT))
 
-REFERENCE_DOCS = [
-    "CLAUDE.md",
-    "PRODUCT_INDEX.md",
-    "README.md",
-    "INDEX.md",
-]
-
-GLOBAL_SURFACE_DRIFT_TERMS = [
-    "entrevista",
-]
-
-LAYERED_SURFACE_DRIFT_TERMS = {
-    "Belgo": [
-        "context/companies/",
-        "stateless/company-packs/",
-    ],
-    "Bekaert": [
-        "context/companies/",
-        "stateless/company-packs/",
-    ],
-}
-
-BACKTICK_PATH_PATTERN = re.compile(
-    r"`(?P<path>(?:_method-wiki|tracks|templates|skills|books|context|examples|archive)/[^`\n]+?\.md)`"
+from scripts.accounting_ops_product_contract import (
+    ACCOUNTING_OPS_PRODUCT_CONTRACT,
+    DEFAULT_PRODUCT_CONTRACT,
+    FindingCategory,
+    ProductContractReport,
+    check_broken_references,
+    check_product_contract,
+    check_surface_drift,
+    extract_doc_references,
+    normalize_markdown_target,
 )
-MARKDOWN_LINK_PATTERN = re.compile(r"\[[^\]]+\]\((?P<path>[^)]+)\)")
 
 
-@dataclass(frozen=True)
-class DoctorResult:
-    root: Path
-    checked: list[str]
-    missing: list[str]
-    broken_references: list[str]
-    surface_drift: list[str]
-
-    @property
-    def ok(self) -> bool:
-        return not (self.missing or self.broken_references or self.surface_drift)
+# Aliases de compatibilidade para callers que importavam a superfície antiga.
+# A política continua definida exclusivamente no Product Contract.
+REQUIRED_PATHS = list(DEFAULT_PRODUCT_CONTRACT.required_paths)
+REFERENCE_DOCS = list(DEFAULT_PRODUCT_CONTRACT.canonical_reference_documents)
+GLOBAL_SURFACE_DRIFT_TERMS = [
+    rule.term
+    for rule in DEFAULT_PRODUCT_CONTRACT.drift_rules
+    if not rule.allowed_prefixes
+]
+LAYERED_SURFACE_DRIFT_TERMS = {
+    rule.term: list(rule.allowed_prefixes)
+    for rule in DEFAULT_PRODUCT_CONTRACT.drift_rules
+    if rule.allowed_prefixes
+}
+DoctorResult = ProductContractReport
 
 
 def default_root() -> Path:
     return Path(__file__).resolve().parents[1]
 
 
-def normalize_markdown_target(reference: str) -> str | None:
-    target = reference.strip()
-    if not target:
-        return None
-    target = target.split("#", 1)[0].split("?", 1)[0].strip()
-    if not target or target.startswith(("http://", "https://", "mailto:")):
-        return None
-    if target.startswith("</") and target.endswith(">"):
-        target = target[2:-1]
-    elif target.startswith("<") and target.endswith(">"):
-        target = target[1:-1]
-
-    vault_anchor = "/home/lucas/Dropbox/Obsidian Vault/Agent Products/github/accounting-ops-public/"
-    if target.startswith(vault_anchor):
-        target = target.removeprefix(vault_anchor)
-
-    if target.startswith(("_method-wiki/", "tracks/", "templates/", "skills/", "books/", "context/", "examples/", "archive/")):
-        return target
-    return None
-
-
-def extract_doc_references(content: str) -> list[str]:
-    references: list[str] = []
-    for match in BACKTICK_PATH_PATTERN.finditer(content):
-        references.append(match.group("path"))
-    for match in MARKDOWN_LINK_PATTERN.finditer(content):
-        normalized = normalize_markdown_target(match.group("path"))
-        if normalized is not None:
-            references.append(normalized)
-    return sorted(set(references))
-
-
-def check_broken_references(root: Path) -> list[str]:
-    broken: list[str] = []
-    for doc in REFERENCE_DOCS:
-        doc_path = root / doc
-        if not doc_path.exists():
-            continue
-        content = doc_path.read_text(encoding="utf-8")
-        for reference in extract_doc_references(content):
-            if not (root / reference).exists():
-                broken.append(f"{doc} -> {reference}")
-    return sorted(set(broken))
-
-
-def check_surface_drift(root: Path) -> list[str]:
-    drift: list[str] = []
-    for path in root.rglob("*.md"):
-        if "archive" in path.parts:
-            continue
-        try:
-            relative = path.relative_to(root).as_posix()
-        except ValueError:
-            relative = str(path)
-        content = path.read_text(encoding="utf-8")
-        for term in GLOBAL_SURFACE_DRIFT_TERMS:
-            if term in content:
-                drift.append(f"{relative} -> {term}")
-        for term, allowed_prefixes in LAYERED_SURFACE_DRIFT_TERMS.items():
-            if term not in content:
-                continue
-            if any(relative.startswith(prefix) for prefix in allowed_prefixes):
-                continue
-            drift.append(f"{relative} -> {term}")
-    return sorted(set(drift))
-
-
 def check_accounting_ops(root: Path | None = None) -> DoctorResult:
-    product_root = (root or default_root()).resolve()
-    missing = [
-        relative_path
-        for relative_path in REQUIRED_PATHS
-        if not (product_root / relative_path).exists()
-    ]
-    return DoctorResult(
-        root=product_root,
-        checked=list(REQUIRED_PATHS),
-        missing=missing,
-        broken_references=check_broken_references(product_root),
-        surface_drift=check_surface_drift(product_root),
-    )
+    return check_product_contract(root, contract=ACCOUNTING_OPS_PRODUCT_CONTRACT)
 
 
 def render_result(result: DoctorResult) -> str:
@@ -171,6 +57,8 @@ def render_result(result: DoctorResult) -> str:
         f"Missing: {len(result.missing)}",
         f"Broken references: {len(result.broken_references)}",
         f"Surface drift: {len(result.surface_drift)}",
+        f"Promotion findings: {len(result.findings_for(FindingCategory.PROMOTION))}",
+        f"Promotion records: {len(result.promotion_records)}",
         "",
     ]
 
@@ -181,19 +69,25 @@ def render_result(result: DoctorResult) -> str:
     lines.append("Status: FAIL")
     lines.append("")
 
-    if result.missing:
-        lines.append("Missing required paths:")
-        lines.extend(f"- {relative_path}" for relative_path in result.missing)
+    labels = {
+        FindingCategory.STRUCTURE: "Missing required paths",
+        FindingCategory.REFERENCE: "Broken references",
+        FindingCategory.SURFACE_DRIFT: "Surface drift",
+        FindingCategory.PROMOTION: "Promotion findings",
+    }
+    for category in FindingCategory:
+        findings = result.findings_for(category)
+        if not findings:
+            continue
+        lines.append(labels.get(category, f"Findings: {category.value}"))
+        lines.extend(
+            f"- {finding.target} [{finding.severity.value}]: {finding.message}"
+            for finding in findings
+        )
         lines.append("")
 
-    if result.broken_references:
-        lines.append("Broken references:")
-        lines.extend(f"- {reference}" for reference in result.broken_references)
-        lines.append("")
-
-    if result.surface_drift:
-        lines.append("Surface drift:")
-        lines.extend(f"- {item}" for item in result.surface_drift)
+    if lines[-1] == "":
+        lines.pop()
 
     return "\n".join(lines)
 

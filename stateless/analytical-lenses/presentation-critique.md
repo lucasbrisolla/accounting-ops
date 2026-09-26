@@ -1,5 +1,8 @@
 # Presentation Critique
 
+> Fontes mestras: `tracks/fpa/playbooks/financial-information-communication.md` e `_method-wiki/processes/management-reporting-and-report-governance.md`.
+> Revisão do adapter: `2026-09-26`.
+
 ## Quando usar
 
 Use esta lente quando o material principal for apresentação, deck, report visual, sumário executivo ou qualquer peça que precise comunicar análise para gestão.

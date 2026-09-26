@@ -7,7 +7,6 @@ Fronteira de dados do `accounting-ops`.
 Pode conter contexto pessoal, empresas específicas, casos reais, fontes, evidências e exercícios do mantenedor.
 
 - `context/`
-- `examples/`
 
 ### Subcamadas recomendadas em `context/`
 
@@ -33,6 +32,7 @@ Camada de método e operação reutilizável do agente.
 - `skills/`
 - `tracks/`
 - `templates/`
+- `stateless/` como camada derivada de adaptação para ambientes sem repositório
 
 ## Camada de Ingestão
 
@@ -58,8 +58,21 @@ Informação específica de uma empresa só deve subir para a camada de sistema 
 
 ## Regra
 
-Personalização do mantenedor, empresas específicas e casos reais devem ficar em `context/`, `examples/` ou arquivos de preparação específicos.
+Personalização do mantenedor, empresas específicas e casos reais devem ficar em `context/` ou em arquivos de preparação específicos.
 
 Conceitos gerais de accounting, controladoria, FP&A, método operacional, templates reutilizáveis e regras de roteamento ficam na camada de sistema.
 
 Não gravar contexto empresarial específico em `_method-wiki/` ou `tracks/` sem decisão explícita de promoção.
+
+### Registro comum de promoção
+
+Decisões editoriais persistidas usam o mesmo contrato em:
+
+- `books/*/promotions/*.md` para candidatos originados em livros;
+- `context/companies/*/promotions/*.md` para candidatos originados em contexto empresarial.
+
+Cada registro preserva origem, tipo de origem, candidato, destino provável,
+justificativa, confiança, evidência, próximo teste ou justificativa explícita
+para não testar, conteúdo não promovido e status editorial. Um registro de
+contexto empresarial só pode usar o status `promoted` quando também declarar
+como o achado foi generalizado; até lá, permanece na camada situada.

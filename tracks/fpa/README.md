@@ -14,12 +14,14 @@ Concentrar conteúdos de:
 
 - `modes/fpa-learning.md`
 - `modes/variance-analysis.md`
+- `workflows/predictive-and-analytical-model-review.md`
 - `workflows/rolling-forecast-and-business-outlook.md`
 - `workflows/integrated-budget-and-driver-review.md`
 - `workflows/revenue-and-gross-margin-driver-review.md`
 - `workflows/gross-margin-bridge.md`
 - `playbooks/financial-information-communication.md`
 - `playbooks/creating-context-for-performance-measures.md`
+- `playbooks/fpa-capability-assessment-and-improvement.md`
 - `playbooks/flash-report-design.md`
 - `playbooks/margin-reporting-without-bad-allocations.md`
 - `playbooks/pricing-strength-vs-operating-efficiency.md`

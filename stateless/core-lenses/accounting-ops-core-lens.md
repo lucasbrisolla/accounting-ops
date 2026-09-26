@@ -1,5 +1,8 @@
 # Accounting Ops Core Lens
 
+> Fontes mestras: `domain.md`, `_method-wiki/patterns/variance-analysis.md` e `skills/explain-variance/SKILL.md`.
+> Revisão do adapter: `2026-09-26`.
+
 ## Papel deste documento
 
 Este documento condensa a lógica central do `accounting-ops` para uso em ferramentas stateless.

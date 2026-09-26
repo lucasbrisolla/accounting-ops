@@ -163,4 +163,5 @@ Toda projeção vai estar errada em algum grau. O objetivo não é fingir precis
 - Conceito: `concepts/budget-vs-forecast-vs-operating-plan.md`
 - Workflow: `tracks/fpa/workflows/rolling-forecast-and-business-outlook.md`
 - Workflow: `tracks/fpa/workflows/integrated-budget-and-driver-review.md`
+- Workflow: `tracks/fpa/workflows/predictive-and-analytical-model-review.md`
 - Playbook: `tracks/fpa/playbooks/financial-information-communication.md`

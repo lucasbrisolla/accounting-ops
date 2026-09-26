@@ -1,8 +1,30 @@
 # Índice do Produto
 
-Inventário operacional sob demanda do `accounting-ops`.
+Catálogo operacional único do `accounting-ops`.
 
 Use este arquivo quando precisar localizar rapidamente trilhas, modos, playbooks, templates e exemplos.
+
+## Entrada e arquitetura
+
+| Arquivo | Papel |
+|---|---|
+| `README.md` | Visão geral, capacidades, limites e ponto de partida humano. |
+| `CLAUDE.md` | Roteamento operacional e seleção de módulos para o agente. |
+| `domain.md` | Mapa conceitual central do produto. |
+| `CONTEXT.md` | Glossário da arquitetura de conhecimento. |
+| `DATA_CONTRACT.md` | Fronteiras entre contexto situado, método e ingestão. |
+| `HEALTH_CHECK.md` | Critérios para verificar a saúde estrutural e operacional. |
+| `stateless/README.md` | Interface do pacote para ambientes sem repositório. |
+
+## Governança do produto
+
+| Arquivo | Quando usar |
+|---|---|
+| `scripts/accounting_ops_product_contract.py` | Consultar ou alterar a política versionada de camadas, caminhos esperados, referências, surface drift e critérios de promoção. |
+| `scripts/accounting_ops_doctor.py` | Executar a verificação estrutural e renderizar findings do Product Contract em CLI. |
+| `scripts/promotion_pipeline.py` | Criar, persistir e carregar decisões editoriais comuns para livros e contexto empresarial. |
+| `tests/test_accounting_ops_product_contract.py` | Verificar a costura pública do contrato com fixtures de estrutura, referências e conteúdo situado. |
+| `tests/test_promotion_pipeline.py` | Verificar invariantes, round-trip e limites de generalização das decisões de promoção. |
 
 ## Method Wiki
 
@@ -36,7 +58,7 @@ Use este arquivo quando precisar localizar rapidamente trilhas, modos, playbooks
 | `_method-wiki/patterns/goal-to-driver-cascade.md` | Descer de objetivo estratégico até driver, KPI, meta e accountability. |
 | `_method-wiki/patterns/performance-tree.md` | Decompor um KPI em drivers subordinados e comunicar causa, impacto e ação. |
 | `_method-wiki/patterns/responsibility-reporting.md` | Ligar linha reportada, nível de agregação e owner do número. |
-| `_method-wiki/patterns/variance-analysis.md` | Estruturar explicação de variação com baseline, driver, evidência, impacto e ação. |
+| `_method-wiki/patterns/variance-analysis.md` | Oferecer decomposições complementares para Variance; o contrato canônico está em `skills/explain-variance/SKILL.md`. |
 | `_method-wiki/processes/account-reconciliation-and-open-items.md` | Revisar conciliações contábeis, diferenças, open items e necessidade de ajuste. |
 | `_method-wiki/processes/dashboard-and-kpi-design.md` | Desenhar dashboards, KPIs, alertas e indicadores de performance ligados a drivers e decisão. |
 | `_method-wiki/processes/forecasting-and-business-outlook.md` | Navegar o processo de forecast, business outlook e cenários. |
@@ -57,7 +79,7 @@ Use este arquivo quando precisar localizar rapidamente trilhas, modos, playbooks
 | Arquivo | Quando usar |
 |---|---|
 | `tracks/fpa/modes/fpa-learning.md` | Explicar conceitos, desenvolver base e construir raciocínio sistêmico de FP&A. |
-| `tracks/fpa/modes/variance-analysis.md` | Analisar orçado vs. realizado, forecast vs. actual e bridges de variação. |
+| `tracks/fpa/modes/variance-analysis.md` | Aplicar a lente de FP&A depois da decisão canônica em orçado vs. realizado, forecast vs. actual e bridges de variação. |
 
 ## Playbooks da trilha FP&A
 
@@ -65,6 +87,7 @@ Use este arquivo quando precisar localizar rapidamente trilhas, modos, playbooks
 |---|---|
 | `tracks/fpa/playbooks/financial-information-communication.md` | Transformar análise financeira em mensagem executiva, apresentação ou report de gestão. |
 | `tracks/fpa/playbooks/creating-context-for-performance-measures.md` | Criar contexto antes de escolher métricas, metas ou dashboards. |
+| `tracks/fpa/playbooks/fpa-capability-assessment-and-improvement.md` | Avaliar capacidade de FP&A, racionalizar reports e modelos e montar plano de melhoria. |
 | `tracks/fpa/playbooks/flash-report-design.md` | Desenhar ou criticar flash reports curtos e acionáveis. |
 | `tracks/fpa/playbooks/margin-reporting-without-bad-allocations.md` | Desenhar reports de margem sem distorção por rateios ruins. |
 | `tracks/fpa/playbooks/pricing-strength-vs-operating-efficiency.md` | Diferenciar margem forte por poder de preço de margem forte por eficiência operacional real. |
@@ -77,6 +100,7 @@ Use este arquivo quando precisar localizar rapidamente trilhas, modos, playbooks
 
 | Arquivo | Quando usar |
 |---|---|
+| `tracks/fpa/workflows/predictive-and-analytical-model-review.md` | Desenvolver e revisar modelos analíticos com objetivo, arquitetura, ownership, validação, cenários, resumo e governança de reuso. |
 | `tracks/fpa/workflows/rolling-forecast-and-business-outlook.md` | Atualizar forecast, revisar premissas, estruturar cenário base/upside/downside e fechar mensagem gerencial do outlook. |
 | `tracks/fpa/workflows/integrated-budget-and-driver-review.md` | Revisar orçamento com foco em drivers, testar premissas críticas e conectar resultado, caixa, estoque e operação. |
 | `tracks/fpa/workflows/revenue-and-gross-margin-driver-review.md` | Revisar crescimento de receita, market share, preço, mix, descontos e drivers de margem bruta. |
@@ -108,6 +132,27 @@ Use este arquivo quando precisar localizar rapidamente trilhas, modos, playbooks
 | `tracks/accounting/workflows/process-costing-and-wip-review.md` | Revisar produção contínua, unidades equivalentes, WIP e distribuição de custos entre processos. |
 | `tracks/accounting/workflows/standard-cost-and-industrial-variance-review.md` | Revisar custo padrão, variâncias industriais e impactos em estoque, CPV e margem. |
 
+## Contexto
+
+| Arquivo | Quando usar |
+|---|---|
+| `context/companies/README.md` | Entender a regra de camada e o fluxo de contexto específico por companhia. |
+| `context/companies/company-slug/` | Usar o scaffold genérico de uma companhia, sem publicar contexto real de empresas. |
+
+## Camada stateless
+
+| Arquivo | Quando usar |
+|---|---|
+| [`stateless/README.md`](stateless/README.md) | Entender a interface, o pacote MVP e as regras de compressão para ambientes sem repositório. |
+| [`stateless/adaptation/README.md`](stateless/adaptation/README.md) | Consultar fontes mestras, rastreabilidade, atualização e critérios de aceitação do adapter. |
+| [`stateless/operating-manuals/general-analysis-manual.md`](stateless/operating-manuals/general-analysis-manual.md) | Analisar materiais sem memória persistente. |
+| [`stateless/core-lenses/accounting-ops-core-lens.md`](stateless/core-lenses/accounting-ops-core-lens.md) | Aplicar a lente central de número, performance e decisão. |
+| [`stateless/analytical-lenses/variance-analysis.md`](stateless/analytical-lenses/variance-analysis.md) | Explicar ou desafiar uma variação em ambiente stateless. |
+| [`stateless/analytical-lenses/forecast-review.md`](stateless/analytical-lenses/forecast-review.md) | Revisar forecast, outlook, premissas e cenários. |
+| [`stateless/analytical-lenses/executive-storyline.md`](stateless/analytical-lenses/executive-storyline.md) | Transformar análise entendida em narrativa executiva. |
+| [`stateless/output-modes/executive-summary-mode.md`](stateless/output-modes/executive-summary-mode.md) | Entregar uma síntese curta, verificável e acionável. |
+| [`stateless/prompt-templates/analyze-material-base.md`](stateless/prompt-templates/analyze-material-base.md) | Iniciar uma análise com dois anexos e um prompt curto. |
+
 ## Books
 
 | Arquivo | Quando usar |
@@ -127,7 +172,10 @@ Use este arquivo quando precisar localizar rapidamente trilhas, modos, playbooks
 
 | Arquivo | Quando usar |
 |---|---|
+| `skills/financial-investigation/SKILL.md` | Transformar sinais, anomalias, afirmações ou dúvidas em investigação baseada em evidências, testes, impacto e ação. |
+| `skills/explain-variance/SKILL.md` | Módulo canônico de Variance; constrói a decisão antes de qualquer formato ou challenge. |
 | `skills/cpc-impact-translation/SKILL.md` | Traduzir CPC/IFRS ou tratamento contábil para efeito no número gerencial. |
+| `skills/diagnose-industrial-costs/SKILL.md` | Classificar uma pergunta ampla de custos industriais, explicitar evidências e encaminhar o workflow adequado. |
 | `skills/challenge-variance-explanation/SKILL.md` | Questionar a robustez de uma explicação de variação. |
 | `skills/number-to-management-story/SKILL.md` | Transformar análise já entendida em headline, mensagem executiva curta ou fala de reunião. |
 | `skills/prepare-journal-entry-support/SKILL.md` | Preparar suporte de lançamento manual com racional, evidência, reversão e impacto gerencial. |
@@ -137,5 +185,4 @@ Use este arquivo quando precisar localizar rapidamente trilhas, modos, playbooks
 
 | Arquivo | Quando usar |
 |---|---|
-| `templates/variance-analysis-one-pager.md` | Criar uma explicação executiva de variação. |
 | `templates/flash-report.md` | Criar um flash report curto com métricas críticas, exceções e ação. |

@@ -78,6 +78,27 @@ Separar a análise em três perguntas:
 
 Essa separação evita atribuir ao FIFO um problema de WIP, ou à eficiência um problema de padrão desatualizado.
 
+### Diagnóstico de custos industriais
+
+Quando a pergunta ainda é ampla, classificar primeiro a natureza do problema e
+só então escolher o workflow. Uma pergunta pode ter uma camada primária e uma
+secundária quando a evidência atravessar mais de uma parte do custo:
+
+| Camada | Pergunta de diagnóstico | Workflow de aprofundamento |
+|---|---|---|
+| Quantidade | O saldo físico, o rollforward ou o cut-off fecham? | Estoque e valuation |
+| Valuation | O método de custo, as camadas e os custos incorporados estão corretos? | Estoque e valuation |
+| WIP | O fluxo, as unidades equivalentes e o percentual de conclusão são defensáveis? | Process costing e WIP |
+| Padrão | O custo padrão é atual, atingível e comparável ao custo real? | Custo padrão e variâncias industriais |
+| Absorção | Volume, capacidade e overhead estão absorvendo o custo de forma econômica? | Custo padrão e variâncias industriais |
+| Eficiência | O consumo, as horas ou a produtividade divergem do padrão por causa operacional? | Custo padrão e variâncias industriais |
+| Perda | Scrap, refugo, retrabalho ou desperdício explicam o custo e têm recorrência? | Custo padrão e variâncias industriais |
+| Obsolescência | Giro, demanda, dano ou valor realizável exigem perda de valor? | Estoque e valuation |
+
+O diagnóstico deve separar evidência que sustenta a classificação de dados que
+ainda faltam. Quantidade não reconciliada impede concluir valuation. Absorção
+favorável, por si só, não prova melhoria econômica.
+
 ## Ponte Auditoria para FP&A
 
 Experiência de auditoria ajuda quando vira raciocínio de negócio:

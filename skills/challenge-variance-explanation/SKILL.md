@@ -3,11 +3,13 @@ name: challenge-variance-explanation
 description: Pressionar uma explicação de variação antes que ela vire narrativa oficial. Usar quando a causa, o driver, a matemática ou a separação entre efeito operacional, contábil e não recorrente precisar ser testada.
 ---
 
-# Desafiar explicação de variação
+# Desafiar explicação de Variance
 
 ## Objetivo
 
-Submeter uma explicação de variação a pressão lógica antes que ela vire narrativa oficial.
+Submeter uma explicação canônica de `Variance` a pressão lógica antes que ela vire narrativa oficial.
+
+Este documento é um `adapter` do módulo [`explain-variance`](../explain-variance/SKILL.md). Ele não recalcula a variação nem cria uma segunda regra para baseline, materialidade, driver, evidência, impacto ou ação.
 
 ## Usar quando
 
@@ -22,59 +24,74 @@ Submeter uma explicação de variação a pressão lógica antes que ela vire na
 - quando ainda não existe explicação mínima para ser desafiada
 - quando o usuário só quer um resumo, não um challenge
 
-## Sequência
+## Interface
 
-### 1. Extrair a tese principal
+O challenge recebe uma `VarianceExplanation` já construída pelo módulo canônico. Ele preserva:
 
-Identificar:
+- baseline, actual, referência e variação calculada;
+- materialidade e relevância decisória;
+- quebra e drivers;
+- evidência, status e confiança;
+- impacto, recorrência e ação.
 
-- qual é a variação
-- qual explicação está sendo defendida
-- qual driver é apresentado como principal
+O adapter acrescenta somente:
 
-### 2. Procurar fragilidades
+- fragilidades encontradas;
+- resultado do teste quantitativo de reconciliação;
+- classificação de drivers operacionais, contábeis e hipotéticos;
+- leitura revisada;
+- confirmações pendentes.
 
-Testar:
+## Sequência do adapter
 
-- a causa explicada realmente fecha com o número?
-- existe driver concorrente ignorado?
-- há efeito de corte, classificação ou provisão escondido?
-- a explicação confunde sintoma com causa?
+### 1. Preservar a tese e o baseline
 
-### 3. Fazer challenge quantitativo
+Ler do contrato canônico:
 
-Testar a matemática da narrativa:
+- qual variação está sendo explicada;
+- qual é o `baseline`;
+- qual materialidade foi declarada;
+- qual impacto e ação foram registrados.
 
-- a soma dos drivers reconcilia com a variação total?
-- preço, volume e mix foram separados quando aplicável?
-- headcount, remuneração média, hora extra e bônus foram separados em despesas de pessoal?
-- rate, mix, eficiência e volume foram separados em custo industrial?
-- "timing" tem data ou evento de reversão?
-- "one-time" é realmente não recorrente ou apenas não planejado?
-- o efeito contábil foi separado de efeito operacional?
+### 2. Ler o resultado quantitativo existente
 
-### 4. Separar fato de hipótese
+Usar a reconciliação do contrato canônico:
 
-Classificar:
+- `reconciled`: os impactos dos drivers fecham com a `Variance`;
+- `unreconciled`: os impactos não fecham e a narrativa precisa ser revista;
+- `incomplete`: existe driver sem impacto conhecido e a investigação não está concluída.
 
-- fato confirmado
-- hipótese provável
-- ponto sem evidência suficiente
+O adapter não refaz a soma nem substitui o resultado do contrato.
 
-### 5. Reescrever a narrativa
+### 3. Procurar fragilidades declaradas
 
-Produzir uma explicação mais robusta, com:
+Sinalizar:
 
-- causa principal
-- causas secundárias
-- incertezas
-- próxima validação recomendada
+- driver com status `hypothesis`;
+- driver com status `missing_evidence`;
+- reconciliação `unreconciled` ou `incomplete`;
+- ausência de evidência em explicação que ainda não pode ser confirmada.
+
+Classificar efeito contábil, `timing` e `one-off` separadamente. Essas naturezas não são fragilidades por si só. Abrir confirmação pendente somente quando `status`, reconciliação ou `evidence_gap` do contrato canônico demonstrar uma lacuna.
+
+### 4. Preservar fato, hipótese e lacuna
+
+Manter os status do módulo canônico também na linguagem da leitura revisada: usar leitura confirmada para `confirmed`, leitura hipotética para `hypothesis` e leitura preliminar com evidência insuficiente para `insufficient_evidence`. O challenge pode dizer que uma explicação é frágil, mas não deve converter hipótese em fato nem rebaixar fato confirmado por causa do tipo do driver ou da recorrência.
+
+### 5. Reescrever a leitura
+
+Produzir uma leitura revisada com:
+
+- o impacto já registrado;
+- o nível de certeza preservado;
+- a ação ou validação recomendada;
+- as confirmações pendentes quando houver fragilidade, tanto no campo estruturado quanto na leitura revisada.
 
 ## Formato de saída
 
-1. Explicação original.
+1. Explicação original, preservada pelo contrato canônico.
 2. Fragilidades da explicação.
-3. Teste quantitativo.
+3. Teste quantitativo: `reconciled`, `unreconciled` ou `incomplete`.
 4. Leitura revisada.
 5. O que ainda precisa ser confirmado.
 
@@ -84,3 +101,5 @@ Produzir uma explicação mais robusta, com:
 - Não inventar drivers alternativos sem plausibilidade.
 - Não tratar ausência de prova como refutação definitiva.
 - Se a explicação estiver boa, dizer isso explicitamente.
+- Não recalcular baseline, porcentual ou reconciliação fora do módulo canônico.
+- Preservar o status e a confiança da explicação original nos campos e na linguagem da leitura revisada.

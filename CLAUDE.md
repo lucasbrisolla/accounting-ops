@@ -7,6 +7,12 @@ Agente para accounting, controladoria e FP&A com foco em entendimento do número
 - `AGENTS.md` existe como porta de entrada compatível com ambientes que procuram esse nome de arquivo.
 - A instrução operacional autoritativa deste produto está neste `CLAUDE.md`.
 
+## Governança Estrutural
+
+Ao criar, mover ou remover artefatos do produto, consulte `scripts/accounting_ops_product_contract.py`: ele é a política versionada de camadas, caminhos esperados, referências canônicas, surface drift e critérios de promoção. Execute `scripts/accounting_ops_doctor.py` ao terminar e trate os findings tipados como evidência da mudança.
+
+Para registrar uma decisão editorial, use `scripts/promotion_pipeline.py`. Livros gravam decisões em `books/*/promotions/`; contexto empresarial grava decisões em `context/companies/*/promotions/`. Um candidato situado só pode ser marcado como promovido quando o registro explicitar sua generalização.
+
 ## Regra de Contexto
 
 - Use `domain.md` como mapa leve de consulta antes de operar.
@@ -16,6 +22,7 @@ Agente para accounting, controladoria e FP&A com foco em entendimento do número
 - Use `PRODUCT_INDEX.md` apenas quando precisar de inventário operacional: method wiki, trilhas, workflows, playbooks, templates, books ou skills.
 - Leia o backlog local do produto quando a tarefa envolver prioridade, pendência ou evolução do produto.
 - Não carregue a base inteira sem necessidade. Comece pelo problema, selecione a trilha e carregue apenas os módulos necessários.
+- Em ambiente sem repositório ou memória persistente, use `stateless/README.md` como entrada e siga o pacote mínimo descrito em `stateless/adaptation/README.md`; esses artefatos são derivados e não substituem as fontes mestras.
 
 ## Fonte Viva
 
@@ -31,6 +38,32 @@ Identifique primeiro qual trilha se aplica:
 
 Depois, ative o módulo correspondente:
 
+### Roteamento de Investigação Financeira
+
+Para qualquer sinal, anomalia, afirmação, discrepância ou dúvida sobre se um
+tratamento está correto, carregue `skills/financial-investigation/SKILL.md`
+quando a causa, a regra ou a evidência ainda não estiver estabelecida. A skill
+classifica o sinal, seleciona o menor conjunto de fontes e fecha o próximo
+teste. Ela não substitui os módulos especializados nem a validação fiscal ou
+contábil responsável.
+
+Para uma `Variance` já delimitada com `Actual` e `Baseline`, carregue primeiro
+`skills/explain-variance/SKILL.md`; a investigação financeira complementa as
+lacunas sem criar uma segunda explicação canônica.
+
+### Roteamento de Variance
+
+Para qualquer pergunta que peça explicar, desafiar ou formatar uma `Variance`,
+carregue primeiro `skills/explain-variance/SKILL.md`. Esse módulo constrói a
+decisão canônica; somente depois escolha o formato ou a lente adicional:
+
+- challenge: `skills/challenge-variance-explanation/SKILL.md`;
+- one-pager ou narrativa executiva: `skills/number-to-management-story/SKILL.md`,
+  usando o adapter `scripts/variance_output_adapters.py`.
+
+O formato altera audiência, canal e densidade. Não substitui o contrato
+canônico nem cria uma segunda explicação da mesma variação.
+
 | Problema | Arquivos |
 |---|---|
 | Entender o produto e a arquitetura atual | `README.md` + `PRODUCT_INDEX.md` |
@@ -40,15 +73,19 @@ Depois, ative o módulo correspondente:
 | Revisar conciliação contábil, diferença entre razão e suporte, open items ou ajuste de reconciliação | `_method-wiki/processes/account-reconciliation-and-open-items.md` + `tracks/accounting/workflows/account-reconciliation-review.md` |
 | Revisar caixa, bancos, liquidez de curto prazo ou reconciliação bancária | `tracks/accounting/modes/accounting-closing-and-quality.md` + `tracks/accounting/workflows/cash-management-and-bank-reconciliation.md` |
 | Revisar capital de giro operacional, DSO, estoque, payables ou conversão de caixa | `tracks/accounting/workflows/working-capital-and-cash-conversion-review.md` + `_method-wiki/checklists/working-capital-driver-checklist.md` |
+| Diagnosticar pergunta ampla de custos industriais | `skills/diagnose-industrial-costs/SKILL.md` + `domain.md` |
+| Investigar sinal, anomalia, afirmação, discrepância ou tratamento sem evidência suficiente | `skills/financial-investigation/SKILL.md` + fontes selecionadas pelo roteamento |
 | Revisar estoque, valuation, obsolescência ou impacto em margem e custo | `_method-wiki/concepts/inventory-and-valuation-foundations.md` + `tracks/accounting/workflows/inventory-and-valuation-review.md` |
 | Revisar produção contínua, unidades equivalentes, percentual de conclusão ou WIP | `tracks/accounting/workflows/process-costing-and-wip-review.md` + `_method-wiki/concepts/inventory-and-valuation-foundations.md` |
 | Revisar custo padrão, padrões desatualizados ou variâncias industriais | `tracks/accounting/workflows/standard-cost-and-industrial-variance-review.md` + `_method-wiki/patterns/variance-analysis.md` |
 | Identificar oportunidade de custo, economia acionável, waste, scrap, rework ou perda operacional | `_method-wiki/heuristics/cost-opportunity-signals.md` + `tracks/accounting/workflows/standard-cost-and-industrial-variance-review.md` |
 | Entender impacto de CPC/IFRS no número gerencial | `tracks/accounting/modes/accounting-technical-application.md` + `tracks/accounting/playbooks/cpc-ifrs-impact-on-management-number.md` |
 | Aprender FP&A | `tracks/fpa/modes/fpa-learning.md` |
-| Analisar desvio de resultado | `_method-wiki/patterns/variance-analysis.md` + `tracks/fpa/modes/variance-analysis.md` + `templates/variance-analysis-one-pager.md` |
+| Avaliar capacidade de FP&A, racionalizar reports e modelos ou montar plano de melhoria | `tracks/fpa/playbooks/fpa-capability-assessment-and-improvement.md` + `_method-wiki/processes/management-reporting-and-report-governance.md` |
+| Explicar ou analisar uma `Variance` | `skills/explain-variance/SKILL.md` + `_method-wiki/patterns/variance-analysis.md` + `tracks/fpa/modes/variance-analysis.md` |
 | Desenhar ou revisar KPIs, dashboards, alertas ou indicadores de performance | `_method-wiki/processes/dashboard-and-kpi-design.md` |
 | Atualizar outlook, rolling forecast ou cenário base/upside/downside | `tracks/fpa/workflows/rolling-forecast-and-business-outlook.md` |
+| Desenvolver ou revisar modelo financeiro, arquitetura, premissas, cenários ou portfólio de modelos | `tracks/fpa/workflows/predictive-and-analytical-model-review.md` + `_method-wiki/checklists/financial-projection-quality-checklist.md` |
 | Revisar qualidade de projeção financeira, premissas, tendência, sensibilidade ou cenários | `_method-wiki/checklists/financial-projection-quality-checklist.md` + `_method-wiki/processes/forecasting-and-business-outlook.md` |
 | Revisar CVP, break-even, margem de segurança ou sensibilidade de volume, preço e custo | `_method-wiki/concepts/operating-leverage-and-break-even.md` + `tracks/fpa/workflows/integrated-budget-and-driver-review.md` |
 | Revisar projeção de longo prazo, guidance estratégico, tese de expansão ou cenário de transformação | `tracks/fpa/playbooks/long-term-projection-and-strategic-scenario-review.md` + `_method-wiki/processes/forecasting-and-business-outlook.md` + `_method-wiki/processes/long-term-capital-management.md` |
@@ -79,7 +116,7 @@ Ao precisar de referência interna, priorize:
 2. `tracks/*/workflows/`
 3. `tracks/*/playbooks/`
 4. `domain.md`
-5. `books/` e material contextual fornecido pelo usuário, quando existir fora da versão pública
+5. `context/`
 
 ## Skills Auxiliares
 
@@ -87,7 +124,9 @@ Use skills apenas quando a saída pedir a capacidade específica:
 
 | Necessidade | Skill |
 |---|---|
+| Investigar um sinal, hipótese, evidência, tratamento normativo ou causa ainda não estabelecida | `skills/financial-investigation/SKILL.md` |
 | Traduzir efeito técnico-contábil para impacto gerencial | `skills/cpc-impact-translation/SKILL.md` |
+| Diagnosticar natureza de custo industrial antes de escolher workflow | `skills/diagnose-industrial-costs/SKILL.md` |
 | Pressionar uma explicação de variação antes da narrativa final | `skills/challenge-variance-explanation/SKILL.md` |
 | Transformar leitura de número em headline, mensagem executiva curta ou fala de reunião | `skills/number-to-management-story/SKILL.md` |
 | Preparar suporte de lançamento manual com racional, evidência, reversão e impacto | `skills/prepare-journal-entry-support/SKILL.md` |

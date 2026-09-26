@@ -1,150 +1,135 @@
 ---
 name: number-to-management-story
-description: Converter uma leitura de número em narrativa executiva curta, clara e utilizável. Usar quando a análise já estiver entendida e precisar virar headline, slide, e-mail, report ou fala de reunião para gestão.
+description: Adaptar uma decisão canônica de Variance para narrativa executiva curta, clara e utilizável em report, slide, e-mail ou reunião.
 ---
 
 # Transformar número em narrativa gerencial
 
-## Objetivo
+## Papel do skill
 
-Converter leitura de número em narrativa executiva curta, clara e utilizável em report, reunião ou mensagem para gestão.
+Este skill é o adapter de comunicação da decisão canônica de `Variance`. Ele
+ajusta audiência, canal e densidade; não investiga a variação, não recalcula o
+baseline e não cria uma causa nova.
 
-Este skill é a versão curta do playbook `tracks/fpa/playbooks/financial-information-communication.md`.
-Ele existe para transformar análise em mensagem explicativa, não para despejar a trilha completa de exploração.
+A decisão precisa existir antes da comunicação, no módulo
+`skills/explain-variance/SKILL.md`. O adapter executável está em
+`scripts/variance_output_adapters.py`, na função `build_management_story`.
 
 ## Usar quando
 
-- o usuário já entende o número, mas precisa comunicar melhor
-- é preciso resumir fechamento, variação ou impacto técnico em linguagem gerencial
-- a resposta está correta, porém muito contábil, longa ou pouco acionável
-- alguém precisa de uma frase ou mini-história executiva sobre o resultado
-- a análise precisa virar headline, slide executivo, e-mail curto ou fala de reunião
+- a explicação da variação já foi construída e precisa virar mensagem executiva;
+- o usuário quer headline, slide, report, e-mail curto ou fala de reunião;
+- é necessário reduzir densidade sem perder impacto, evidência, recorrência ou
+  nível de confiança;
+- a mesma decisão também será exibida em um one-pager, report, slide, e-mail ou
+  fala de reunião.
 
 ## Não usar quando
 
-- quando a análise ainda está crua e sem entendimento suficiente da causa
-- quando o objetivo é investigar o número, não comunicá-lo
-- quando o usuário quer profundidade técnica integral, e não síntese
-- quando a audiência ainda não foi definida e a mensagem pode induzir decisão errada
+- a análise ainda está exploratória e não existe uma decisão canônica, mesmo
+  que essa decisão venha a ser classificada como hipótese ou evidência insuficiente;
+- o objetivo é descobrir ou testar drivers, e não comunicar uma decisão;
+- a audiência pede a trilha técnica integral em vez de síntese;
+- faltam baseline, drivers, impacto, ação ou status no contrato canônico.
 
-## Sequência
+## Interface
 
-### 0. Confirmar que a análise saiu do exploratório
+Entrada obrigatória:
 
-Antes de lapidar wording, testar:
+- `VarianceExplanation` do módulo canônico;
+- `audience` opcional para identificar a audiência;
+- `channel` opcional para identificar report, slide, e-mail ou reunião.
+- `density` opcional (`concise`, `standard` ou `detailed`); quando ausente, o
+  canal e a audiência definem o nível de detalhe.
 
-- você já sabe qual é a pérola e o que é só trilha de análise?
-- consegue explicar o ponto principal sem abrir a planilha inteira?
-- existe um pedido, implicação ou monitoramento claro?
+Saída de `build_management_story`:
 
-Se a resposta for não, volte uma etapa. Este skill não substitui entendimento analítico.
+1. `headline`: direção, unidade, referência, status e driver principal;
+2. `principal_driver`: `primary_driver_name` declarado pela decisão canônica;
+3. `caveat`: incerteza, lacuna, reconciliação, efeito contábil, timing ou
+   one-off que devam permanecer visíveis;
+4. `managerial_implication`: impacto gerencial canônico;
+5. `monitoring`: ação, owner e timing canônicos;
+6. `drivers`, `evidence`, `recurrence`, `status`, `confidence` e
+   `reconciliation` como suporte da mensagem;
+7. `density` e `message`: densidade aplicada e mensagem renderizada para o canal;
+8. `original`: registro completo da `VarianceExplanation` que originou a
+   narrativa.
 
-### 1. Definir audiência, objetivo e mecanismo
+O registro `original` e os campos de suporte permitem revisar a mensagem sem
+precisar reconstruir a decisão a partir de uma frase resumida.
 
-Antes da frase final, identificar:
+## Sequência do adapter
 
-- quem vai receber a mensagem
-- qual decisão, alinhamento ou atenção a mensagem deve provocar
-- se a mensagem será falada, apresentada em slide, enviada por e-mail ou registrada em report
-- qual nível de detalhe é útil para essa audiência
-- quais vieses, premissas ou sensibilidades podem distorcer a leitura
+### 1. Ler a decisão, não reabrir a investigação
 
-### 2. Capturar o essencial e a Big Idea
+Usar baseline, quebra, drivers, evidência, impacto, recorrência, confiança,
+status, reconciliação e ação exatamente como foram entregues pelo contrato.
 
-Extrair:
+### 2. Definir audiência e canal
 
-- o que aconteceu
-- principal causa
-- impacto
-- Big Idea em uma frase
-- versão de 3 minutos do raciocínio, em linguagem natural
-- recorrência ou não recorrência
-- incerteza ou lacuna relevante
-- ação, decisão ou monitoramento sugerido
+Registrar quem receberá a mensagem e como ela será consumida. `slide` e reunião
+usam densidade concisa; e-mail usa densidade padrão; report e one-pager usam
+densidade detalhada. `density` explícita pode substituir esse default. A
+densidade altera a quantidade de contexto renderizado, preservando todos os
+campos analíticos estruturados.
 
-### 2.1 Construir um arco narrativo curto
+### 3. Formar a headline
 
-Ordenar a mensagem em quatro movimentos:
+Descrever Actual contra a referência com direção, magnitude e unidade canônicas,
+usando apenas o `primary_driver_name`. Para status `hypothesis` ou
+`insufficient_evidence`, declarar a incerteza na própria headline. O adapter não
+escolhe o driver por posição ou impacto e não transforma hipótese em fato.
 
-1. ponto de partida: plano, meta, tendência ou expectativa
-2. tensão: mudança, desvio, risco ou trade-off que importa para a audiência
-3. evidência: drivers que explicam a tensão e seu impacto
-4. resolução: implicação, ação, decisão ou monitoramento
+### 4. Preservar a ressalva
 
-Em uma narrativa financeira, a tensão deve ser observável e gerencialmente relevante. Não inventar conflito para tornar a frase mais interessante; explicitar o que já está em jogo no número.
+Mostrar no corpo principal qualquer driver contábil, `evidence_gap`,
+hipótese, reconciliação incompleta ou não reconciliada, além de timing e
+one-off. Se o status não for confirmado, escrever como leitura preliminar ou
+insuficiente, conforme o contrato.
 
-Escolher uma frase-âncora curta e repetível para a Big Idea. Usá-la ou retomá-la no headline, na transição entre evidências e no fechamento, com pequenas adaptações apenas quando aumentarem a clareza.
+### 5. Fechar com implicação e monitoramento
 
-### 3. Cortar ruído
-
-Eliminar:
-
-- jargão desnecessário
-- excesso de conta sem mensagem
-- detalhe técnico que não muda a decisão
-- gráfico, métrica ou anexo que não sustenta a tese
-
-### 4. Organizar a mensagem
-
-Montar em ordem:
-
-- headline do número
-- explicação principal
-- ressalva importante
-- ação ou implicação
-
-Se a mensagem for apresentada em páginas ou slides, cada parte deve responder à anterior e conduzir à resolução. Se uma evidência não aumenta o entendimento da tensão nem sustenta a ação, movê-la para o suporte ou removê-la.
-
-A densidade final deve acompanhar o mecanismo de consumo. Fala ao vivo aceita mais síntese; e-mail e report assíncrono pedem contexto um pouco mais explícito.
-
-### 5. Ajustar o tom
-
-Escolher tom conforme contexto:
-
-- executivo
-- técnico-gerencial
-- didático
-- defensivo para reunião de revisão
-- board / diretoria
-- gestor não financeiro
+Usar o impacto gerencial e a ação canônicos. O monitoramento pode ser
+apresentado em uma frase mais curta, mas deve manter owner e timing quando
+existirem.
 
 ## Formato de saída
 
-1. Manchete do resultado.
-2. Principal driver.
+### Narrativa executiva
+
+1. Headline do resultado.
+2. Driver principal.
 3. Ressalva ou ruído contábil.
 4. Implicação gerencial.
 5. Próximo passo ou monitoramento.
 
-## Padrões de Mensagem
+### Padrões de redação
 
-### Headline executiva
+Headline confirmada:
 
-`[Resultado] veio [acima/abaixo/em linha] por [driver principal], com impacto de [valor/%] em [margem/EBITDA/caixa], exigindo [ação/monitoramento].`
+`Actual ficou [unidade] [magnitude] [acima/abaixo] de [referência], principalmente por [driver canônico].`
 
-### Big Idea
+Headline com incerteza:
 
-`[Ponto principal], o que coloca [resultado/caixa/operação] em [risco/oportunidade] e exige [ação, decisão ou monitoramento].`
+`Actual ficou [magnitude] [acima/abaixo] de [referência]; a leitura permanece [hipotética/com evidência insuficiente]. Driver principal declarado: [driver canônico].`
 
-### Tradução para gestor não financeiro
+Mensagem para slide:
 
-`O ponto não é apenas [termo contábil]. Na prática, isso significa que [efeito operacional], então a decisão relevante é [ação ou trade-off].`
+`Mensagem principal: [headline]. Ressalva: [caveat]. Implicação: [impacto]. Monitoramento: [ação].`
 
-### Mensagem com incerteza
+Mensagem para gestor não financeiro:
 
-`A leitura preliminar aponta [causa provável], mas ainda falta validar [lacuna]. Até lá, a decisão segura é [ação prudente] e o acompanhamento deve focar em [indicador].`
-
-### Mensagem para slide
-
-`Mensagem principal: [tese]. Evidência: [driver ou gráfico]. Implicação: [impacto]. Próximo passo: [ação].`
+Explicar a consequência gerencial do impacto canônico sem remover a ressalva
+contábil ou a incerteza que condiciona a decisão.
 
 ## Guardrails
 
-- Não exagerar certeza.
-- Não esconder o que é efeito contábil.
-- Não usar frase bonita sem conteúdo.
-- Não usar a mesma densidade para fala ao vivo e leitura assíncrona.
-- Se o número ainda estiver sujo ou incerto, a mensagem deve refletir isso.
-- Se você ainda precisa mostrar toda a exploração para a tese fazer sentido, a narrativa não está pronta.
-- Não adaptar a mensagem só para soar melhor; adaptar para melhorar a decisão.
-- Não começar pelo detalhe se a audiência precisa primeiro da implicação.
+- Não recalcular Actual, referência, Variance, percentual ou reconciliação.
+- Não reclassificar drivers, decidir uma causa concorrente ou alterar impacto.
+- Não alterar `status`, `confidence`, `recurrence` ou `requires_validation`.
+- Não esconder efeito contábil, evidência faltante, hipótese ou lacuna atrás de
+  uma frase executiva.
+- Não apresentar uma leitura preliminar como conclusão confirmada.
+- Não adaptar apenas para soar melhor; adaptar para melhorar a decisão.
+- Não remover o registro `original` da saída persistida.

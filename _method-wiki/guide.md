@@ -40,6 +40,7 @@ O que acontece aqui: revisar orçamento, atualizar expectativas e testar premiss
 
 **Workflows:**
 
+- `tracks/fpa/workflows/predictive-and-analytical-model-review.md`
 - `tracks/fpa/workflows/rolling-forecast-and-business-outlook.md`
 - `tracks/fpa/workflows/integrated-budget-and-driver-review.md`
 
@@ -103,6 +104,7 @@ O que acontece aqui: criar contexto antes de medir, ligar estratégia a drivers 
 **Playbooks relevantes:**
 
 - `tracks/fpa/playbooks/creating-context-for-performance-measures.md`
+- `tracks/fpa/playbooks/fpa-capability-assessment-and-improvement.md`
 - `tracks/fpa/playbooks/flash-report-design.md`
 - `tracks/fpa/playbooks/margin-reporting-without-bad-allocations.md`
 
@@ -145,6 +147,13 @@ O que acontece aqui: revisar intensidade de capital, uso de ativos, CAPEX, caixa
 2. Use `checklists/financial-projection-quality-checklist.md` para testar ownership, tendência, premissas, cenários, riscos, upsides e visão financeira completa.
 3. Se a projeção for um forecast recorrente, aplique também `tracks/fpa/workflows/rolling-forecast-and-business-outlook.md`.
 
+### Preciso desenvolver ou revisar um modelo financeiro
+
+1. Comece por `tracks/fpa/workflows/predictive-and-analytical-model-review.md`.
+2. Use `checklists/financial-projection-quality-checklist.md` para testar a qualidade do número futuro e suas premissas.
+3. Consulte `processes/forecasting-and-business-outlook.md` ou o workflow de orçamento conforme o uso do modelo.
+4. Feche com resumo de apresentação, decisão apoiada, owner das premissas e próximo checkpoint.
+
 ### Preciso revisar uma projeção de longo prazo ou guidance estratégico
 
 1. Comece por `tracks/fpa/playbooks/long-term-projection-and-strategic-scenario-review.md`.
@@ -178,6 +187,13 @@ O que acontece aqui: revisar intensidade de capital, uso de ativos, CAPEX, caixa
 2. Use `tracks/fpa/playbooks/creating-context-for-performance-measures.md` para construir contexto antes da métrica.
 3. Consulte `concepts/value-driver-framework.md` para organizar os drivers de valor.
 4. Use `patterns/goal-to-driver-cascade.md` para ligar objetivo, driver, KPI, meta e owner.
+
+### Preciso avaliar a capacidade de FP&A ou montar um plano de melhoria
+
+1. Comece por `tracks/fpa/playbooks/fpa-capability-assessment-and-improvement.md`.
+2. Use `processes/management-reporting-and-report-governance.md` para revisar a utilidade dos reports e eliminar duplicação.
+3. Consulte `tracks/fpa/playbooks/financial-information-communication.md` para testar se a análise chega à gestão com clareza e ação.
+4. Feche com poucas ações de alto impacto, owner, prazo, evidência e revisão mensal.
 
 ### Preciso desenhar ou revisar reporting gerencial
 
@@ -263,8 +279,21 @@ O que acontece aqui: revisar intensidade de capital, uso de ativos, CAPEX, caixa
 3. Conecte quantidade, valuation, obsolescência, custo e margem.
 4. Se houver impacto em margem, use `patterns/gross-margin-bridge.md`.
 
+### Preciso diagnosticar uma pergunta ampla de custos industriais
+
+1. Comece por `skills/diagnose-industrial-costs/SKILL.md`.
+2. Registre sinais, evidências disponíveis e dados faltantes.
+3. Use `domain.md` para distinguir quantidade, valuation, WIP, padrão,
+   absorção, eficiência, perda e obsolescência.
+4. Só depois carregue o workflow de estoque/valuation, process costing/WIP ou
+   custo padrão indicado pelo diagnóstico.
+5. Se já existir uma `VarianceExplanation`, preserve-a para fechar baseline,
+   impacto e ação; não crie uma segunda explicação.
+
 ### Preciso explicar uma variação
 
-1. Use `patterns/variance-analysis.md` para estruturar baseline, materialidade, quebra, driver, evidência, impacto e ação.
-2. Se a variação envolver fechamento, consulte `concepts/number-quality-foundations.md`.
-3. Se a explicação parecer frágil, use `skills/challenge-variance-explanation/SKILL.md`.
+1. Use `skills/explain-variance/SKILL.md` para construir a decisão canônica de baseline, materialidade, quebra, driver, evidência, impacto, recorrência, confiança, reconciliação e ação.
+2. Use `patterns/variance-analysis.md` somente como lente complementar de decomposição.
+3. Se a variação envolver fechamento, consulte `concepts/number-quality-foundations.md`.
+4. Se a explicação parecer frágil, use `skills/challenge-variance-explanation/SKILL.md` depois do módulo canônico.
+5. Use `skills/number-to-management-story/SKILL.md` apenas para adaptar a saída.

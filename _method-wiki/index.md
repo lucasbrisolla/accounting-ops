@@ -60,7 +60,7 @@
 | [goal-to-driver-cascade.md](patterns/goal-to-driver-cascade.md) | Estrutura para descer de objetivo amplo até driver, medida, meta e accountability. | Jack Alexander Cap. 7 |
 | [performance-tree.md](patterns/performance-tree.md) | Estrutura para decompor um KPI em drivers subordinados e comunicar causa, impacto e ação. | Jack Alexander Cap. 3 |
 | [responsibility-reporting.md](patterns/responsibility-reporting.md) | Estrutura para ligar linha reportada, granularidade e owner do número. | Steven Bragg Cap. 14 |
-| [variance-analysis.md](patterns/variance-analysis.md) | Estrutura recorrente para explicar variações gerais e industriais entre actual, budget, forecast ou padrão. | Modo variance-analysis + Bragg Cost Accounting Cap. 7 |
+| [variance-analysis.md](patterns/variance-analysis.md) | Lente complementar de decomposição para variações gerais e industriais; o contrato canônico fica em `skills/explain-variance/SKILL.md`. | Modo variance-analysis + Bragg Cost Accounting Cap. 7 |
 
 ## Processes
 

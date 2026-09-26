@@ -41,7 +41,6 @@ class AccountingOpsDoctorTests(unittest.TestCase):
             touch(root, "CLAUDE.md", "`tracks/fpa/modes/fpa-learning.md`")
             touch(root, "PRODUCT_INDEX.md", "`tracks/accounting/modes/accounting-closing-and-quality.md`")
             touch(root, "README.md", "`templates/flash-report.md`")
-            touch(root, "INDEX.md", "`skills/number-to-management-story/SKILL.md`")
 
             result = module.check_accounting_ops(root)
 
@@ -75,7 +74,6 @@ class AccountingOpsDoctorTests(unittest.TestCase):
             touch(root, "CLAUDE.md", "`tracks/fpa/modes/ghost-mode.md`")
             touch(root, "PRODUCT_INDEX.md", "[ghost](tracks/accounting/modes/ghost-mode.md)")
             touch(root, "README.md", "`templates/flash-report.md`")
-            touch(root, "INDEX.md", "`skills/number-to-management-story/SKILL.md`")
 
             result = module.check_accounting_ops(root)
 
@@ -92,7 +90,6 @@ class AccountingOpsDoctorTests(unittest.TestCase):
             touch(root, "CLAUDE.md", "")
             touch(root, "PRODUCT_INDEX.md", "")
             touch(root, "README.md", "")
-            touch(root, "INDEX.md", "")
             touch(root, "context/companies/belgo-arames/enterprise-context.md", "Belgo")
             touch(root, "context/companies/bekaert/enterprise-context.md", "Bekaert e Belgo")
             touch(root, "stateless/company-packs/belgo-lens.md", "Belgo")
@@ -112,7 +109,6 @@ class AccountingOpsDoctorTests(unittest.TestCase):
             touch(root, "CLAUDE.md", "entrevista")
             touch(root, "PRODUCT_INDEX.md", "")
             touch(root, "README.md", "")
-            touch(root, "INDEX.md", "")
             touch(root, "_method-wiki/concepts/generic-method.md", "Belgo")
             touch(root, "archive/interview/legacy.md", "Belgo")
 
